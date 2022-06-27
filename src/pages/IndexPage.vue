@@ -14,7 +14,7 @@
       no-native-menu
       @click="$router.push('/room')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #b0003a solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center">Жильё</div>
     </q-img>
@@ -23,7 +23,7 @@
       no-native-menu
       @click="$router.replace('/parking')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #9e00c5 solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center">Транспорт</div>
     </q-img>
