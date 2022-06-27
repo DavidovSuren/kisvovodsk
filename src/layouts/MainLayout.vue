@@ -10,13 +10,6 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
-<<<<<<< HEAD
-        <q-toolbar-title
-          @click="this.$router.push('/');"
-        >
-          KissLove
-=======
         <q-toolbar-title @click="this.$router.push('/');">
           KissLoveodsk
           <q-avatar>
