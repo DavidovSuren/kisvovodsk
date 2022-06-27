@@ -5,16 +5,16 @@
       no-native-menu
       @click="$router.replace('/food')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #2196f3 solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #2196f3 solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #2196f3; font-size: 25px;">Еда</div>
     </q-img>
     <q-img
-      src="~assets/room.jpg"
+      src="~assets/room.png"
       no-native-menu
       @click="$router.push('/room')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #b0003a solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #b0003a solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #b0003a; font-size: 25px;">Жильё</div>
     </q-img>
@@ -23,7 +23,7 @@
       no-native-menu
       @click="$router.replace('/parking')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #9e00c5 solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #9e00c5 solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #320b86; font-size: 25px;">Транспорт</div>
     </q-img>
@@ -32,25 +32,16 @@
       no-native-menu
       @click="$router.replace('/eks')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%4; border: 10px #388e3c solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #26c6da solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #388e3c; font-size: 25px;">Экскурсии</div>
-    </q-img>
-    <q-img
-      src="~assets/eks.jpg"
-      no-native-menu
-      @click="$router.replace('/eks')"
-      alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #26c6da solid; margin: 5px"
-    >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #26c6da; font-size: 25px;">Гиды</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #ffab00; font-size: 25px;">Гиды</div>
     </q-img>
     <q-img
       src="~assets/clothing.jpg"
       no-native-menu
       @click="$router.replace('/clothing')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #ffff00 solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #ffff00 solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="color: #ffff00; font-size: 25px;">Одежда</div>
     </q-img>
@@ -59,7 +50,7 @@
       no-native-menu
       @click="$router.replace('/serves')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #00e5ff solid; margin: 5px"
+      style="width: 46%; border-radius: 50%; border: 10px #00e5ff solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #00e5ff; font-size: 25px;">Услуги</div>
     </q-img>
