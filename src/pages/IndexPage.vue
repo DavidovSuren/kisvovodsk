@@ -25,7 +25,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%; border: 10px #9e00c5 solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Транспорт</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #320b86; font-size: 25px;">Транспорт</div>
     </q-img>
     <q-img
       src="~assets/eks.jpg"
@@ -34,7 +34,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Экскурсии</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #388e3c; font-size: 25px;">Экскурсии</div>
     </q-img>
     <q-img
       src="~assets/eks.jpg"
@@ -43,7 +43,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Гиды</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #26c6da; font-size: 25px;">Гиды</div>
     </q-img>
     <q-img
       src="~assets/clothing.jpg"
