@@ -32,7 +32,7 @@
       no-native-menu
       @click="$router.replace('/eks')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%4; border: 10px #388e3c solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #388e3c; font-size: 25px;">Экскурсии</div>
     </q-img>
@@ -41,7 +41,7 @@
       no-native-menu
       @click="$router.replace('/eks')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #26c6da solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #26c6da; font-size: 25px;">Гиды</div>
     </q-img>
@@ -50,18 +50,18 @@
       no-native-menu
       @click="$router.replace('/clothing')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #ffff00 solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Одежда</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #ffff00; font-size: 25px;">Одежда</div>
     </q-img>
     <q-img
       src="~assets/serves.jpg"
       no-native-menu
       @click="$router.replace('/serves')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #00e5ff solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Услуги</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #00e5ff; font-size: 25px;">Услуги</div>
     </q-img>
   </q-page>
 </template>
