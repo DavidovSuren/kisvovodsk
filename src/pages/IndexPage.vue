@@ -5,7 +5,7 @@
       no-native-menu
       @click="$router.replace('/food')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #000 solid"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #000 solid; margin: 5px"
     >
       <div class="absolute-bottom text-subtitle1 text-center">Еда</div>
     </q-img>
@@ -26,6 +26,15 @@
       style="width: 200px; height: 200px; border-radius: 50%"
     >
       <div class="absolute-bottom text-subtitle1 text-center">Парковка</div>
+    </q-img>
+    <q-img
+      src="~assets/eks.jpg"
+      no-native-menu
+      @click="$router.replace('/eks')"
+      alt="Quasar logo"
+      style="width: 200px; height: 200px; border-radius: 50%"
+    >
+      <div class="absolute-bottom text-subtitle1 text-center">Достопримечательности и эксскурсии</div>
     </q-img>
     <q-img
       src="~assets/eks.jpg"
