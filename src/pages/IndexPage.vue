@@ -5,7 +5,7 @@
       no-native-menu
       @click="$router.replace('/food')"
       alt="Quasar logo"
-      style="width: 200px; height: 200px; border-radius: 50%"
+      style="width: 200px; height: 200px; border-radius: 50%; border: 10px #000 solid"
     >
       <div class="absolute-bottom text-subtitle1 text-center">Еда</div>
     </q-img>

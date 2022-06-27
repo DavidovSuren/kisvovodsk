@@ -14,7 +14,7 @@
         <q-toolbar-title
           @click="this.$router.push('/');"
         >
-          Кисловодск
+          KissLove
         </q-toolbar-title>
 
         <q-btn
