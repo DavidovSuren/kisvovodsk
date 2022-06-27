@@ -10,30 +10,20 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
-        <q-toolbar-title
-          @click="this.$router.push('/');"
-        >
-          Кисловодск
+        <q-toolbar-title @click="this.$router.push('/');">
+          KissLoveodsk
+          <q-avatar>
+            <img src="~assets/logo.png" />
+          </q-avatar>
         </q-toolbar-title>
 
-        <q-btn
-        icon="help"
-        @click="this.$router.push('/info');"
-        ></q-btn>
+        <q-btn icon="help" @click="this.$router.push('/info');"></q-btn>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label
-          header
-        >
-        </q-item-label>
+        <q-item-label header> </q-item-label>
 
         <EssentialLink
           v-for="link in essentialLinks"
