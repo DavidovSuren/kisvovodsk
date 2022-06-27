@@ -1,12 +1,10 @@
 <template>
 <q-page>
-  <div class="q-pa-md q-gutter-md">
       <q-card
         v-for="cardInfo in cards"
         :key="cardInfo.title"
         class="my-card">
         <q-img src="~assets/dizzy.jpg" />
-
         <q-card-section>
           <q-btn
             fab
@@ -44,7 +42,6 @@
           <q-btn flat color="primary"> Отзывы </q-btn>
         </q-card-actions>
       </q-card>
-  </div>
 </q-page>
 </template>
 <script>
@@ -100,9 +97,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.my-card {
-  width: 100%;
-  min-height: 470px;
-}
-</style>

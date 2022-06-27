@@ -25,7 +25,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%"
     >
-      <div class="absolute-bottom text-subtitle1 text-center">Парковка</div>
+      <div class="absolute-bottom text-subtitle1 text-center">Транспорт</div>
     </q-img>
     <q-img
       src="~assets/eks.jpg"
@@ -43,7 +43,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%"
     >
-      <div class="absolute-bottom text-subtitle1 text-center">Достопримечательности и эксскурсии</div>
+      <div class="absolute-bottom text-subtitle1 text-center">Гиды</div>
     </q-img>
     <q-img
       src="~assets/clothing.jpg"
