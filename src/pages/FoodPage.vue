@@ -1,11 +1,10 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
-    <q-page
-      v-for="cardInfo in cards"
-      :key="cardInfo.title"
-      class="flex flex-center mycard"
-    >
-      <q-card class="my-card">
+<q-page>
+  <div class="q-pa-md q-gutter-md">
+      <q-card
+        v-for="cardInfo in cards"
+        :key="cardInfo.title"
+        class="my-card">
         <q-img src="~assets/dizzy.jpg" />
 
         <q-card-section>
@@ -32,7 +31,7 @@
         </q-card-section>
 
         <q-card-section class="q-pt-none">
-          <div class="text-subtitle1">Европейская/Японская кухня</div>
+          <div class="text-subtitle1">Европейская / Японская кухня</div>
           <div class="text-caption text-grey">
             ВРЕМЯ РАБОТЫ: Пн—Вс с 14:00 до 02:00.
           </div>
@@ -45,8 +44,8 @@
           <q-btn flat color="primary"> Отзывы </q-btn>
         </q-card-actions>
       </q-card>
-    </q-page>
   </div>
+</q-page>
 </template>
 <script>
 export default {
