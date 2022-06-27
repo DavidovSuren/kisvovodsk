@@ -34,7 +34,7 @@
       alt="Quasar logo"
       style="width: 46%; height: 46%; border-radius: 50%; border: 10px #26c6da solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #26c6da; font-size: 25px;">Гиды</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #ffab00; font-size: 25px;">Гиды</div>
     </q-img>
     <q-img
       src="~assets/clothing.jpg"
