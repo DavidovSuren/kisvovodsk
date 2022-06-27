@@ -22,7 +22,6 @@
           <q-avatar>
             <img src="~assets/logo.png" />
           </q-avatar>
->>>>>>> d39fa1ecb1a50c6c607540f30983c73453f80b49
         </q-toolbar-title>
 
         <q-btn icon="help" @click="this.$router.push('/info');"></q-btn>
