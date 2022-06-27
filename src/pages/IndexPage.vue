@@ -16,7 +16,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%; border: 10px #b0003a solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Жильё</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="background-color: #FFFFFF; opacity: 0.5; color: #b0003a; font-size: 25px;">Жильё</div>
     </q-img>
     <q-img
       src="~assets/parking.jpg"
@@ -52,7 +52,7 @@
       alt="Quasar logo"
       style="width: 200px; height: 200px; border-radius: 50%; border: 10px #ffff00 solid; margin: 5px"
     >
-      <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #ffff00; font-size: 25px;">Одежда</div>
+      <div class="absolute-bottom text-subtitle1 text-center" style="color: #ffff00; font-size: 25px;">Одежда</div>
     </q-img>
     <q-img
       src="~assets/serves.jpg"

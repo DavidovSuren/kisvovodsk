@@ -47,6 +47,9 @@
 <script>
 export default {
   name: 'FoodName',
+  async mounted () {
+    console.log(await this.$fetch.get_posts())
+  },
   setup () {
     return {
       cards: [
