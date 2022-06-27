@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <q-img
-      src="~assets/food.jpg"
+      src="~assets/food.png"
       no-native-menu
       @click="$router.replace('/food')"
       alt="Quasar logo"
