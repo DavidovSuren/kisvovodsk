@@ -51,6 +51,9 @@ import { useQuasar } from 'quasar'
 
 export default {
   name: 'FoodName',
+  async mounted () {
+    console.log(await this.$fetch.get_posts())
+  },
   setup () {
     const $q = useQuasar()
     const data = ref(null)

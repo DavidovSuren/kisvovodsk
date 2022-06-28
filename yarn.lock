@@ -1965,6 +1965,11 @@
   "resolved" "https://registry.npmjs.org/kolorist/-/kolorist-1.5.1.tgz"
   "version" "1.5.1"
 
+"ky@^0.31.0":
+  "integrity" "sha512-C27vqDb3vuxy4mi/x1wt9P1ES0QxEJg3CbPz2t3lTaQ4AvR/hkwES06yPdqol+q3hH+DrZKb/PKD+pAQkharNg=="
+  "resolved" "https://registry.npmjs.org/ky/-/ky-0.31.0.tgz"
+  "version" "0.31.0"
+
 "lazystream@^1.0.0":
   "integrity" "sha512-b94GiNHQNy6JNTrt5w6zNyffMrNkXZb3KTkCZJb2V1xaEGCk093vkZ2jk3tpaeP33/OiXC+WvK9AxUebnf5nbw=="
   "resolved" "https://registry.npmjs.org/lazystream/-/lazystream-1.0.1.tgz"
