@@ -71,5 +71,5 @@ export default defineComponent({
 .q-img {width: 46%; border-radius: 50%; border-width: 6px; border-style: solid; margin: 5px}
 .q-img__image {padding:15%}
 .q-img__container {border: none !important; border-radius: 0px;}
-.img-title {font-family: 'Marck Script', cursive; background-color: #FFFFFF !important; opacity: 0.75; color: #ffab00; font-size: 30px; padding-top: 10px !important}
+.img-title {font-family: 'Marck Script', cursive; background-color: #FFFFFF !important; opacity: 0.875; color: #ffab00; font-size: 30px; padding-top: 10px !important}
 </style>
