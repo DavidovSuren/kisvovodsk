@@ -56,16 +56,18 @@
     </q-img>
   </q-page>
 </template>
-
 <script>
+<<<<<<< HEAD
+=======
+// Услуги:
+// TODO: Мебель  <a href="https://www.flaticon.com/free-icons/interior-design" title="interior design icons">Interior design icons created by Nhor Phai - Flaticon</a>
+>>>>>>> e39948c309041580123c2bf79abf0448881137fb
 // TODO: Указать авторство иконок где-то.. <a href="https://www.flaticon.com/ru/free-icons/" title="компас иконки">Компас иконки от Freepik - Flaticon</a>
 import { defineComponent } from 'vue'
-
 export default defineComponent({
   name: 'IndexPage'
 })
 </script>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 .q-img {width: 46%; border-radius: 50%; border-width: 6px; border-style: solid; margin: 5px}
