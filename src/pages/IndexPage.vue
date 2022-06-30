@@ -19,11 +19,7 @@
       <div class="img-title absolute-bottom text-subtitle1 text-center" style="color: #1976d2">Жильё</div>
     </q-img>
     <q-img
-<<<<<<< HEAD
-      src="~assets/transport.jpg"
-=======
       src="~assets/icons/free-icon-taxi.png"
->>>>>>> b6599a4985467f47ee9f0fcb2467423fe36b3173
       no-native-menu
       @click="$router.replace('/transport')"
       alt="Quasar logo"
@@ -62,6 +58,13 @@
 </template>
 
 <script>
+
+
+
+// Услуги:
+// TODO: Мебель  <a href="https://www.flaticon.com/free-icons/interior-design" title="interior design icons">Interior design icons created by Nhor Phai - Flaticon</a>
+
+
 // TODO: Указать авторство иконок где-то.. <a href="https://www.flaticon.com/ru/free-icons/" title="компас иконки">Компас иконки от Freepik - Flaticon</a>
 import { defineComponent } from 'vue'
 
