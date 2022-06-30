@@ -1,10 +1,10 @@
 <template>
 <q-page>
       <q-card
-        v-for="cardInfo in cards"
-        :key="cardInfo.title"
+        v-for="cardInfo in data"
+        :key="cardInfo.id"
         class="my-card">
-        <q-img src="~assets/dizzy.jpg" />
+        <q-img :src="cardInfo.fimg_url" />
         <q-card-section>
           <q-btn
             fab
@@ -16,13 +16,12 @@
 
           <div class="row no-wrap items-center">
             <div class="col text-h6 ellipsis">
-              {{cardInfo.title}}
+              {{cardInfo.title.rendered}}
             </div>
             <div
               class="col-auto text-grey text-caption q-pt-md row no-wrap items-center"
             >
               <q-icon name="place" />
-              250 m
             </div>
           </div>
           <q-rating v-model="stars" :max="5" size="32px" />
@@ -34,65 +33,59 @@
             ВРЕМЯ РАБОТЫ: Пн—Вс с 14:00 до 02:00.
           </div>
         </q-card-section>
-
+        <q-card-section v-html="cardInfo.content.rendered">
+        </q-card-section>
         <q-separator />
 
         <q-card-actions>
           <q-btn flat round icon="event" />
-          <q-btn flat color="primary"> Отзывы </q-btn>
+          <q-btn flat color="primary" @click="getComments(cardInfo.id)"> Отзывы </q-btn>
         </q-card-actions>
       </q-card>
 </q-page>
 </template>
 <script>
+import { ref, onMounted } from 'vue'
+import { api } from 'boot/axios'
+import { useQuasar } from 'quasar'
+
 export default {
   name: 'FoodName',
+  async mounted () {
+    console.log(await this.$fetch.get_posts())
+  },
   setup () {
+    const $q = useQuasar()
+    const data = ref(null)
+    function loadData () {
+      api.get('/posts')
+        .then((response) => {
+          data.value = response.data
+        })
+        .catch(() => {
+          console.log('server error!')
+        })
+    }
+    function getComments (id) {
+      api.get(`/comments?post=${id}`)
+        .then((response) => {
+          response.data.forEach(function (entry) {
+            $q.notify(entry.content.rendered)
+          })
+
+          console.log(response.data)
+        })
+        .catch(() => {
+          console.log('server error!')
+        })
+    }
+    onMounted(() => {
+      loadData()
+    })
     return {
-      cards: [
-        {
-          title: 'Loft Bar "DIZZY"',
-          caption: 'Рестораны Бары Кафе ',
-          icon: 'flatware',
-          link: '#food'
-        },
-        {
-          title: 'Жильё',
-          caption: 'Санатории Отели Квартиры',
-          icon: 'hotel',
-          link: '#room'
-        },
-        {
-          title: 'Парковки',
-          caption: 'Цена Часы Охрана',
-          icon: 'local_parking',
-          link: '#parking'
-        },
-        {
-          title: 'Эксскурсии',
-          caption: 'Достопримечательности Гиды',
-          icon: 'place',
-          link: 'Eks'
-        },
-        {
-          title: 'Одежда',
-          caption: 'Спорт Мех Туризм',
-          icon: 'sell',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Услуги',
-          caption: 'SPA Доставка Трансфер',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
-        },
-        {
-          title: 'Помощь',
-          caption: 'Обратная свзяь Реклама',
-          icon: 'accessibility',
-          link: 'https://awesome.quasar.dev'
-        }
-      ]
+      data,
+      loadData,
+      getComments
     }
   }
 }
