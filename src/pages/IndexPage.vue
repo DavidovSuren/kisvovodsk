@@ -58,6 +58,13 @@
 </template>
 
 <script>
+
+
+
+// Услуги:
+// TODO: Мебель  <a href="https://www.flaticon.com/free-icons/interior-design" title="interior design icons">Interior design icons created by Nhor Phai - Flaticon</a>
+
+
 // TODO: Указать авторство иконок где-то.. <a href="https://www.flaticon.com/ru/free-icons/" title="компас иконки">Компас иконки от Freepik - Flaticon</a>
 import { defineComponent } from 'vue'
 
