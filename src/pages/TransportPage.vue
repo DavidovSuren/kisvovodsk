@@ -69,8 +69,8 @@ export default {
         {
           title: 'Парковки',
           caption: 'Цена Часы Охрана',
-          icon: 'local_parking',
-          link: '#parking'
+          icon: 'local_transport',
+          link: '#transport'
         },
         {
           title: 'Эксскурсии',

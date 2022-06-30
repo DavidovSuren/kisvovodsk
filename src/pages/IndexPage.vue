@@ -19,9 +19,9 @@
       <div class="absolute-bottom text-subtitle1 text-center" style="background: transparent; color: #b0003a; font-size: 25px;">Жильё</div>
     </q-img>
     <q-img
-      src="~assets/parking.jpg"
+      src="~assets/transport.jpg"
       no-native-menu
-      @click="$router.replace('/parking')"
+      @click="$router.replace('/transport')"
       alt="Quasar logo"
       style="width: 46%; border-radius: 50%; border: 10px #9e00c5 solid; margin: 5px"
     >

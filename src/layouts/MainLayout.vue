@@ -57,10 +57,10 @@ const linksList = [
     link: '#room'
   },
   {
-    title: 'Парковки',
+    title: 'Транспорт',
     caption: 'Цена Часы Охрана',
-    icon: 'local_parking',
-    link: '#parking'
+    icon: 'local_',
+    link: '#transport'
   },
   {
     title: 'Эксскурсии',
