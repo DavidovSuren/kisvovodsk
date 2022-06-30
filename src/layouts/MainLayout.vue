@@ -63,7 +63,7 @@ const linksList = [
     link: '#transport'
   },
   {
-    title: 'Эксскурсии',
+    title: 'Туризм',
     caption: 'Достопримечательности Гиды',
     icon: 'place',
     link: 'Eks'
