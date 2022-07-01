@@ -1,122 +1,134 @@
 <template>
-  <q-page id="index" class="flex flex-center">
-    <q-img
-      src="~assets/icons/free-icon-food.png"
-      no-native-menu
-      @click="$router.replace('/food')"
-      alt="Quasar logo"
-      style="border-color: #f9a825"
+  <div class="q-pa-md">
+    <h2>ЕДА</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #f9a825"
-      >
-        Еда
-      </div>
-    </q-img>
-    <q-img
-      src="~assets/icons/free-icon-hotel.png"
-      no-native-menu
-      @click="$router.push('/room')"
-      alt="Quasar logo"
-      style="border-color: #1976d2"
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/Food/restraunt.png" width="100px" height="50px"/>Рестораны</q-btn>
+          <q-btn href=" "><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/Food/cafe.png" width="100px" height="10px"/>Кафе</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/Food/canteen.png" width="100px" height="50px"/>Столовая</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/Food/fastfood.png" width="100px" height="50px"/>Фаст-фуд</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+    <div class="q-pa-md">
+    <h2>Жилье</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
+      class="bg-grey-1 "
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #1976d2"
-      >
-        Жильё
-      </div>
-    </q-img>
-    <q-img
-      src="~assets/icons/free-icon-taxi.png"
-      no-native-menu
-      @click="$router.replace('/transport')"
-      alt="Quasar logo"
-      style="border-color: #03a9f4"
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/housing/hotel.png" width="100px" height="50px"/>Отели</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/housing/sanatoriums.png" width="100px" height="50px"/>Санатории</q-btn>
+          <q-btn href=" "><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/housing/Gostinitsa.png" width="100px" height="10px"/>Гостиницы</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/housing/motel.png" width="100px" height="50px"/>Хостелы</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/housing/flat.png" width="100px" height="50px"/>Квартиры</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+    <div class="q-pa-md">
+    <h2>Туризм</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
+      class="bg-grey-1 "
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #03a9f4; font-size: 23px"
-      >
-        Транспорт
-      </div>
-    </q-img>
-    <q-img
-      src="~assets/icons/free-icon-photo.png"
-      no-native-menu
-      @click="$router.replace('/eks')"
-      alt="Quasar logo"
-      style="border-color: #43a047"
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/excursion.png" width="100px" height="10px"/>Экскурсии</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/guides.png" width="100px" height="50px"/>Гиды</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/acropolis.png" width="100px" height="50px"/>Достопримечательности</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/events.png" width="100px" height="50px"/>Мероприятия</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+   <div class="q-pa-md">
+    <h2>Одежда</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
+      class="bg-grey-1 "
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #43a047"
-      >
-        Туризм
-      </div>
-    </q-img>
-    <q-img
-      src="~assets/icons/free-icon-store.png"
-      no-native-menu
-      @click="$router.replace('/clothing')"
-      alt="Quasar logo"
-      style="border-color: #5e35b1"
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/sport.png" width="100px" height="10px"/>Спорт</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/fashion.png" width="100px" height="50px"/>Масс-маркет</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/boutique.png" width="100px" height="50px"/>Бутик</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/fur.png" width="100px" height="50px"/>Мех</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+  <div class="q-pa-md">
+    <h2>Услуги</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
+      class="bg-grey-1 "
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #5e35b1"
-      >
-        Одежда
-      </div>
-    </q-img>
-    <q-img
-      src="~assets/icons/free-icon-payment.png"
-      no-native-menu
-      @click="$router.replace('/serves')"
-      alt="Quasar logo"
-      style="border-color: #ec407a"
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/laptop.png" width="100px" height="50px"/>Сувениры</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/SPA.png" width="100px" height="10px"/>СПА</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/fitness.png" width="100px" height="50px"/>Фитнес</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/hair-cut.png" width="100px" height="50px"/>Парикмахерская</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/laptop.png" width="100px" height="50px"/>Электроника</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+    <div class="q-pa-md">
+    <h2>Транспорт</h2>
+    <q-carousel
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="200px"
+      class="bg-grey-1 "
     >
-      <div
-        class="img-title absolute-bottom text-subtitle1 text-center"
-        style="color: #ec407a"
-      >
-        Услуги
-      </div>
-    </q-img>
-  </q-page>
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Маршрутки</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/parking.png" width="100px" height="10px"/>Парковка</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/repair.png" width="100px" height="50px"/>Автосервис</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Автомойк</q-btn>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
 </template>
 <script>
-// Услуги:
-// TODO: Мебель  <a href="https://www.flaticon.com/free-icons/interior-design" title="interior design icons">Interior design icons created by Nhor Phai - Flaticon</a>
-// TODO: Указать авторство иконок где-то.. <a href="https://www.flaticon.com/ru/free-icons/" title="компас иконки">Компас иконки от Freepik - Flaticon</a>
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'IndexPage'
-})
+import { ref } from 'vue'
+
+export default {
+  setup () {
+    return {
+      slide: ref(1)
+    }
+  }
+}
 </script>
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
-.q-img {
-  width: 46%;
-  border-radius: 50%;
-  border-width: 6px;
-  border-style: solid;
-  margin: 5px;
-}
-.q-img__image {
-  padding: 15%;
-}
-.q-img__container {
-  border: none !important;
-  border-radius: 0px;
-}
-.img-title {
-  font-family: "Marck Script", cursive;
-  background-color: #ffffff !important;
-  opacity: 0.875;
-  color: #ffab00;
-  font-size: 30px;
-  padding-top: 10px !important;
-}
-</style>
