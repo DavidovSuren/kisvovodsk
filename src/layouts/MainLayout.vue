@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated
-   style=" background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(9,9,121,1) 35%, rgb(225, 21, 21) 120%) "
+   style=" background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(9,9,121,1) 35%, rgb(225, 21, 21) 120%)"
 >
       <q-toolbar>
         <q-btn
@@ -13,7 +13,7 @@
           @click="toggleLeftDrawer"
         />
         <q-toolbar-title @click="this.$router.push('/');">
-          KissLoveodsk
+          душа города
           <q-avatar>
             <img src="~assets/logo.png" />
           </q-avatar>
