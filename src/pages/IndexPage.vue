@@ -1,7 +1,35 @@
 <template>
+<div class="q-pa-md">
+    <q-carousel
+    swipeable
+      arrows
+      animated
+      v-model="info"
+      height="250px"
+    >
+      <q-carousel-slide name="first" img-src="https://cdn.quasar.dev/img/mountains.jpg">
+        <div class="absolute-bottom custom-caption">
+          <div class="text-h2" style="color:bisque">13-14 августа</div>
+          <div class="text-subtitle1" style="color:bisque">акция в глория джинс</div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide name="second" img-src="https://cdn.quasar.dev/img/parallax1.jpg">
+        <div class="absolute-bottom custom-caption">
+          <div class="text-h2">Second stop</div>
+          <div class="text-subtitle1">Famous City</div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide name="third" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <div class="absolute-bottom custom-caption">
+          <div class="text-h2">Third stop</div>
+          <div class="text-subtitle1">Famous Bridge</div>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
   <div class="q-pa-md">
     <h2>ЕДА</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -20,7 +48,7 @@
   </div>
     <div class="q-pa-md">
     <h2>Жилье</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -40,7 +68,7 @@
   </div>
     <div class="q-pa-md">
     <h2>Туризм</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -59,7 +87,7 @@
   </div>
    <div class="q-pa-md">
     <h2>Одежда</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -78,7 +106,7 @@
   </div>
   <div class="q-pa-md">
     <h2>Услуги</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -98,7 +126,7 @@
   </div>
     <div class="q-pa-md">
     <h2>Транспорт</h2>
-    <q-carousel
+    <q-carousel style="margin-top:-40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -122,7 +150,8 @@ import { ref } from 'vue'
 export default {
   setup () {
     return {
-      slide: ref(1)
+      slide: ref(1),
+      info: ref('first')
     }
   }
 }
