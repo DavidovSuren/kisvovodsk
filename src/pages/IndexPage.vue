@@ -26,7 +26,6 @@
       control-color="primary"
       arrows
       height="200px"
-      class="bg-grey-1 "
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
@@ -47,7 +46,6 @@
       control-color="primary"
       arrows
       height="200px"
-      class="bg-grey-1 "
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
@@ -67,7 +65,6 @@
       control-color="primary"
       arrows
       height="200px"
-      class="bg-grey-1 "
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
@@ -87,7 +84,6 @@
       control-color="primary"
       arrows
       height="200px"
-      class="bg-grey-1 "
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
@@ -108,14 +104,13 @@
       control-color="primary"
       arrows
       height="200px"
-      class="bg-grey-1 "
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Маршрутки</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/parking.png" width="100px" height="10px"/>Парковка</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/repair.png" width="100px" height="50px"/>Автосервис</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Автомойк</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Маршрутки</q-btn>
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -132,3 +127,7 @@ export default {
   }
 }
 </script>
+<style>
+h2{font-size: 40px;
+}
+</style>
