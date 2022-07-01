@@ -11,11 +11,12 @@
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
+          color="black"
         />
         <q-toolbar-title @click="this.$router.push('/');">
           душа города
           <q-avatar>
-            <img src="~assets/logo.png" />
+            <img src="public/icons/heart.png" />
           </q-avatar>
         </q-toolbar-title>
 
