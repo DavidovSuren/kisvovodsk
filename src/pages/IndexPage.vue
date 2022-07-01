@@ -129,5 +129,7 @@ export default {
 </script>
 <style>
 h2{font-size: 40px;
+text-align: center;
+;
 }
 </style>
