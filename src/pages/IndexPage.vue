@@ -151,22 +151,6 @@ export default {
     return {
       slide: ref(1),
       info: ref('first'),
-      items: [
-        {
-          id: 1,
-          name: 'first',
-          title: 'Хуй 1',
-          photo: '1',
-          subtitle: 'название'
-        },
-        {
-          id: 2,
-          name: 'second',
-          title: 'Хуй 2',
-          photo: '2',
-          subtitle: 'название'
-        }
-      ],
       food: [
         {
           id: 1,
