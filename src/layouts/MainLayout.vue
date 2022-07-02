@@ -1,9 +1,11 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated
-   style=" background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(9,9,121,1) 35%, rgb(225, 21, 21) 120%)"
+   style="
+background: linear-gradient(234deg, rgba(158,105,215,0.7231267507002801) 11%, rgba(30,162,175,0.7262255243894433) 40%, rgba(63,76,167,0.4321078773306197) 57%, rgba(166,107,238,0.38448882971157217) 72%, rgba(238,111,107,0.47692580450148814) 89%);
+backdrop-filter: blur(10px);"
 >
-      <q-toolbar>
+      <q-toolbar >
         <q-btn
           flat
           dense
@@ -13,18 +15,17 @@
           @click="toggleLeftDrawer"
           color="black"
         />
-        <q-toolbar-title @click="this.$router.push('/');">
-          душа города
-          <q-avatar>
-            <img src="public/icons/heart.png" />
-          </q-avatar>
+        <q-toolbar-title @click="this.$router.push('/');" style="color: black">
+          <div style="font-family:cursive; margin-bottom: -3px;" >СЕРДЦЕ ГОРОДА
+          <q-icon size="25px">
+            <img src="public/icons/heart 1.png" alt="" >
+          </q-icon></div>
         </q-toolbar-title>
 
-        <q-btn icon="help" @click="this.$router.push('/info');"></q-btn>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
       <q-list>
         <q-item-label header> </q-item-label>
 
@@ -70,6 +71,12 @@ const linksList = [
     caption: 'Достопримечательности Гиды',
     icon: 'place',
     link: 'Eks'
+  },
+  {
+    title: 'О нас',
+    caption: 'Обратная свзяь Реклама',
+    icon: 'help',
+    link: 'info'
   },
   {
     title: 'Одежда',
