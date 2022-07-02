@@ -10,22 +10,22 @@
       height="200px"
       class="shadow-3"
     >
-      <q-carousel-slide name="first" img-src="https://cdn.quasar.dev/img/mountains.jpg" >
-      <div class="absolute-bottom custom-caption">
-          <div class="text-h2">First stop</div>
-          <div class="text-subtitle1">Mountains</div>
+      <q-carousel-slide name="first" img-src="https://www.hotevents.ru/img/m/gloriajeans/gj_2013-03-18.jpg">
+        <div class="absolute-bottom custom-caption">
+          <div class="text-h2" style="color:chartreuse">13-14 августа</div>
+          <div class="text-subtitle1" style="color:chartreuse">Акция в глория джинс 2 по цене 1</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="second" img-src="https://cdn.quasar.dev/img/parallax1.jpg">
+      <q-carousel-slide name="second" img-src="https://www.belcitymall.ru/images/wss/sale/zolla/18.03.2021.jpg">
         <div class="absolute-bottom custom-caption">
-          <div class="text-h2">Second stop</div>
-          <div class="text-subtitle1">Famous City</div>
+          <div class="text-h2" style="color:bisque">Распродажа до 50%</div>
+          <div class="text-subtitle1" style="color:bisque">С 18-22</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="third" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <q-carousel-slide name="third" img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg">
         <div class="absolute-bottom custom-caption">
-          <div class="text-h2">Third stop</div>
-          <div class="text-subtitle1">Famous Bridge</div>
+          <div class="text-h2" style="color:bisque">Реконструкция озера</div>
+          <div class="text-subtitle1" style="color:bisque">Кисловодск</div>
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -115,7 +115,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/laptop.png" width="100px" height="50px"/>Сувениры</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/gift.png" width="100px" height="50px"/>Сувениры</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/SPA.png" width="100px" height="10px"/>СПА</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/fitness.png" width="100px" height="50px"/>Фитнес</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/hair-cut.png" width="100px" height="50px"/>Парикмахерская</q-btn>
@@ -138,7 +138,7 @@
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/parking.png" width="100px" height="10px"/>Парковка</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/repair.png" width="100px" height="50px"/>Автосервис</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Автомойк</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Маршрутки</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/van.png" width="100px" height="50px"/>Маршрутки</q-btn>
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -146,7 +146,6 @@
 </template>
 <script>
 import { ref } from 'vue'
-
 export default {
   setup () {
     return {
