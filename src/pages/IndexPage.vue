@@ -115,7 +115,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/laptop.png" width="100px" height="50px"/>Сувениры</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/gift.png" width="100px" height="50px"/>Сувениры</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/SPA.png" width="100px" height="10px"/>СПА</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/fitness.png" width="100px" height="50px"/>Фитнес</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/hair-cut.png" width="100px" height="50px"/>Парикмахерская</q-btn>
@@ -138,22 +138,13 @@
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/parking.png" width="100px" height="10px"/>Парковка</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/repair.png" width="100px" height="50px"/>Автосервис</q-btn>
           <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Автомойк</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Маршрутки</q-btn>
+          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/van.png" width="100px" height="50px"/>Маршрутки</q-btn>
         </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
 </template>
 <script>
-<<<<<<< HEAD
-// Услуги:
-// TODO: Мебель  <a href="https://www.flaticon.com/free-icons/interior-design" title="interior design icons">Interior design icons created by Nhor Phai - Flaticon</a>
-// TODO: Указать авторство иконок где-то.. <a href="https://www.flaticon.com/ru/free-icons/" title="компас иконки">Компас иконки от Freepik - Flaticon</a>
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'IndexPage'
-})
-=======
 import { ref } from 'vue'
 
 export default {
@@ -164,7 +155,6 @@ export default {
     }
   }
 }
->>>>>>> 167d1fb75d0cc322d15e97c7686f107e15655e0e
 </script>
 <style>
 h2{font-size: 40px;
