@@ -27,20 +27,9 @@
           <q-rating v-model="stars" :max="5" size="32px" />
         </q-card-section>
 
-        <q-card-section class="q-pt-none">
-          <div class="text-subtitle1">Европейская / Японская кухня</div>
-          <div class="text-caption text-grey">
-            ВРЕМЯ РАБОТЫ: Пн—Вс с 14:00 до 02:00.
-          </div>
-        </q-card-section>
         <q-card-section v-html="cardInfo.content.rendered">
         </q-card-section>
         <q-separator />
-
-        <q-card-actions>
-          <q-btn flat round icon="event" />
-          <q-btn flat color="primary" @click="getComments(cardInfo.id)"> Отзывы </q-btn>
-        </q-card-actions>
       </q-card>
 </q-page>
 </template>

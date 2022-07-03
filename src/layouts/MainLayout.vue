@@ -52,31 +52,31 @@ const linksList = [
     title: 'Еда',
     caption: 'Рестораны Бары Кафе ',
     icon: 'flatware',
-    link: '#food'
+    link: '/food'
   },
   {
     title: 'Жильё',
     caption: 'Санатории Отели Квартиры',
     icon: 'hotel',
-    link: '#room'
+    link: '/room'
   },
   {
     title: 'Транспорт',
     caption: 'Цена Часы Охрана',
     icon: 'local_',
-    link: '#transport'
+    link: '/transport'
   },
   {
     title: 'Туризм',
     caption: 'Достопримечательности Гиды',
     icon: 'place',
-    link: 'Eks'
+    link: '/ex'
   },
   {
     title: 'О нас',
     caption: 'Обратная свзяь Реклама',
     icon: 'help',
-    link: 'info'
+    link: '/info'
   },
   {
     title: 'Одежда',
