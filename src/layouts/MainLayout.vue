@@ -124,5 +124,5 @@ export default defineComponent({
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-}</style>
+  height: 100vh;}
+</style>
