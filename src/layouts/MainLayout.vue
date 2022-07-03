@@ -118,3 +118,11 @@ export default defineComponent({
   }
 })
 </script>
+<style>
+      body{
+  background: linear-gradient(335deg, rgb(243, 201, 189) 0%, rgba(255,228,168,1) 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}</style>
