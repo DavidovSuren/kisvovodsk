@@ -211,17 +211,17 @@ export default {
         {
           id: 1,
           icon: 'hotel',
-          name: 'Отель'
+          name: 'Отели'
         },
         {
           id: 2,
           icon: 'sanatoriums',
-          name: 'Санаторий'
+          name: 'Санатории'
         },
         {
           id: 3,
           icon: 'Gostinitsa',
-          name: 'Гостиница'
+          name: 'Гостиницы'
         },
         {
           id: 4,
@@ -238,7 +238,7 @@ export default {
         {
           id: 1,
           icon: 'events',
-          name: 'Мероприятия'
+          name: 'Мероприятии'
         },
         {
           id: 2,
@@ -287,7 +287,7 @@ export default {
         {
           id: 2,
           icon: 'hair-cut',
-          name: 'Парикмахеская'
+          name: 'Парикмахеские'
         },
         {
           id: 3,
@@ -297,7 +297,7 @@ export default {
         {
           id: 4,
           icon: 'fitness',
-          name: 'Фитнес '
+          name: 'Фитнес'
         },
         {
           id: 5,
@@ -319,7 +319,7 @@ export default {
         {
           id: 3,
           icon: 'repair',
-          name: 'Мастерские'
+          name: 'Автосервис'
         },
         {
           id: 4,
