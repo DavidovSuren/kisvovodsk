@@ -32,7 +32,7 @@
       <q-separator dark />
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap"
         >
           <q-btn v-for="btn in food" :key="btn.id" href="" class="bg-white"
             ><q-img
@@ -59,7 +59,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn class="bg-white" v-for="btn in home" :key="btn.id" href=""
             ><q-img
@@ -85,7 +85,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" href=""
             ><q-img
@@ -111,7 +111,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" href=""
             ><q-img
@@ -137,7 +137,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn class="bg-white" v-for="btn in services " :key="btn.id" href=""
             ><q-img
@@ -163,7 +163,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" href=""
             ><q-img
@@ -211,17 +211,17 @@ export default {
         {
           id: 1,
           icon: 'hotel',
-          name: 'Отель'
+          name: 'Отели'
         },
         {
           id: 2,
           icon: 'sanatoriums',
-          name: 'Санаторий'
+          name: 'Санатории'
         },
         {
           id: 3,
           icon: 'Gostinitsa',
-          name: 'Гостиница'
+          name: 'Гостиницы'
         },
         {
           id: 4,
@@ -238,7 +238,7 @@ export default {
         {
           id: 1,
           icon: 'events',
-          name: 'Мероприятия'
+          name: 'Мероприятии'
         },
         {
           id: 2,
@@ -248,7 +248,7 @@ export default {
         {
           id: 3,
           icon: 'acropolis',
-          name: 'Достопримечательности'
+          name: 'Виды'
         },
         {
           id: 4,
@@ -287,7 +287,7 @@ export default {
         {
           id: 2,
           icon: 'hair-cut',
-          name: 'Парикмахеская'
+          name: 'Парикмахеские'
         },
         {
           id: 3,
@@ -297,7 +297,7 @@ export default {
         {
           id: 4,
           icon: 'fitness',
-          name: 'Фитнес '
+          name: 'Фитнес'
         },
         {
           id: 5,
@@ -319,7 +319,7 @@ export default {
         {
           id: 3,
           icon: 'repair',
-          name: 'Мастерские'
+          name: 'Автосервис'
         },
         {
           id: 4,
@@ -347,4 +347,5 @@ export default {
 }
 .q-carousel{
   background: none;}
+
 </style>
