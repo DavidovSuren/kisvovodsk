@@ -169,7 +169,7 @@ export default {
         {
           id: 3,
           icon: 'canteen',
-          name: 'Столовая'
+          name: 'Столовые'
         },
         {
           id: 4,
