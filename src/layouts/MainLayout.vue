@@ -120,7 +120,8 @@ export default defineComponent({
 </script>
 <style>
       body{
-  background: linear-gradient(335deg, rgb(243, 201, 189) 0%, rgba(255,228,168,1) 100%);
+background: rgb(131,222,244);
+background: linear-gradient(356deg, rgba(131,222,244,0.1561519607843137) 0%, rgba(250,250,250,0.258140756302521) 100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
