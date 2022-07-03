@@ -32,7 +32,7 @@
       <q-separator dark />
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+          class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
         >
           <q-btn v-for="btn in food" :key="btn.id" href="" class="bg-white"
             ><q-img
@@ -231,7 +231,7 @@ export default {
         {
           id: 5,
           icon: 'flat',
-          name: 'Квартиры'
+          name: 'Квартира'
         }
       ],
       tour: [
