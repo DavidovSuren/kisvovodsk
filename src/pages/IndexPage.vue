@@ -20,7 +20,7 @@
   </div>
   <div class="q-pa-md" style="margin-top: -40px">
     <q-separator dark />
-    <h2>Питание</h2>
+    <h2>ПИТАНИЕ</h2>
     <q-carousel
       class="div_bg"
       style="margin-top: -40px"
@@ -48,7 +48,7 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h2>Жилье</h2>
+    <h2>ЖИЛЬЁ</h2>
     <q-carousel
       style="margin-top: -40px"
       v-model="slide"
@@ -99,54 +99,84 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-    <h2>Туризм</h2>
+  <div class="q-pa-md mt">
+    <h2>ОДЕЖДА</h2>
     <q-carousel
       style="margin-top: -40px"
       v-model="slide"
       animated
       control-color="primary"
       arrows
-      height="200px"
+      height="150px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
         >
-          <q-btn href=""
+          <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" href=""
             ><q-img
               class="rounded-borders col-6 full-height"
-              src="src/assets/icons/tourism/excursion.png"
-              width="100px"
-              height="10px"
-            />Экскурсии</q-btn
-          >
-          <q-btn href=""
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              src="src/assets/icons/tourism/guides.png"
-              width="100px"
+              :src="`src/assets/icons/clothing/${btn.icon}.png`"
+              width="80px"
               height="50px"
-            />Гиды</q-btn
-          >
-          <q-btn href=""
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              src="src/assets/icons/tourism/acropolis.png"
-              width="100px"
-              height="50px"
-            />Достопримечательности</q-btn
-          >
-          <q-btn href=""
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              src="src/assets/icons/tourism/events.png"
-              width="100px"
-              height="50px"
-            />Мероприятия</q-btn
+            />{{btn.name}}</q-btn
           >
         </div>
       </q-carousel-slide>
     </q-carousel>
+  </div>
+  <div class="q-pa-md mt">
+    <h2>УСЛУГИ</h2>
+    <q-carousel
+      style="margin-top: -40px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+        >
+          <q-btn class="bg-white" v-for="btn in services " :key="btn.id" href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="`src/assets/icons/services/${btn.icon}.png`"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+  <div class="q-pa-md mt">
+    <h2>ТРАНСПОРТ</h2>
+    <q-carousel
+      style="margin-top: -40px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+        >
+          <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="`src/assets/icons/transport/${btn.icon}.png`"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
 </template>
 <script>
 import { ref } from 'vue'
@@ -207,8 +237,8 @@ export default {
       tour: [
         {
           id: 1,
-          icon: 'acropolis',
-          name: 'Достопримечательности'
+          icon: 'events',
+          name: 'Мероприятия'
         },
         {
           id: 2,
@@ -217,13 +247,84 @@ export default {
         },
         {
           id: 3,
-          icon: 'events',
-          name: 'Мероприятия'
+          icon: 'acropolis',
+          name: 'Достопримечательности'
         },
         {
           id: 4,
           icon: 'guides',
           name: 'Гиды'
+        }
+      ],
+      clothes: [
+        {
+          id: 1,
+          icon: 'fashion',
+          name: 'Сетевые'
+        },
+        {
+          id: 2,
+          icon: 'boutique',
+          name: 'Бутики'
+        },
+        {
+          id: 3,
+          icon: 'sport',
+          name: 'Спортивные'
+        },
+        {
+          id: 4,
+          icon: 'fur',
+          name: 'Меховые'
+        }
+      ],
+      services: [
+        {
+          id: 1,
+          icon: 'gift',
+          name: 'Сувениры'
+        },
+        {
+          id: 2,
+          icon: 'hair-cut',
+          name: 'Парикмахеская'
+        },
+        {
+          id: 3,
+          icon: 'SPA',
+          name: 'СПА'
+        },
+        {
+          id: 4,
+          icon: 'fitness',
+          name: 'Фитнес '
+        },
+        {
+          id: 5,
+          icon: 'laptop',
+          name: 'Электроника'
+        }
+      ],
+      transport: [
+        {
+          id: 1,
+          icon: 'car-wash',
+          name: 'Автомойки'
+        },
+        {
+          id: 2,
+          icon: 'parking',
+          name: 'Парковки'
+        },
+        {
+          id: 3,
+          icon: 'repair',
+          name: 'Мастерские'
+        },
+        {
+          id: 4,
+          icon: 'van',
+          name: 'Маршрутки '
         }
       ]
     }
