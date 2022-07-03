@@ -11,22 +11,16 @@
       class="shadow-3"
     >
       <q-carousel-slide name="first" img-src="https://www.hotevents.ru/img/m/gloriajeans/gj_2013-03-18.jpg">
-        <div class="absolute-bottom custom-caption">
           <div class="text-h2" style="color:chartreuse">13-14 августа</div>
           <div class="text-subtitle1" style="color:chartreuse">Акция в глория джинс 2 по цене 1</div>
-        </div>
       </q-carousel-slide>
       <q-carousel-slide name="second" img-src="https://www.belcitymall.ru/images/wss/sale/zolla/18.03.2021.jpg">
-        <div class="absolute-bottom custom-caption">
           <div class="text-h2" style="color:bisque">Распродажа до 50%</div>
           <div class="text-subtitle1" style="color:bisque">С 18-22</div>
-        </div>
       </q-carousel-slide>
       <q-carousel-slide name="third" img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg">
-        <div class="absolute-bottom custom-caption">
           <div class="text-h2" style="color:bisque">Реконструкция озера</div>
           <div class="text-subtitle1" style="color:bisque">Кисловодск</div>
-        </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
