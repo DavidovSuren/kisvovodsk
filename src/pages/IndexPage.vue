@@ -186,7 +186,7 @@ export default {
         {
           id: 5,
           icon: 'flat',
-          name: 'Квартира'
+          name: 'Квартиры'
         }
       ]
     }
