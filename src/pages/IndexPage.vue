@@ -1,8 +1,7 @@
 <template>
-  <div class="q-pa-md"
-  >
-   <q-carousel
-    swipeable
+  <div class="q-pa-md">
+    <q-carousel
+      swipeable
       animated
       v-model="info"
       arrows
@@ -19,29 +18,39 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-  <div class="q-pa-md"
-  style="margin-top:-40px"
-  >
+  <div class="q-pa-md" style="margin-top: -40px">
     <q-separator dark />
-    <h2 >Питание</h2>
-    <q-carousel class=" div_bg" style="margin-top:-40px;"
+    <h2>Питание</h2>
+    <q-carousel
+      class="div_bg"
+      style="margin-top: -40px"
       v-model="slide"
       animated
       arrows
       height="150px"
     >
-<q-separator dark />
+      <q-separator dark />
       <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap">
-        <q-btn v-for="btn in food" :key="btn.id" href="" class="bg-white" ><q-img  class="circle-borders col-3 full-height" :src="`src/assets/icons/Food/${btn.icon}.png`" width="80px" height="50px"/>{{btn.name}}</q-btn>
+        <div
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap"
+        >
+          <q-btn v-for="btn in food" :key="btn.id" href="" class="bg-white"
+            ><q-img
+              class="circle-borders col-3 full-height"
+              :src="`src/assets/icons/Food/${btn.icon}.png`"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
         </div>
       </q-carousel-slide>
       <q-separator dark />
     </q-carousel>
   </div>
-    <div class="q-pa-md mt">
+  <div class="q-pa-md mt">
     <h2>Жилье</h2>
-    <q-carousel style="margin-top:-40px"
+    <q-carousel
+      style="margin-top: -40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -49,15 +58,50 @@
       height="150px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap  horisintal">
-          <q-btn class = "bg-white" v-for="btn in home" :key="btn.id" href=""><q-img  class="rounded-borders col-6 full-height" :src="`src/assets/icons/housing/${btn.icon}.png`" width="80px" height="50px"/>{{btn.name}}</q-btn>
+        <div
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+        >
+          <q-btn class="bg-white" v-for="btn in home" :key="btn.id" href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="`src/assets/icons/housing/${btn.icon}.png`"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
         </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
     <div class="q-pa-md mt">
-    <h2 >Туризм</h2>
-    <q-carousel style="margin-top:-40px"
+    <h2>ТУРИЗМ</h2>
+    <q-carousel
+      style="margin-top: -40px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-md q-col-gutter no-wrap horisintal"
+        >
+          <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="`src/assets/icons/tourism/${btn.icon}.png`"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+    <h2>Туризм</h2>
+    <q-carousel
+      style="margin-top: -40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -65,73 +109,44 @@
       height="200px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/excursion.png" width="100px" height="10px"/>Экскурсии</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/guides.png" width="100px" height="50px"/>Гиды</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/acropolis.png" width="100px" height="50px"/>Достопримечательности</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/tourism/events.png" width="100px" height="50px"/>Мероприятия</q-btn>
+        <div
+          class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+        >
+          <q-btn href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              src="src/assets/icons/tourism/excursion.png"
+              width="100px"
+              height="10px"
+            />Экскурсии</q-btn
+          >
+          <q-btn href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              src="src/assets/icons/tourism/guides.png"
+              width="100px"
+              height="50px"
+            />Гиды</q-btn
+          >
+          <q-btn href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              src="src/assets/icons/tourism/acropolis.png"
+              width="100px"
+              height="50px"
+            />Достопримечательности</q-btn
+          >
+          <q-btn href=""
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              src="src/assets/icons/tourism/events.png"
+              width="100px"
+              height="50px"
+            />Мероприятия</q-btn
+          >
         </div>
       </q-carousel-slide>
     </q-carousel>
-  </div>
-   <div class="q-pa-md mt">
-    <h2>Одежда</h2>
-    <q-carousel style="margin-top:-40px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="200px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href="" style=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/sport.png" width="100px" height="10px" />Спорт</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/fashion.png" width="100px" height="50px" position="inline"/>Сетевой</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/boutique.png" width="100px" height="50px"/>Бутик</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/clothing/fur.png" width="100px" height="50px"/>Мех</q-btn>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-  <div class="q-pa-md mt" >
-    <h2>Услуги</h2>
-    <q-carousel style="margin-top:-40px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="200px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/gift.png" width="100px" height="50px"/>Сувениры</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/SPA.png" width="100px" height="10px"/>СПА</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/fitness.png" width="100px" height="50px"/>Фитнес</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/hair-cut.png" width="100px" height="50px"/>Парикмахерская</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/services/laptop.png" width="100px" height="50px"/>Электроника</q-btn>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-    <div class="q-pa-md mt">
-    <h2>Транспорт</h2>
-    <q-carousel style="margin-top:-40px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="200px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/parking.png" width="100px" height="10px"/>Парковка</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/repair.png" width="100px" height="50px"/>Автосервис</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/car-wash.png" width="100px" height="50px"/>Автомойк</q-btn>
-          <q-btn href=""><q-img  class="rounded-borders col-6 full-height" src="src/assets/icons/transport/van.png" width="100px" height="50px"/>Маршрутки</q-btn>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
 </template>
 <script>
 import { ref } from 'vue'
@@ -188,6 +203,28 @@ export default {
           icon: 'flat',
           name: 'Квартиры'
         }
+      ],
+      tour: [
+        {
+          id: 1,
+          icon: 'acropolis',
+          name: 'Достопримечательности'
+        },
+        {
+          id: 2,
+          icon: 'excursion',
+          name: 'Экскурсии'
+        },
+        {
+          id: 3,
+          icon: 'events',
+          name: 'Мероприятия'
+        },
+        {
+          id: 4,
+          icon: 'guides',
+          name: 'Гиды'
+        }
       ]
     }
   }
@@ -198,12 +235,15 @@ export default {
   text-align: center;
   padding: 12px;
   color: white;
-  background-color:  rgba(158,105,215,0.2) ;
-backdrop-filter: blur(10px);}
-.div_bg  {
-  background-color: "black" ;
+  background-color: rgba(158, 105, 215, 0.2);
+  backdrop-filter: blur(10px);
+}
+.div_bg {
+  background-color: "black";
 }
 .mt {
-  margin-top:-50px;
+  margin-top: -50px;
 }
+.q-carousel{
+  background: none;}
 </style>
