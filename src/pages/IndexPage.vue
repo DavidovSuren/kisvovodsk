@@ -248,7 +248,7 @@ export default {
         {
           id: 3,
           icon: 'acropolis',
-          name: 'Достопримечательности'
+          name: 'Виды'
         },
         {
           id: 4,
