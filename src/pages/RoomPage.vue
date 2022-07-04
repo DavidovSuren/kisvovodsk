@@ -1,12 +1,8 @@
 <template>
-  <div class="q-pa-md q-gutter-md">
-    <div class="inset-shadow flex inline shadow-box flex-center doc-inset-shadow">
-      Нарзан
-    </div>
-    <div class="inset-shadow-down flex inline shadow-box flex-center doc-inset-shadow">
-      Виктория
-    </div>
-  </div>
+        <div class="row no-wrap items-center">
+          <q-rating size="18px" v-model="stars" :max="5" color="primary" />
+          <span class="text-caption text-grey q-ml-sm">4.2 (551)</span>
+        </div>
 </template>
 
 <style lang="sass" scoped>
