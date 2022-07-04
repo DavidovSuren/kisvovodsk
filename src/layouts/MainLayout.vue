@@ -49,7 +49,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Еда',
+    title: 'Питание',
     caption: 'Рестораны Бары Кафе ',
     icon: 'flatware',
     link: '/food'
