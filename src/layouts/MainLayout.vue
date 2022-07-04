@@ -64,19 +64,19 @@ const linksList = [
     title: 'Туризм',
     caption: 'Мероприятия Экскурсии Виды Гиды',
     icon: 'place',
-    link: '/ex'
+    link: '/eks'
   },
   {
     title: 'Одежда',
     caption: 'Сетевые Бутики Спортивные Меховые',
     icon: 'sell',
-    link: 'https://twitter.quasar.dev'
+    link: '/clothing'
   },
   {
     title: 'Услуги',
     caption: 'Сувениры Парикмахерские СПА Фитнес Электроника ',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: '/serves'
   },
   {
     title: 'Транспорт',
