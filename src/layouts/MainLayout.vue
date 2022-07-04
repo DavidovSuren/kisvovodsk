@@ -50,45 +50,45 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Питание',
-    caption: 'Рестораны Бары Кафе ',
+    caption: 'Рестораны Кафе Столовые Фаст-Фуд ',
     icon: 'flatware',
     link: '/food'
   },
   {
     title: 'Жильё',
-    caption: 'Санатории Отели Квартиры',
+    caption: 'Отели Санатории Гостиницы Хостелы Квартиры',
     icon: 'hotel',
     link: '/room'
   },
   {
-    title: 'Транспорт',
-    caption: 'Цена Часы Охрана',
-    icon: 'local_',
-    link: '/transport'
-  },
-  {
     title: 'Туризм',
-    caption: 'Достопримечательности Гиды',
+    caption: 'Мероприятия Экскурсии Виды Гиды',
     icon: 'place',
     link: '/ex'
+  },
+  {
+    title: 'Одежда',
+    caption: 'Сетевые Бутики Спортивные Меховые',
+    icon: 'sell',
+    link: 'https://twitter.quasar.dev'
+  },
+  {
+    title: 'Услуги',
+    caption: 'Сувениры Парикмахерские СПА Фитнес Электроника ',
+    icon: 'public',
+    link: 'https://facebook.quasar.dev'
+  },
+  {
+    title: 'Транспорт',
+    caption: 'Автомойки Парковки Автосервис Маршрутки ',
+    icon: 'fa fa- car',
+    link: '/transport'
   },
   {
     title: 'О нас',
     caption: 'Обратная свзяь Реклама',
     icon: 'help',
     link: '/info'
-  },
-  {
-    title: 'Одежда',
-    caption: 'Спорт Мех Туризм',
-    icon: 'sell',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Услуги',
-    caption: 'SPA Доставка Трансфер',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
   },
   {
     title: 'Помощь',
