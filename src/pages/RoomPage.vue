@@ -1,6 +1,6 @@
 <template>
         <div class="row no-wrap items-center">
-          <q-rating size="18px" v-model="stars" :max="5" color="primary" />
+          <q-rating size="18px" v-model="stars" :max="5" color="primary"/>
           <span class="text-caption text-grey q-ml-sm">4.2 (551)</span>
         </div>
 </template>
