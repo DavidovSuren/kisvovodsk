@@ -226,7 +226,7 @@ export default {
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/housing/gostinitsa.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/Gostinitsa.png', import.meta.url).href,
           link: 'gostinitsa',
           name: 'Гостиницы'
         },
@@ -310,7 +310,7 @@ export default {
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/services/spa.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
