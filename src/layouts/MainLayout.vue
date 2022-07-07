@@ -18,7 +18,7 @@ backdrop-filter: blur(10px);"
         <q-toolbar-title @click="this.$router.push('/');" style="color: black">
           <div style="font-family:cursive; margin-bottom: -3px;" >СЕРДЦЕ ГОРОДА
           <q-icon size="25px">
-            <img :src="btn.icon" >
+            <img src="../assets/bitmap.png" >
           </q-icon></div>
         </q-toolbar-title>
 
@@ -48,9 +48,6 @@ import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
-  {
-    icon: new URL('../dist/pwa/icons/heart 1.png', import.meta.url).href,
-  },
   {
     title: 'Питание',
     caption: 'Рестораны Кафе Столовые Фаст-Фуд ',
