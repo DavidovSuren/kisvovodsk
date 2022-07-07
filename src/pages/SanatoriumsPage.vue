@@ -39,7 +39,7 @@ import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'Sanatoriums',
+  name: 'SanatoriumsPage',
   async mounted () {
     console.log(await this.$fetch.get_posts())
   },
