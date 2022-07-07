@@ -1,6 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-carousel
+      cycle
       swipeable
       animated
       v-model="info"
@@ -287,7 +288,7 @@ export default {
         {
           id: 2,
           icon: 'hair-cut',
-          name: 'Парикмахеские'
+          name: 'Парикмахерские'
         },
         {
           id: 3,
