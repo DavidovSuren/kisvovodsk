@@ -37,7 +37,7 @@
           <q-btn v-for="btn in food" :key="btn.id" :to="btn.link" class="bg-white"
             ><q-img
               class="circle-borders col-3 full-height"
-              :src="`src/assets/icons/Food/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -188,13 +188,13 @@ export default {
       food: [
         {
           id: 1,
-          icon: 'restraunt',
+          icon: new URL('../assets/icons/Food/restraunt.png', import.meta.url).href,
           link: 'restraunt',
           name: 'Рестораны'
         },
         {
           id: 2,
-          icon: 'cafe',
+          icon: new URL('../assets/icons/Food/cafe.png', import.meta.url).href,
           link: 'cafe',
           name: 'Кафе'
         },
