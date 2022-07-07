@@ -35,7 +35,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap"
         >
-          <q-btn v-for="btn in food" :key="btn.id" href="" class="bg-white"
+          <q-btn v-for="btn in food" :key="btn.id" :to="btn.link" class="bg-white"
             ><q-img
               class="circle-borders col-3 full-height"
               :src="`src/assets/icons/Food/${btn.icon}.png`"
@@ -62,7 +62,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in home" :key="btn.id" href=""
+          <q-btn class="bg-white" v-for="btn in home" :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="`src/assets/icons/housing/${btn.icon}.png`"
@@ -88,7 +88,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" href=""
+          <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="`src/assets/icons/tourism/${btn.icon}.png`"
@@ -114,7 +114,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" href=""
+          <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="`src/assets/icons/clothing/${btn.icon}.png`"
@@ -140,7 +140,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in services " :key="btn.id" href=""
+          <q-btn class="bg-white" v-for="btn in services " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="`src/assets/icons/services/${btn.icon}.png`"
@@ -166,7 +166,7 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" href=""
+          <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="`src/assets/icons/transport/${btn.icon}.png`"
@@ -190,21 +190,25 @@ export default {
         {
           id: 1,
           icon: 'restraunt',
+          link: 'restraunt',
           name: 'Рестораны'
         },
         {
           id: 2,
           icon: 'cafe',
+          link: 'cafe',
           name: 'Кафе'
         },
         {
           id: 3,
           icon: 'canteen',
+          link: 'canteen',
           name: 'Столовые'
         },
         {
           id: 4,
           icon: 'fastfood',
+          link: 'fastfood',
           name: 'Фаст-фуд'
         }
       ],
@@ -212,48 +216,57 @@ export default {
         {
           id: 1,
           icon: 'hotel',
+          link: 'hotel',
           name: 'Отели'
         },
         {
           id: 2,
           icon: 'sanatoriums',
+          link: 'sanatoriums',
           name: 'Санатории'
         },
         {
           id: 3,
           icon: 'Gostinitsa',
+          link: 'gostinitsa',
           name: 'Гостиницы'
         },
         {
           id: 4,
           icon: 'motel',
+          link: 'motel',
           name: 'Хостелы'
         },
         {
           id: 5,
           icon: 'flat',
-          name: 'Квартира'
+          link: 'flat',
+          name: 'Квартиры'
         }
       ],
       tour: [
         {
           id: 1,
           icon: 'events',
+          link: 'events',
           name: 'Мероприятии'
         },
         {
           id: 2,
           icon: 'excursion',
+          link: 'excursion',
           name: 'Экскурсии'
         },
         {
           id: 3,
           icon: 'acropolis',
+          link: 'acropolis',
           name: 'Виды'
         },
         {
           id: 4,
           icon: 'guides',
+          link: 'guides',
           name: 'Гиды'
         }
       ],
@@ -261,21 +274,25 @@ export default {
         {
           id: 1,
           icon: 'fashion',
+          link: 'fashion',
           name: 'Сетевые'
         },
         {
           id: 2,
           icon: 'boutique',
+          link: 'boutique',
           name: 'Бутики'
         },
         {
           id: 3,
           icon: 'sport',
+          link: 'sport',
           name: 'Спортивные'
         },
         {
           id: 4,
           icon: 'fur',
+          link: 'fur',
           name: 'Меховые'
         }
       ],
@@ -283,6 +300,7 @@ export default {
         {
           id: 1,
           icon: 'gift',
+          link: 'gift',
           name: 'Сувениры'
         },
         {
@@ -293,16 +311,19 @@ export default {
         {
           id: 3,
           icon: 'SPA',
+          link: 'spa',
           name: 'СПА'
         },
         {
           id: 4,
           icon: 'fitness',
+          link: 'fitness',
           name: 'Фитнес'
         },
         {
           id: 5,
           icon: 'laptop',
+          link: 'laptop',
           name: 'Электроника'
         }
       ],
@@ -310,21 +331,25 @@ export default {
         {
           id: 1,
           icon: 'car-wash',
+          link: 'car-wash',
           name: 'Автомойки'
         },
         {
           id: 2,
           icon: 'parking',
+          link: 'parking',
           name: 'Парковки'
         },
         {
           id: 3,
           icon: 'repair',
+          link: 'repair',
           name: 'Автосервис'
         },
         {
           id: 4,
           icon: 'van',
+          link: 'van',
           name: 'Маршрутки '
         }
       ]
