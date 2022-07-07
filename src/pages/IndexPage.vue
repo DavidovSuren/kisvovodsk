@@ -64,7 +64,7 @@
           <q-btn class="bg-white" v-for="btn in home" :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
-              :src="`src/assets/icons/housing/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -90,7 +90,7 @@
           <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
-              :src="`src/assets/icons/tourism/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -116,7 +116,7 @@
           <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
-              :src="`src/assets/icons/clothing/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -142,7 +142,7 @@
           <q-btn class="bg-white" v-for="btn in services " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
-              :src="`src/assets/icons/services/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -168,7 +168,7 @@
           <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
-              :src="`src/assets/icons/transport/${btn.icon}.png`"
+              :src="btn.icon"
               width="80px"
               height="50px"
             />{{btn.name}}</q-btn
@@ -214,31 +214,31 @@ export default {
       home: [
         {
           id: 1,
-          icon: new URL('../assets/icons/Food/hotel.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/hotel.png', import.meta.url).href,
           link: 'hotel',
           name: 'Отели'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/Food/sanatoriums.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/sanatoriums.png', import.meta.url).href,
           link: 'sanatoriums',
           name: 'Санатории'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/Food/gostinitsa.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/gostinitsa.png', import.meta.url).href,
           link: 'gostinitsa',
           name: 'Гостиницы'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/Food/motel.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/motel.png', import.meta.url).href,
           link: 'motel',
           name: 'Хостелы'
         },
         {
           id: 5,
-          icon: new URL('../assets/icons/Food/flat.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/flat.png', import.meta.url).href,
           link: 'flat',
           name: 'Квартиры'
         }
@@ -246,25 +246,25 @@ export default {
       tour: [
         {
           id: 1,
-          icon: new URL('../assets/icons/Food/events.png', import.meta.url).href,
+          icon: new URL('../assets/icons/tourism/events.png', import.meta.url).href,
           link: 'events',
           name: 'Мероприятии'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/Food/excursion.png', import.meta.url).href,
+          icon: new URL('../assets/icons/tourism/excursion.png', import.meta.url).href,
           link: 'excursion',
           name: 'Экскурсии'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/Food/acropolis.png', import.meta.url).href,
+          icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
           name: 'Виды'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/Food/guides.png', import.meta.url).href,
+          icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
           name: 'Гиды'
         }
@@ -272,25 +272,25 @@ export default {
       clothes: [
         {
           id: 1,
-          icon: new URL('../assets/icons/Food/fashion.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/fashion.png', import.meta.url).href,
           link: 'fashion',
           name: 'Сетевые'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/Food/boutique.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/boutique.png', import.meta.url).href,
           link: 'boutique',
           name: 'Бутики'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/Food/sport.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/sport.png', import.meta.url).href,
           link: 'sport',
           name: 'Спортивные'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/Food/fur.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/fur.png', import.meta.url).href,
           link: 'fur',
           name: 'Меховые'
         }
@@ -298,31 +298,31 @@ export default {
       services: [
         {
           id: 1,
-          icon: new URL('../assets/icons/Food/gift.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
           link: 'gift',
           name: 'Сувениры'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/Food/hair-cut.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Парикмахеские'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/Food/spa.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/spa.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/Food/fitness.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
           id: 5,
-          icon: new URL('../assets/icons/Food/laptop.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
         }
@@ -330,25 +330,25 @@ export default {
       transport: [
         {
           id: 1,
-          icon: new URL('../assets/icons/Food/car-wash.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/car-wash.png', import.meta.url).href,
           link: 'car-wash',
           name: 'Автомойки'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/Food/parking.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/parking.png', import.meta.url).href,
           link: 'parking',
           name: 'Парковки'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/Food/repair.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/repair.png', import.meta.url).href,
           link: 'repair',
           name: 'Автосервис'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/Food/van.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/van.png', import.meta.url).href,
           link: 'van',
           name: 'Маршрутки '
         }
