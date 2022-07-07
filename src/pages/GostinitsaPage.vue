@@ -39,7 +39,7 @@ import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'CafeName',
+  name: 'GostinitsaPage',
   async mounted () {
     console.log(await this.$fetch.get_posts())
   },
