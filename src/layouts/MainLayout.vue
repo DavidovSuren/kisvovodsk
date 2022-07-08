@@ -15,6 +15,14 @@ backdrop-filter: blur(10px);"
           @click="toggleLeftDrawer"
           color="black"
         />
+         <q-btn
+          flat
+          dense
+          round
+          icon="home"
+          aria-label="Home"
+          color="black"
+        />
         <q-toolbar-title @click="this.$router.push('/');" style="color: black">
           <div style="font-family:cursive; margin-bottom: -3px;">СЕРДЦЕ ГОРОДА&nbsp;
           <q-icon size="25px">
