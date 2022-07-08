@@ -5,14 +5,12 @@
         :key="cardInfo.id" >
       <router-link :to="`/post/${cardInfo.id}`">
       <q-card-section horizontal>
-<q-img :src="cardInfo.fimg_url" width="150px" />
+<q-img :src="cardInfo.fimg_url" />
 <div class="q-pa-md" >
           <div >
             <h1>{{cardInfo.title.rendered}}</h1>
           </div>
-          <div class="text-caption text-grey" >
-            <p v-html="cardInfo.excerpt.rendered"></p>
-        </div>
+          <div class="text-caption text-grey"  v-html="cardInfo.excerpt.rendered"></div>
         <div class="text-caption text-grey">
           <p>Адрес: {{cardInfo.acf.адрес}}</p>
         </div>
@@ -71,4 +69,7 @@ export default {
 
 <style>
 .mmt{  margin-top: 20px;}
+.text-caption p {font-size:12px; margin-bottom: 10px;}
+.q-img{position: inherit !important; overflow: visible;}
+.q-img, .q-img__image, .q-img__container, .q-img__content {width:200px !important; height: 200px !important;}
 </style>
