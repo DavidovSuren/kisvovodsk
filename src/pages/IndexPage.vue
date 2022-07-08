@@ -368,5 +368,5 @@ export default {
 }
 .q-carousel{
   background: none;}
-
+.q-carousel__slide {padding-left: 3px !important}
 </style>
