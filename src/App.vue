@@ -11,8 +11,8 @@ export default defineComponent({
 </script>
 <style>
 body { background: "src/background/fon2.png"}
-h1 {font-family: cursive;  }
+h1 {font-family: monospace; font-size: 23px; margin-top: -30px; margin-bottom: -20px;}
 h2 {font-family:monospace; font-size: 23px; align-self: start;  }
-p  {font-family: monospace; font-size: 20px}
+p  {font-family: monospace; font-size: 15px}
 a  {font-family: cursive; font-weight:  150px;text-decoration: none}
 </style>
