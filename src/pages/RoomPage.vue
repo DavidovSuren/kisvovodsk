@@ -1,5 +1,5 @@
 <template>
-<div class="q-pa-md  ">
+<div class="q-pa-md ">
   <q-page class="">
     <q-card class = "mmt "  v-for="cardInfo in data"
         :key="cardInfo.id" >
@@ -7,13 +7,13 @@
 <q-img :src="cardInfo.fimg_url" width="150px"/>
 <div class="q-pa-md" >
           <div >
-            <p>{{cardInfo.title.rendered}}<br/></p>
+            <h1>{{cardInfo.title.rendered}}</h1>
           </div>
-          <div class="text-caption text-grey">
-          {{cardInfo.excerpt.rendered}}
+          <div class="text-caption text-grey" >
+            <p v-html="cardInfo.excerpt.rendered"></p>
         </div>
         <div class="text-caption text-grey">
-          Адрес:{{cardInfo.acf.адрес}}
+          <p>Адрес: {{cardInfo.acf.адрес}}</p>
         </div>
 <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />{{cardInfo.acf.рейтинг }}
       </div>
@@ -71,11 +71,5 @@ export default {
 </script>
 
 <style>
-.mmt{
-  margin-top: 20px;
-}
-.wd
-{
-  max-height: 50px
-}
+.mmt{  margin-top: 20px;}
 </style>
