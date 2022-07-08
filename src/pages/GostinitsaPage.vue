@@ -1,37 +1,45 @@
 <template>
-<div class="q-pa-md">
-    <q-card class = "mmt"  v-for="cardInfo in data"
-        :key="cardInfo.id">
-      <q-card-section horizontal>
-<q-img :src="cardInfo.fimg_url" width="50%"/>
-<div class="q-pa-md" >
-          <div >
-            <p>{{cardInfo.title.rendered}}<br/></p>
+<q-page>
+      <q-card
+        v-for="cardInfo in data"
+        :key="cardInfo.id"
+        class="my-card">
+        <q-img :src="cardInfo.fimg_url" />
+        <q-card-section>
+          <q-btn
+            fab
+            color="primary"
+            icon="place"
+            class="absolute"
+            style="top: 0; right: 12px; transform: translateY(-50%)"
+          />
+
+          <div class="row no-wrap items-center">
+            <div class="col text-h6 ellipsis">
+              {{cardInfo.title.rendered}}
+            </div>
+            <div
+              class="col-auto text-grey text-caption q-pt-md row no-wrap items-center"
+            >
+              <q-icon name="place" />
+            </div>
           </div>
-        <div class="text-caption text-grey">
-          Адрес:
-        </div>
-      </div>
-      </q-card-section>
+          <q-rating v-model="stars" :max="5" size="32px" />
+        </q-card-section>
 
-      <q-separator ></q-separator>
-
-      <q-card-actions>
-        <q-btn flat color="primary">
-         <a :href="card.feedback">Написать отзыв</a>
-        </q-btn>
-      </q-card-actions>
+        <q-card-section v-html="cardInfo.content.rendered">
+        </q-card-section>
+        <q-separator />
       </q-card>
-    </div>
+</q-page>
 </template>
-
 <script>
 import { ref, onMounted } from 'vue'
 import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'RoomPage',
+  name: 'GostinitsaPage',
   async mounted () {
     console.log(await this.$fetch.get_posts())
   },
@@ -71,10 +79,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.mmt{
-  margin-top: 20px;
-}
-
-</style>

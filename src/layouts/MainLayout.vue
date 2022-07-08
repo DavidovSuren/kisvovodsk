@@ -16,9 +16,9 @@ backdrop-filter: blur(10px);"
           color="black"
         />
         <q-toolbar-title @click="this.$router.push('/');" style="color: black">
-          <div style="font-family:cursive; margin-bottom: -3px;" >СЕРДЦЕ ГОРОДА
+          <div style="font-family:cursive; margin-bottom: -3px;">СЕРДЦЕ ГОРОДА&nbsp;
           <q-icon size="25px">
-            <img src="public/icons/heart 1.png" alt="" >
+            <img src="../assets/bitmap.png" >
           </q-icon></div>
         </q-toolbar-title>
 

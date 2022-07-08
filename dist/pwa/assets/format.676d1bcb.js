@@ -1,1 +1,0 @@
-import{c as r}from"./index.b606ee4d.js";const n={dark:{type:Boolean,default:null}};function o(t,a){return r(()=>t.dark===null?a.dark.isActive:t.dark)}function s(t,a,e){return e<=a?a:Math.min(e,Math.max(a,t))}export{o as a,s as b,n as u};

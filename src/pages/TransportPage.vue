@@ -6,8 +6,6 @@
       class="flex flex-center mycard"
     >
       <q-card class="my-card">
-        <q-img src="~assets/dizzy.jpg" />
-
         <q-card-section>
           <q-btn
             fab
