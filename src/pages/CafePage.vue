@@ -1,38 +1,25 @@
 <template>
-<q-page>
-      <q-card
-        v-for="cardInfo in data"
-        :key="cardInfo.id"
-        class="my-card">
-        <q-img :src="cardInfo.fimg_url" />
-        <q-card-section>
-          <q-btn
-            fab
-            color="primary"
-            icon="place"
-            class="absolute"
-            style="top: 0; right: 12px; transform: translateY(-50%)"
-          />
-
-          <div class="row no-wrap items-center">
-            <div class="col text-h6 ellipsis">
-              {{cardInfo.acf.телефон}}
-              {{cardInfo.title.rendered}}
-            </div>
-            <div
-              class="col-auto text-grey text-caption q-pt-md row no-wrap items-center"
-            >
-              <q-icon name="place" />
-            </div>
+<div class="q-pa-md  ">
+  <q-page class="">
+    <q-card class = "mmt "  v-for="cardInfo in data"
+        :key="cardInfo.id" >
+      <q-card-section horizontal>
+<q-img :src="cardInfo.fimg_url" width="50%"/>
+<div class="q-pa-md" >
+          <div >
+            <p>{{cardInfo.title.rendered}}<br/></p>
           </div>
-          <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />
-        </q-card-section>
-        <q-card-section>
-        </q-card-section>
-        <q-separator />
+        <div class="text-caption text-grey">
+          Адрес:{{cardInfo.acf.адрес}}
+        </div>
+<q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />{{cardInfo.acf.рейтинг }}
+      </div>
+      </q-card-section>
       </q-card>
 </q-page>
+</div>
 </template>
+
 <script>
 import { ref, onMounted } from 'vue'
 import { api } from 'boot/axios'
@@ -79,3 +66,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.mmt{
+  margin-top: 20px;
+}
+.wd
+{
+  max-height: 50px
+}
+</style>
