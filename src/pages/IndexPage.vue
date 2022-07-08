@@ -252,8 +252,8 @@ export default {
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/tourism/excursion.png', import.meta.url).href,
-          link: 'excursion',
+          icon: new URL('../assets/icons/tourism/cexcursionfe.png', import.meta.url).href,
+          link: 'cexcursionfe',
           name: 'Экскурсии'
         },
         {
