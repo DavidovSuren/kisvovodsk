@@ -249,7 +249,7 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/tourism/events.png', import.meta.url).href,
           link: 'events',
-          name: 'Мероприятии'
+          name: 'Мероприятия'
         },
         {
           id: 2,

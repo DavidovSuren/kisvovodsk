@@ -4,11 +4,14 @@
     <q-card class = "mmt "  v-for="cardInfo in data"
         :key="cardInfo.id" >
       <q-card-section horizontal>
-<q-img :src="cardInfo.fimg_url" width="50%"/>
+<q-img :src="cardInfo.fimg_url" width="150px"/>
 <div class="q-pa-md" >
           <div >
             <p>{{cardInfo.title.rendered}}<br/></p>
           </div>
+          <div class="text-caption text-grey">
+          {{cardInfo.excerpt.rendered}}
+        </div>
         <div class="text-caption text-grey">
           Адрес:{{cardInfo.acf.адрес}}
         </div>
