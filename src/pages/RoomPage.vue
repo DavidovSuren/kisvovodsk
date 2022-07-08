@@ -1,7 +1,8 @@
 <template>
-<div class="q-pa-md">
-    <q-card class = "mmt"  v-for="cardInfo in data"
-        :key="cardInfo.id">
+<div class="q-pa-md  ">
+  <q-page class="">
+    <q-card class = "mmt "  v-for="cardInfo in data"
+        :key="cardInfo.id" >
       <q-card-section horizontal>
 <q-img :src="cardInfo.fimg_url" width="50%"/>
 <div class="q-pa-md" >
@@ -9,20 +10,14 @@
             <p>{{cardInfo.title.rendered}}<br/></p>
           </div>
         <div class="text-caption text-grey">
-          Адрес:
+          Адрес:{{cardInfo.acf.адрес}}
         </div>
+<q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />{{cardInfo.acf.рейтинг }}
       </div>
       </q-card-section>
-
-      <q-separator ></q-separator>
-
-      <q-card-actions>
-        <q-btn flat color="primary">
-         <a :href="card.feedback">Написать отзыв</a>
-        </q-btn>
-      </q-card-actions>
       </q-card>
-    </div>
+</q-page>
+</div>
 </template>
 
 <script>
@@ -31,7 +26,7 @@ import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'RoomPage',
+  name: 'CafeName',
   async mounted () {
     console.log(await this.$fetch.get_posts())
   },
@@ -39,7 +34,7 @@ export default {
     const $q = useQuasar()
     const data = ref(null)
     function loadData () {
-      api.get('/posts')
+      api.get('/posts?categories=31')
         .then((response) => {
           data.value = response.data
         })
@@ -76,5 +71,8 @@ export default {
 .mmt{
   margin-top: 20px;
 }
-
+.wd
+{
+  max-height: 50px
+}
 </style>

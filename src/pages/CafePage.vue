@@ -16,6 +16,7 @@
 
           <div class="row no-wrap items-center">
             <div class="col text-h6 ellipsis">
+              {{cardInfo.acf.телефон}}
               {{cardInfo.title.rendered}}
             </div>
             <div
@@ -24,10 +25,9 @@
               <q-icon name="place" />
             </div>
           </div>
-          <q-rating v-model="stars" :max="5" size="32px" />
+          <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />
         </q-card-section>
-
-        <q-card-section v-html="cardInfo.content.rendered">
+        <q-card-section>
         </q-card-section>
         <q-separator />
       </q-card>
@@ -47,7 +47,7 @@ export default {
     const $q = useQuasar()
     const data = ref(null)
     function loadData () {
-      api.get('/posts')
+      api.get('/posts?categories=31')
         .then((response) => {
           data.value = response.data
         })
