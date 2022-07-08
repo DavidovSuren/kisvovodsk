@@ -1,1 +1,0 @@
-import{Q as a}from"./QPage.67623948.js";import{_ as e,V as o,W as r}from"./index.1220f4f7.js";const n={name:"InfoPage"};function t(s,c,p,f,_,d){return o(),r(a,{padding:""})}var g=e(n,[["render",t]]);export{g as default};

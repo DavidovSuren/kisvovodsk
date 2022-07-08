@@ -47,7 +47,7 @@ export default {
     const $q = useQuasar()
     const data = ref(null)
     function loadData () {
-      api.get('/posts')
+      api.get('/posts?categories=23')
         .then((response) => {
           data.value = response.data
         })
