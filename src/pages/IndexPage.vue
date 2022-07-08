@@ -19,12 +19,11 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-  <div class="q-pa-md" style="margin-top: -40px">
+  <div class="q-pa-md">
     <q-separator dark />
-    <h2>ПИТАНИЕ</h2>
     <q-carousel
       class="div_bg"
-      style="margin-top: -40px"
+      style="margin-top: -30px"
       v-model="slide"
       animated
       arrows
@@ -49,9 +48,8 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h2>ЖИЛЬЁ</h2>
     <q-carousel
-      style="margin-top: -40px"
+      style="margin-top: 20px"
       v-model="slide"
       animated
       control-color="primary"
@@ -75,9 +73,8 @@
     </q-carousel>
   </div>
     <div class="q-pa-md mt">
-    <h2>ТУРИЗМ</h2>
     <q-carousel
-      style="margin-top: -40px"
+      style="margin-top: 20px"
       v-model="slide"
       animated
       control-color="primary"
@@ -101,9 +98,8 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h2>ОДЕЖДА</h2>
     <q-carousel
-      style="margin-top: -40px"
+      style="margin-top: 20px"
       v-model="slide"
       animated
       control-color="primary"
@@ -127,9 +123,8 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h2>УСЛУГИ</h2>
     <q-carousel
-      style="margin-top: -40px"
+      style="margin-top: 20px"
       v-model="slide"
       animated
       control-color="primary"
@@ -153,9 +148,8 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h2>ТРАНСПОРТ</h2>
     <q-carousel
-      style="margin-top: -40px"
+      style="margin-top: 20px"
       v-model="slide"
       animated
       control-color="primary"

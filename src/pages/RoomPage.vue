@@ -1,10 +1,11 @@
 <template>
 <div class="q-pa-md ">
   <q-page class="">
-    <q-card class = "mmt "  v-for="cardInfo in data"
+    <q-card class = "mmt " v-for="cardInfo in data"
         :key="cardInfo.id" >
+      <router-link :to="`/post/${cardInfo.id}`">
       <q-card-section horizontal>
-<q-img :src="cardInfo.fimg_url" width="150px"/>
+<q-img :src="cardInfo.fimg_url" width="150px" />
 <div class="q-pa-md" >
           <div >
             <h1>{{cardInfo.title.rendered}}</h1>
@@ -18,6 +19,7 @@
 <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />{{cardInfo.acf.рейтинг }}
       </div>
       </q-card-section>
+      </router-link>
       </q-card>
 </q-page>
 </div>
@@ -30,9 +32,6 @@ import { useQuasar } from 'quasar'
 
 export default {
   name: 'CafeName',
-  async mounted () {
-    console.log(await this.$fetch.get_posts())
-  },
   setup () {
     const $q = useQuasar()
     const data = ref(null)
