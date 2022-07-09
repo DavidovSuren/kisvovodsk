@@ -1,48 +1,35 @@
 <template>
-<q-page>
-      <q-card
-        v-for="cardInfo in data"
-        :key="cardInfo.id"
-        class="my-card">
-        <q-img :src="cardInfo.fimg_url" />
-        <q-card-section>
-          <q-btn
-            fab
-            color="primary"
-            icon="place"
-            class="absolute"
-            style="top: 0; right: 12px; transform: translateY(-50%)"
-          />
-
-          <div class="row no-wrap items-center">
-            <div class="col text-h6 ellipsis">
-              {{cardInfo.title.rendered}}
-            </div>
-            <div
-              class="col-auto text-grey text-caption q-pt-md row no-wrap items-center"
-            >
-              <q-icon name="place" />
-            </div>
+<div class="q-pa-md ">
+  <q-page class="">
+    <q-card class = "mmt " v-for="cardInfo in data"
+        :key="cardInfo.id" >
+      <router-link :to="`/post/${cardInfo.id}`">
+      <q-card-section horizontal>
+<q-img :src="cardInfo.fimg_url" />
+<div class="q-pa-md" >
+          <div >
+            <h1>{{cardInfo.title.rendered}}</h1>
           </div>
-          <q-rating v-model="stars" :max="5" size="32px" />
-        </q-card-section>
-
-        <q-card-section v-html="cardInfo.content.rendered">
-        </q-card-section>
-        <q-separator />
+          <div class="text-caption text-grey"  v-html="cardInfo.excerpt.rendered"></div>
+        <div class="text-caption text-grey">
+          <p>Адрес: {{cardInfo.acf.адрес}}</p>
+        </div>
+<q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="32px" />{{cardInfo.acf.рейтинг }}
+      </div>
+      </q-card-section>
+      </router-link>
       </q-card>
 </q-page>
+</div>
 </template>
+
 <script>
 import { ref, onMounted } from 'vue'
 import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'CanteenPage',
-  async mounted () {
-    console.log(await this.$fetch.get_posts())
-  },
+  name: 'CafeName',
   setup () {
     const $q = useQuasar()
     const data = ref(null)
@@ -79,3 +66,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.mmt{  margin-top: 20px;}
+.text-caption p {font-size:12px; margin-bottom: 10px;}
+.q-img{position: inherit !important; overflow: visible;}
+.q-img, .q-img__image, .q-img__container, .q-img__content {width:200px !important; height: 200px !important;}
+</style>
