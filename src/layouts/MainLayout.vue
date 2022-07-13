@@ -23,10 +23,9 @@ backdrop-filter: blur(10px);"
           </q-icon>
        </div>
         </q-toolbar-title>
-  <q-btn
+  <q-btn @click="this.$router.push('/');"
           flat
           dense
-          round
           icon="home"
           aria-label="Home"
           color="dark blue"
