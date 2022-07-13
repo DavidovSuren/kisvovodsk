@@ -37,6 +37,7 @@ onMounted(() => {
   {{title}}
   {{addr}}
   <q-rating v-model="rating" :max="5" size="15px" />
+  <div v-html="cont"></div>
   </q-page>
 </div>
 </template>
