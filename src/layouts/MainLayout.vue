@@ -13,7 +13,7 @@ backdrop-filter: blur(10px);"
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-          color="black"
+          color="dark blue"
         />
         <q-toolbar-title @click="this.$router.push('/');" style="color: black">
           <div style="font-family:cursive; margin-bottom: -3px;">СЕРДЦЕ ГОРОДА&nbsp;
@@ -21,10 +21,18 @@ backdrop-filter: blur(10px);"
           <q-icon size="25px">
             <img src="../assets/bitmap.png" >
           </q-icon>
-          </div>
+       </div>
         </q-toolbar-title>
-
+  <q-btn
+          flat
+          dense
+          round
+          icon="home"
+          aria-label="Home"
+          color="dark blue"
+        />
       </q-toolbar>
+
     </q-header>
 
     <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
