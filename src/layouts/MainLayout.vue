@@ -58,42 +58,6 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Питание',
-    caption: 'Рестораны Кафе Столовые Фаст-Фуд ',
-    icon: 'flatware',
-    link: '/food'
-  },
-  {
-    title: 'Жильё',
-    caption: 'Отели Санатории Гостиницы Хостелы Квартиры',
-    icon: 'hotel',
-    link: '/room'
-  },
-  {
-    title: 'Туризм',
-    caption: 'Мероприятия Экскурсии Виды Гиды',
-    icon: 'place',
-    link: '/eks'
-  },
-  {
-    title: 'Одежда',
-    caption: 'Сетевые Бутики Спортивные Меховые',
-    icon: 'sell',
-    link: '/clothing'
-  },
-  {
-    title: 'Услуги',
-    caption: 'Сувениры Парикмахерские СПА Фитнес Электроника ',
-    icon: 'public',
-    link: '/serves'
-  },
-  {
-    title: 'Транспорт',
-    caption: 'Автомойки Парковки Автосервис Маршрутки ',
-    icon: 'fa fa- car',
-    link: '/transport'
-  },
-  {
     title: 'О нас',
     caption: 'Обратная свзяь Реклама',
     icon: 'help',
