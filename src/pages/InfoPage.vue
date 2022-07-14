@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <!-- content -->
+    <!-- content -->о нас
   </q-page>
 </template>
 <script>
