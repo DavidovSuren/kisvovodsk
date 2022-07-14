@@ -59,14 +59,19 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'О нас',
-    caption: 'Обратная свзяь Реклама',
     icon: 'help',
     link: '/info'
   },
   {
     title: 'Помощь',
-    caption: 'Обратная свзяь Реклама',
+    caption: 'Обратная свзяь',
     icon: 'accessibility',
+    link: 'https://awesome.quasar.dev'
+  },
+  {
+    title: 'Контакты',
+    caption: 'Реклама',
+    icon: 'phone',
     link: 'https://awesome.quasar.dev'
   }
 ]
