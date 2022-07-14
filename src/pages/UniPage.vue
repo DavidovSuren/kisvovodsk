@@ -27,12 +27,15 @@ import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
 
 export default {
-  name: 'CafeName',
-  setup () {
+  name: 'UniName',
+  props: {
+    categoryId: String
+  },
+  setup (props) {
     const $q = useQuasar()
     const data = ref(null)
     function loadData () {
-      api.get('/posts?categories=19')
+      api.get(`/posts?categories=${props.categoryId}`)
         .then((response) => {
           data.value = response.data
         })
