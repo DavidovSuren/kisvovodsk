@@ -5,7 +5,7 @@
 background: linear-gradient(234deg, rgba(158,105,215,0.7231267507002801) 11%, rgba(30,162,175,0.7262255243894433) 40%, rgba(63,76,167,0.4321078773306197) 57%, rgba(166,107,238,0.38448882971157217) 72%, rgba(238,111,107,0.47692580450148814) 89%);
 backdrop-filter: blur(10px);"
 >
-      <q-toolbar >
+<q-toolbar >
         <q-btn
           flat
           dense
