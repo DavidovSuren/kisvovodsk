@@ -197,7 +197,7 @@ export default {
           id: 3,
           icon: new URL('../assets/icons/Food/canteen.png', import.meta.url).href,
           link: 'canteen',
-          name: 'Столовые'
+          name: 'Столовые '
         },
         {
           id: 4,
