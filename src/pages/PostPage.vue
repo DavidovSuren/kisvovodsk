@@ -30,8 +30,24 @@ onMounted(() => {
   <p>{{data.excerpt.rendered}}</p>
   <p>{{data.acf.адрес}}</p>
   <p>{{data.acf.рейтинг}}</p>-->
-    <h1>{{title}}</h1>
-    {{addr}}
-    <div v-html="content"></div>
+    <q-card flat bordered class="my-card">
+      <q-card-section>
+        <div class="text-h6">
+          <h1>{{title}}</h1>
+        </div>
+      </q-card-section>
+      <q-card-section class="q-pt-none">
+        {{addr}}
+      </q-card-section>
+      <q-separator inset />
+      <q-card-section>
+        <div v-html="content"></div>
+      </q-card-section>
+    </q-card>
   </q-page>
 </template>
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+  max-width: 100%
+</style>
