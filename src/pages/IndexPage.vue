@@ -293,30 +293,42 @@ export default {
       services: [
         {
           id: 1,
+          icon: new URL('../assets/icons/services/horse.png', import.meta.url).href,
+          link: 'horse',
+          name: 'Лошади'
+        },
+        {
+          id: 2,
+          icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
+          link: 'extreme',
+          name: 'Экстрим'
+        },
+        {
+          id: 3,
           icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
           link: 'gift',
           name: 'Сувениры'
         },
         {
-          id: 2,
+          id: 4,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Парикмахерские'
         },
         {
-          id: 3,
+          id: 5,
           icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
-          id: 4,
+          id: 6,
           icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
-          id: 5,
+          id: 7,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
