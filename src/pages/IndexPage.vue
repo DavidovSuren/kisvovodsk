@@ -10,12 +10,21 @@
       height="200px"
       class="shadow-3"
     >
-      <q-carousel-slide name="first" img-src="https://www.hotevents.ru/img/m/gloriajeans/gj_2013-03-18.jpg">
+      <q-carousel-slide
+        name="first"
+        img-src="https://www.hotevents.ru/img/m/gloriajeans/gj_2013-03-18.jpg"
+      >
       </q-carousel-slide>
-      <q-carousel-slide name="second" img-src="https://www.belcitymall.ru/images/wss/sale/zolla/18.03.2021.jpg">
+      <q-carousel-slide
+        name="second"
+        img-src="https://www.belcitymall.ru/images/wss/sale/zolla/18.03.2021.jpg"
+      >
       </q-carousel-slide>
-      <q-carousel-slide name="third" img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg">
-          <div class="text-h4" style="color:bisque">Кисловодск</div>
+      <q-carousel-slide
+        name="third"
+        img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg"
+      >
+        <div class="text-h4" style="color: bisque">Кисловодск</div>
       </q-carousel-slide>
     </q-carousel>
   </div>
@@ -34,7 +43,11 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap"
         >
-          <q-btn v-for="btn in food" :key="btn.id" :to="btn.link" class="bg-white"
+          <q-btn
+            v-for="btn in food"
+            :key="btn.id"
+            :to="btn.link"
+            class="bg-white"
             ><q-img
               class="circle-borders col-3 full-height"
               :src="btn.icon"
@@ -60,32 +73,11 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in home" :key="btn.id" :to="btn.link"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            />{{btn.name}}</q-btn
-          >
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-    <div class="q-pa-md mt">
-    <q-carousel
-      style="margin-top: 20px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn class="bg-white" v-for="btn in tour  " :key="btn.id" :to="btn.link"
+          <q-btn
+            class="bg-white"
+            v-for="btn in home"
+            :key="btn.id"
+            :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -110,7 +102,11 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in clothes " :key="btn.id" :to="btn.link"
+          <q-btn
+            class="bg-white"
+            v-for="btn in tour  "
+            :key="btn.id"
+            :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -135,7 +131,11 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in services " :key="btn.id" :to="btn.link"
+          <q-btn
+            class="bg-white"
+            v-for="btn in clothes "
+            :key="btn.id"
+            :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -160,7 +160,40 @@
         <div
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
-          <q-btn class="bg-white" v-for="btn in transport " :key="btn.id" :to="btn.link"
+          <q-btn
+            class="bg-white"
+            v-for="btn in services "
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+  <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in transport "
+            :key="btn.id"
+            :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -378,7 +411,10 @@ export default {
 .mt {
   margin-top: -50px;
 }
-.q-carousel{
-  background: none;}
-.q-carousel__slide {padding-left: 3px !important}
+.q-carousel {
+  background: none;
+}
+.q-carousel__slide {
+  padding-left: 3px !important;
+}
 </style>
