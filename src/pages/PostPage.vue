@@ -25,14 +25,13 @@ onMounted(() => {
 </script>
 
 <template>
-<q-page>
-  <!--<p>{{data.title.rendered}}</p>
+  <q-page>
+    <!--<p>{{data.title.rendered}}</p>
   <p>{{data.excerpt.rendered}}</p>
   <p>{{data.acf.адрес}}</p>
   <p>{{data.acf.рейтинг}}</p>-->
-  <h1>{{title}}</h1>
-  {{addr}}
-  <div v-html="content">
-  </div>
-</q-page>
+    <h1>{{title}}</h1>
+    {{addr}}
+    <div v-html="content"></div>
+  </q-page>
 </template>
