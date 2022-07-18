@@ -1,4 +1,6 @@
 <template>
+<video v-if="intro" src="../assets/intro.mp4" autoplay muted style="width: 100%; height: 100%; position:absolute; z-index: 10000; object-fit: cover;">
+</video>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated
    style="
@@ -85,10 +87,13 @@ export default defineComponent({
 
   setup () {
     const leftDrawerOpen = ref(false)
+    const intro = ref(true)
+    setTimeout(() => { intro.value = false }, 3000)
 
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
+      intro,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
