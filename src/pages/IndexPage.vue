@@ -12,19 +12,20 @@
     >
       <q-carousel-slide
         name="first"
-        img-src="https://www.hotevents.ru/img/m/gloriajeans/gj_2013-03-18.jpg"
+        img-src="https://s0.rbk.ru/v6_top_pics/resized/590xH/media/img/6/15/756093282677156.jpg"
       >
+              <div class="text-h4" style="color: black">Реконструкция кинотеатра России</div>
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="https://www.belcitymall.ru/images/wss/sale/zolla/18.03.2021.jpg"
+        img-src="https://i8.otzovik.com/2021/11/20/12696163/img/981591_34048091_b.jpeg"
       >
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
         img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg"
       >
-        <div class="text-h4" style="color: bisque">Кисловодск</div>
+        <div class="text-h4" style="color: bisque">Реконструкция озера</div>
       </q-carousel-slide>
     </q-carousel>
   </div>
