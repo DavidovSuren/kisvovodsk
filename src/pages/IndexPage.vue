@@ -277,7 +277,7 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/tourism/events.png', import.meta.url).href,
           link: 'events',
-          name: 'Мероприятия'
+          name: 'Афиша'
         },
         {
           id: 2,
@@ -289,7 +289,7 @@ export default {
           id: 3,
           icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
-          name: 'Виды'
+          name: 'Маршрут'
         },
         {
           id: 4,
