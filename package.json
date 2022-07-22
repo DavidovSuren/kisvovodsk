@@ -1,8 +1,8 @@
 {
   "name": "kislovodsk",
   "version": "0.0.1",
-  "description": "Kislovodsk",
-  "productName": "Quasar App",
+  "description": "Сердце Кисловодска",
+  "productName": "Сердце Города",
   "author": "lowa <lowa@lowa>",
   "private": true,
   "scripts": {
