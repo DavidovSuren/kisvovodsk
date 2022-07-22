@@ -341,13 +341,13 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
           link: 'fashion',
-          name: 'Cat&Dog'
+          name: 'Питомцы'
         },
         {
           id: 2,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
-          name: 'Салоны красоты'
+          name: 'Бьюти'
         },
         {
           id: 3,
