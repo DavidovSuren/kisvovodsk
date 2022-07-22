@@ -18,7 +18,7 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="https://i8.otzovik.com/2021/11/20/12696163/img/981591_34048091_b.jpeg"
+        img-src="https://www.geo360.ru/upload/resize_cache/sprint.editor/107/1000_625_10e423fdebffef9f74f54ec5b7ce1b66a/img_1629275470_4994_606_img_20210513_132129.jpg"
       >
       </q-carousel-slide>
       <q-carousel-slide
