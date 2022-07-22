@@ -283,7 +283,7 @@ export default {
           id: 2,
           icon: new URL('../assets/icons/services/child.png', import.meta.url).href,
           link: 'child',
-          name: 'Для детей'
+          name: 'Детям'
         },
         {
           id: 3,
@@ -315,7 +315,7 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/clothing/fashion.png', import.meta.url).href,
           link: 'fashion',
-          name: 'Для детей'
+          name: 'Детям'
         },
         {
           id: 2,
