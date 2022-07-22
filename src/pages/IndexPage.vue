@@ -134,7 +134,7 @@
         >
           <q-btn
             class="bg-white"
-            v-for="btn in clothes "
+            v-for="btn in services "
             :key="btn.id"
             :to="btn.link"
             ><q-img
@@ -148,7 +148,7 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-  <div class="q-pa-md mt">
+    <div class="q-pa-md mt">
     <q-carousel
       style="margin-top: 20px"
       v-model="slide"
@@ -163,7 +163,7 @@
         >
           <q-btn
             class="bg-white"
-            v-for="btn in services "
+            v-for="btn in clothes "
             :key="btn.id"
             :to="btn.link"
             ><q-img
@@ -313,30 +313,24 @@ export default {
       clothes: [
         {
           id: 1,
-          icon: new URL('../assets/icons/clothing/fashion.png', import.meta.url).href,
-          link: 'fashion',
-          name: 'Детям'
-        },
-        {
-          id: 2,
           icon: new URL('../assets/icons/clothing/boutique.png', import.meta.url).href,
           link: 'boutique',
           name: 'Бутики'
         },
         {
-          id: 3,
+          id: 2,
           icon: new URL('../assets/icons/clothing/sport.png', import.meta.url).href,
           link: 'sport',
           name: 'Спортивные'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/clothing/fur.png', import.meta.url).href,
           link: 'fur',
           name: 'Меховые'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
           link: 'gift',
           name: 'Сувениры'
@@ -345,24 +339,30 @@ export default {
       services: [
         {
           id: 1,
+          icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
+          link: 'fashion',
+          name: 'Cat&Dog'
+        },
+        {
+          id: 2,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Салоны красоты'
         },
         {
-          id: 2,
+          id: 3,
           icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
-          id: 3,
+          id: 4,
           icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
-          id: 4,
+          id: 5,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
