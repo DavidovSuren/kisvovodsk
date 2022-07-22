@@ -29,6 +29,35 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
+    <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in tour  "
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
   <div class="q-pa-md">
     <q-separator dark />
     <q-carousel
@@ -77,35 +106,6 @@
           <q-btn
             class="bg-white"
             v-for="btn in home"
-            :key="btn.id"
-            :to="btn.link"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            />{{btn.name}}</q-btn
-          >
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-  <div class="q-pa-md mt">
-    <q-carousel
-      style="margin-top: 20px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-            class="bg-white"
-            v-for="btn in tour  "
             :key="btn.id"
             :to="btn.link"
             ><q-img
@@ -289,13 +289,25 @@ export default {
           id: 3,
           icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
-          name: 'Маршрут'
+          name: 'Маршруты'
         },
         {
           id: 4,
           icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
           name: 'Гиды'
+        },
+        {
+          id: 5,
+          icon: new URL('../assets/icons/services/horse.png', import.meta.url).href,
+          link: 'horse',
+          name: 'Лошади'
+        },
+        {
+          id: 6,
+          icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
+          link: 'extreme',
+          name: 'Экстрим'
         }
       ],
       clothes: [
@@ -303,7 +315,7 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/clothing/fashion.png', import.meta.url).href,
           link: 'fashion',
-          name: 'Сетевые'
+          name: 'Для детей'
         },
         {
           id: 2,
@@ -322,47 +334,35 @@ export default {
           icon: new URL('../assets/icons/clothing/fur.png', import.meta.url).href,
           link: 'fur',
           name: 'Меховые'
+        },
+        {
+          id: 5,
+          icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
+          link: 'gift',
+          name: 'Сувениры'
         }
       ],
       services: [
         {
           id: 1,
-          icon: new URL('../assets/icons/services/horse.png', import.meta.url).href,
-          link: 'horse',
-          name: 'Лошади'
+          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
+          link: 'hair-cut',
+          name: 'Салоны красоты'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
-          link: 'extreme',
-          name: 'Экстрим'
-        },
-        {
-          id: 3,
-          icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
-          link: 'gift',
-          name: 'Сувениры'
-        },
-        {
-          id: 4,
-          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
-          link: 'hair-cut',
-          name: 'Парикмахерские'
-        },
-        {
-          id: 5,
           icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
-          id: 6,
+          id: 3,
           icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
-          id: 7,
+          id: 4,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
@@ -391,7 +391,7 @@ export default {
           id: 4,
           icon: new URL('../assets/icons/transport/van.png', import.meta.url).href,
           link: 'van',
-          name: 'Маршрутки '
+          name: 'Транспорт '
         }
       ]
     }
