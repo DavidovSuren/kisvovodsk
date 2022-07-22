@@ -33,7 +33,7 @@ const routes = [
       { path: '/parking', component: () => import('pages/UniPage.vue'), props: { categoryId: 16 } },
       { path: '/repair', component: () => import('pages/UniPage.vue'), props: { categoryId: 15 } },
       { path: '/van', component: () => import('pages/UniPage.vue'), props: { categoryId: 10 } },
-      { path: '/horse', component: () => import('pages/UniPage.vue'), props: { categoryId: 37 } },
+      { path: '/child', component: () => import('pages/UniPage.vue'), props: { categoryId: 37 } },
       { path: '/extreme', component: () => import('pages/UniPage.vue'), props: { categoryId: 38 } },
       { path: '/info', component: () => import('pages/InfoPage.vue') }
 

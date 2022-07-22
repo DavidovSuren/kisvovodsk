@@ -281,27 +281,27 @@ export default {
         },
         {
           id: 2,
+          icon: new URL('../assets/icons/services/child.png', import.meta.url).href,
+          link: 'child',
+          name: 'Для детей'
+        },
+        {
+          id: 3,
           icon: new URL('../assets/icons/tourism/cexcursionfe.png', import.meta.url).href,
           link: 'cexcursionfe',
           name: 'Экскурсии'
         },
         {
-          id: 3,
+          id: 4,
           icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
           name: 'Маршруты'
         },
         {
-          id: 4,
+          id: 5,
           icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
           name: 'Гиды'
-        },
-        {
-          id: 5,
-          icon: new URL('../assets/icons/services/horse.png', import.meta.url).href,
-          link: 'horse',
-          name: 'Лошади'
         },
         {
           id: 6,
