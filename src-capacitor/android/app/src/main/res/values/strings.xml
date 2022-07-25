@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Сердце Города</string>
+    <string name="title_activity_main">Сердце Города</string>
+    <string name="package_name">ru.kissloveodsk.app</string>
+    <string name="custom_url_scheme">ru.kissloveodsk.app</string>
+</resources>
