@@ -13,6 +13,9 @@ const path = require('path')
 
 module.exports = configure(function (/* ctx */) {
   return {
+    bin: {
+      linuxAndroidStudio: '/snap/bin/android-studio'
+    },
     eslint: {
       // fix: true,
       // include = [],
