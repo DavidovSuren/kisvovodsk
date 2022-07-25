@@ -247,19 +247,19 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/eventss/Prosh.png', import.meta.url).href,
           link: 'past',
-          name: 'Прошлое'
+          name: 'Афиша'
         },
         {
           id: 2,
           icon: new URL('../assets/icons/eventss/Nast.png', import.meta.url).href,
           link: 'thepresent',
-          name: 'Настоящее'
+          name: 'Сегодня'
         },
         {
           id: 3,
           icon: new URL('../assets/icons/eventss/Bud.png', import.meta.url).href,
           link: 'future',
-          name: 'Будущее'
+          name: 'Фотоотчеты'
         }
       ],
       food: [
