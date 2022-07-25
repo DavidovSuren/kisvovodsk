@@ -29,6 +29,35 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
+      <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in eventsDark"
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
     <div class="q-pa-md mt">
     <q-carousel
       style="margin-top: 20px"
@@ -214,6 +243,26 @@ export default {
     return {
       slide: ref(1),
       info: ref('first'),
+      eventsDark: [
+        {
+          id: 1,
+          icon: new URL('../assets/icons/eventss/Prosh.png', import.meta.url).href,
+          link: 'past',
+          name: 'Прошлое'
+        },
+        {
+          id: 2,
+          icon: new URL('../assets/icons/eventss/Nast.png', import.meta.url).href,
+          link: 'thepresent',
+          name: 'Настоящее'
+        },
+        {
+          id: 3,
+          icon: new URL('../assets/icons/eventss/Bud.png', import.meta.url).href,
+          link: 'future',
+          name: 'Будущее'
+        }
+      ],
       food: [
         {
           id: 1,
@@ -275,36 +324,30 @@ export default {
       tour: [
         {
           id: 1,
-          icon: new URL('../assets/icons/tourism/events.png', import.meta.url).href,
-          link: 'events',
-          name: 'Афиша'
-        },
-        {
-          id: 2,
           icon: new URL('../assets/icons/services/child.png', import.meta.url).href,
           link: 'child',
           name: 'Детям'
         },
         {
-          id: 3,
+          id: 2,
           icon: new URL('../assets/icons/tourism/cexcursionfe.png', import.meta.url).href,
           link: 'cexcursionfe',
           name: 'Экскурсии'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
           name: 'Маршруты'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
           name: 'Гиды'
         },
         {
-          id: 6,
+          id: 5,
           icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
           link: 'extreme',
           name: 'Экстрим'
