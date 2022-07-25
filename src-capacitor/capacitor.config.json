@@ -1,0 +1,7 @@
+{
+  "appId": "ru.kissloveodsk.app",
+  "appName": "Сердце Города",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www"
+}
