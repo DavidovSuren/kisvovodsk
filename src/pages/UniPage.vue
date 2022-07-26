@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .mmt{  margin-top: 20px;}
 .text-caption p {font-size:8px; margin-bottom: 3px;}
 .q-img{position: inherit !important; overflow: hidden;}
