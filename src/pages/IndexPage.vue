@@ -461,4 +461,5 @@ export default {
 .q-carousel__slide {
   padding-left: 3px !important;
 }
+
 </style>
