@@ -10,6 +10,9 @@ const routes = [
       { path: '/cafe', component: () => import('pages/UniPage.vue'), props: { categoryId: 31 } },
       { path: '/restraunt', component: () => import('pages/UniPage.vue'), props: { categoryId: 30 } },
       { path: '/canteen', component: () => import('pages/UniPage.vue'), props: { categoryId: 32 } },
+      { path: '/Past', component: () => import('pages/UniPage.vue'), props: { categoryId: 41 } },
+      { path: '/thepresent', component: () => import('pages/UniPage.vue'), props: { categoryId: 42 } },
+      { path: '/future', component: () => import('pages/UniPage.vue'), props: { categoryId: 43 } },
       { path: '/fastfood', component: () => import('pages/UniPage.vue'), props: { categoryId: 33 } },
       { path: '/hotel', component: () => import('pages/UniPage.vue'), props: { categoryId: 35 } },
       { path: '/sanatoriums', component: () => import('src/pages/UniPage.vue'), props: { categoryId: 11 } },
@@ -35,7 +38,9 @@ const routes = [
       { path: '/van', component: () => import('pages/UniPage.vue'), props: { categoryId: 10 } },
       { path: '/child', component: () => import('pages/UniPage.vue'), props: { categoryId: 39 } },
       { path: '/extreme', component: () => import('pages/UniPage.vue'), props: { categoryId: 38 } },
-      { path: '/info', component: () => import('pages/InfoPage.vue') }
+      { path: '/info', component: () => import('pages/InfoPage.vue') },
+      { path: '/contact', component: () => import('pages/ContactPage.vue') },
+      { path: '/help', component: () => import('pages/HelpPage.vue') }
 
     ]
   },

@@ -7,25 +7,53 @@
       v-model="info"
       arrows
       infinite
-      height="200px"
+      height="250px"
       class="shadow-3"
     >
       <q-carousel-slide
         name="first"
-        img-src="https://s0.rbk.ru/v6_top_pics/resized/590xH/media/img/6/15/756093282677156.jpg"
+        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtiI1zTmPNOiGNOpj7XfsXWSFlKOhDleE1A&usqp=CAU"
+
       >
-              <div class="text-h4" style="color: black">Реконструкция кинотеатра России</div>
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="https://www.geo360.ru/upload/resize_cache/sprint.editor/107/1000_625_10e423fdebffef9f74f54ec5b7ce1b66a/img_1629275470_4994_606_img_20210513_132129.jpg"
+        img-src="https://xn--35-jlc3but5b.xn--p1ai/media/k2/items/cache/9ecd376e5371efaef9aad9bc9143aed8_L.jpg"
       >
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
-        img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg"
+        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGUbdbALL8s1dPZtHnJQsSNPxRb0nTDhIjhA&usqp=CAU"
       >
-        <div class="text-h4" style="color: bisque">Реконструкция озера</div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+      <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in eventsDark"
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
@@ -214,6 +242,26 @@ export default {
     return {
       slide: ref(1),
       info: ref('first'),
+      eventsDark: [
+        {
+          id: 1,
+          icon: new URL('../assets/icons/eventss/Prosh.png', import.meta.url).href,
+          link: 'past',
+          name: 'Афиша'
+        },
+        {
+          id: 2,
+          icon: new URL('../assets/icons/eventss/Nast.png', import.meta.url).href,
+          link: 'thepresent',
+          name: 'Сегодня'
+        },
+        {
+          id: 3,
+          icon: new URL('../assets/icons/eventss/Bud.png', import.meta.url).href,
+          link: 'future',
+          name: 'Фотоотчеты'
+        }
+      ],
       food: [
         {
           id: 1,
@@ -275,36 +323,30 @@ export default {
       tour: [
         {
           id: 1,
-          icon: new URL('../assets/icons/tourism/events.png', import.meta.url).href,
-          link: 'events',
-          name: 'Афиша'
-        },
-        {
-          id: 2,
           icon: new URL('../assets/icons/services/child.png', import.meta.url).href,
           link: 'child',
           name: 'Детям'
         },
         {
-          id: 3,
+          id: 2,
           icon: new URL('../assets/icons/tourism/cexcursionfe.png', import.meta.url).href,
           link: 'cexcursionfe',
           name: 'Экскурсии'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/tourism/acropolis.png', import.meta.url).href,
           link: 'acropolis',
           name: 'Маршруты'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
           name: 'Гиды'
         },
         {
-          id: 6,
+          id: 5,
           icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
           link: 'extreme',
           name: 'Экстрим'
