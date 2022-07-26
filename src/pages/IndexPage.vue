@@ -7,25 +7,24 @@
       v-model="info"
       arrows
       infinite
-      height="200px"
+      height="250px"
       class="shadow-3"
     >
       <q-carousel-slide
         name="first"
-        img-src="https://s0.rbk.ru/v6_top_pics/resized/590xH/media/img/6/15/756093282677156.jpg"
+        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtiI1zTmPNOiGNOpj7XfsXWSFlKOhDleE1A&usqp=CAU"
+
       >
-              <div class="text-h4" style="color: black">Реконструкция кинотеатра России</div>
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="https://www.geo360.ru/upload/resize_cache/sprint.editor/107/1000_625_10e423fdebffef9f74f54ec5b7ce1b66a/img_1629275470_4994_606_img_20210513_132129.jpg"
+        img-src="https://xn--35-jlc3but5b.xn--p1ai/media/k2/items/cache/9ecd376e5371efaef9aad9bc9143aed8_L.jpg"
       >
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
-        img-src="https://stv24.tv/wp-content/uploads/2020/08/02/star-kis5.jpg"
+        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGUbdbALL8s1dPZtHnJQsSNPxRb0nTDhIjhA&usqp=CAU"
       >
-        <div class="text-h4" style="color: bisque">Реконструкция озера</div>
       </q-carousel-slide>
     </q-carousel>
   </div>
@@ -248,19 +247,19 @@ export default {
           id: 1,
           icon: new URL('../assets/icons/eventss/Prosh.png', import.meta.url).href,
           link: 'past',
-          name: 'Прошлое'
+          name: 'Афиша'
         },
         {
           id: 2,
           icon: new URL('../assets/icons/eventss/Nast.png', import.meta.url).href,
           link: 'thepresent',
-          name: 'Настоящее'
+          name: 'Сегодня'
         },
         {
           id: 3,
           icon: new URL('../assets/icons/eventss/Bud.png', import.meta.url).href,
           link: 'future',
-          name: 'Будущее'
+          name: 'Фотоотчеты'
         }
       ],
       food: [

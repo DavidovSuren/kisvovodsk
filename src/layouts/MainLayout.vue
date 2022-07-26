@@ -68,13 +68,13 @@ const linksList = [
     title: 'Помощь',
     caption: 'Обратная свзяь',
     icon: 'accessibility',
-    link: 'https://awesome.quasar.dev'
+    link: '/help'
   },
   {
     title: 'Контакты',
     caption: 'Реклама',
     icon: 'phone',
-    link: 'https://awesome.quasar.dev'
+    link: '/contact'
   }
 ]
 
