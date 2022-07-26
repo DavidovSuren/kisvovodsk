@@ -38,7 +38,9 @@ const routes = [
       { path: '/van', component: () => import('pages/UniPage.vue'), props: { categoryId: 10 } },
       { path: '/child', component: () => import('pages/UniPage.vue'), props: { categoryId: 39 } },
       { path: '/extreme', component: () => import('pages/UniPage.vue'), props: { categoryId: 38 } },
-      { path: '/info', component: () => import('pages/InfoPage.vue') }
+      { path: '/info', component: () => import('pages/InfoPage.vue') },
+      { path: '/contact', component: () => import('pages/ContactPage.vue') },
+      { path: '/help', component: () => import('pages/HelpPage.vue') }
 
     ]
   },
