@@ -7,6 +7,8 @@ const post = route.params.id
 const title = ref(null)
 const addr = ref(null)
 const content = ref(null)
+const gal = ref([])
+const slide = ref('style')
 function load () {
   api.get(`/posts/${post}`)
     .then((response) => {
@@ -14,8 +16,18 @@ function load () {
       content.value = response.data.content.rendered
       addr.value = response.data.acf.адрес
     })
-    .catch(() => {
-      console.log('server error!')
+    .catch((e) => {
+      console.log(e)
+    })
+  api.get(`/media?parent=${post}`)
+    .then((response) => {
+      /* response.data.forEach((el) => {
+        gal.value.push(el.guid.rendered)
+      }) */
+      gal.value = response.data
+    })
+    .catch((e) => {
+      console.log(e)
     })
 }
 onMounted(() => {
@@ -40,9 +52,21 @@ onMounted(() => {
         {{addr}}
       </q-card-section>
       <q-separator inset />
-      <q-card-section>
+      <q-carousel
+        autoplay
+        swipeable
+        animated
+        v-model="slide"
+        arrows
+        infinite
+        height="700px"
+        class="shadow-3"
+      >
+      <q-carousel-slide v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
+      </q-carousel>
+      <!--q-card-section>
         <div v-html="content"></div>
-      </q-card-section>
+      </q-card-section-->
     </q-card>
   </q-page>
 </template>
