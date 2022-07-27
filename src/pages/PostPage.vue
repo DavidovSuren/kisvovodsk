@@ -6,6 +6,7 @@ const route = useRoute()
 const post = route.params.id
 const title = ref(null)
 const addr = ref(null)
+const phone = ref(null)
 const content = ref(null)
 const gal = ref([])
 const slide = ref('style')
@@ -15,6 +16,7 @@ function load () {
       title.value = response.data.title.rendered
       content.value = response.data.content.rendered
       addr.value = response.data.acf.адрес
+      phone.value = response.data.acf.телефон
     })
     .catch((e) => {
       console.log(e)
@@ -50,6 +52,11 @@ onMounted(() => {
       </q-card-section>
       <q-card-section class="q-pt-none">
         {{addr}}
+      </q-card-section>
+        <q-card-section>
+        <div class="text-h6">
+          <a :href="`tel:${phone}`">{{phone}}</a>
+        </div>
       </q-card-section>
       <q-separator inset />
       <q-carousel
