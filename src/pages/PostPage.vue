@@ -59,7 +59,7 @@ onMounted(() => {
         v-model="slide"
         arrows
         infinite
-        height="700px"
+        height="500px"
         class="shadow-3"
       >
       <q-carousel-slide v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
