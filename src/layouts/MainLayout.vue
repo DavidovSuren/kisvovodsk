@@ -55,6 +55,7 @@ backdrop-filter: blur(10px);"
 </template>
 
 <script>
+
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 
@@ -100,6 +101,7 @@ export default defineComponent({
     }
   }
 })
+
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap');
