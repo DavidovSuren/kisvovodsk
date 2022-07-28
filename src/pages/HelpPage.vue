@@ -4,7 +4,7 @@
       class="my-card text-white telegram-link"
     >
       <q-card-section style="text-align:center">
-      <div class="text-h4">TELEGRAM</div><br>
+      <div class="text-h4">ТЕЛЕГРАМ</div><br>
          <q-btn
           dense
           icon="fa-brands fa-telegram"
