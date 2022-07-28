@@ -15,6 +15,7 @@
           aria-label="Fa-brands fa-vk"
           color="blue"
           size="2em"
+          :href="'//vk.com/id711311713'"
         />
          <q-btn
           dense
@@ -22,6 +23,7 @@
           aria-label="Fa-brands fa-instagram"
           color="red"
           size="2em"
+          :href="'https://instagram.com/heart_city_kissloveodsk?igshid=YmMyMTA2M2Y='"
         />
       </q-card-section>
 
@@ -39,13 +41,8 @@
           aria-label="Email"
           color="dark blue"
           size="2em"
+          :href="'mailto:davidov05101996@gmail.com'"
         />
-      </q-card-section>
-
-      <q-separator dark inset />
-
-      <q-card-section>
-      <div class="text-subtitle2">davidov05101996@gmail.com</div>
       </q-card-section>
     </q-card>
 
@@ -58,17 +55,8 @@
           aria-label="Phone"
           color="green"
           size="2em"
+          :href="'tel:89620031286'"
         />
-      </q-card-section>
-
-      <q-card-section class="q-pt-none">
-      +7(962) 003 12 86
-      </q-card-section>
-
-      <q-separator inset />
-
-      <q-card-section>
-      +7(928) 346 8468
       </q-card-section>
     </q-card>
   </div>
