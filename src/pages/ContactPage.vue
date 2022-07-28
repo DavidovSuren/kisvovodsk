@@ -1,14 +1,11 @@
 <template>
-<h1>СВЯЖИТЕСЬ С НАМИ
-<p>Мы объединяем людей</p>
-</h1>
   <div class="q-pa-md row items-start q-gutter-md">
     <q-card
       class="my-card text-white"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
     >
       <q-card-section style="text-align:center">
-        <div class="text-h6">СВЯЖИТЕСЬ С НАМИ:</div>
+        <div class="text-h4">СВЯЖИТЕСЬ С НАМИ:</div><br>
          <q-btn
           dense
           icon="fa-brands fa-vk"
@@ -34,7 +31,7 @@
 
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section style="text-align:center">
-        <div class="text-h6">ЭЛЕКТРОННОЕ ПИСЬМО:</div>
+        <div class="text-h4">ЭЛЕКТРОННОЕ ПИСЬМО:</div><br>
           <q-btn
           dense
           icon="email"
@@ -48,7 +45,7 @@
 
     <q-card flat bordered class="my-card">
       <q-card-section style="text-align:center">
-        <div class="text-h6">ПОЗВОНИТЕ НАМ:</div>
+        <div class="text-h4">ПОЗВОНИТЕ НАМ:</div><br>
           <q-btn
           dense
           icon="phone"
