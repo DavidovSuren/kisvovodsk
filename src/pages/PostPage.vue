@@ -35,6 +35,7 @@ function load () {
 onMounted(() => {
   load()
 })
+
 // console.log(data.value)
 </script>
 
@@ -49,14 +50,19 @@ onMounted(() => {
         <div class="text-h6">
           <h1>{{title}}</h1>
         </div>
+
       </q-card-section>
       <q-card-section class="q-pt-none">
         {{addr}}
+        <div>
+          <a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a>
+        </div>
       </q-card-section>
         <q-card-section>
         <div class="text-h6">
           <a :href="`tel:${phone}`">{{phone}}</a>
         </div>
+
       </q-card-section>
       <q-separator inset />
       <q-carousel
@@ -75,8 +81,25 @@ onMounted(() => {
         <div v-html="content"></div>
       </q-card-section-->
     </q-card>
+    <q-card-section>
+            <div>
+  <q-btn @click="back">НАЗАД</q-btn>
+</div>
+      </q-card-section>
+
   </q-page>
 </template>
+<script>
+export default {
+  data () {
+  },
+  methods: {
+    back () {
+      this.$router.go(-1)
+    }
+  }
+}
+</script>
 <style>
 .wp-block-image {
   width: 100% !important;
