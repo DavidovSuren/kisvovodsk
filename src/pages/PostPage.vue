@@ -83,7 +83,7 @@ onMounted(() => {
     </q-card>
     <q-card-section>
             <div>
-  <q-btn @click="back">НАЗАД</q-btn>
+  <q-btn background-color="white" @click="back">НАЗАД</q-btn>
 </div>
       </q-card-section>
 
