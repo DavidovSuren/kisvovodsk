@@ -394,7 +394,7 @@ export default {
         {
           id: 1,
           icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
-          link: 'fashion',
+          link: 'pets',
           name: 'Питомцы'
         },
         {
