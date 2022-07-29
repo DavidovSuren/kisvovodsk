@@ -2,6 +2,8 @@
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { api } from 'boot/axios'
+import { useQuasar } from 'quasar'
+const $q = useQuasar()
 const route = useRoute()
 const post = route.params.id
 const title = ref(null)
@@ -29,6 +31,15 @@ function load () {
         gal.value.push(el.guid.rendered)
       }) */
       gal.value = response.data
+    })
+    .catch((e) => {
+      console.log(e)
+    })
+  api.get(`/comments?post=${post}`)
+    .then((response) => {
+      response.data.forEach((comment) => {
+        $q.notify(comment.content.rendered)
+      })
     })
     .catch((e) => {
       console.log(e)
