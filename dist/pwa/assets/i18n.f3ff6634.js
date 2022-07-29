@@ -1,8 +1,4 @@
-<<<<<<< HEAD:dist/pwa/assets/i18n.f31ae505.js
-import{h as $,F as xe,i as kt,r as G,g as $e,c as B,w as Fe,a as pt,o as wt,b as St,d as ve,T as ke,e as Ot}from"./index.2c00f1fc.js";/*!
-=======
 import{h as $,F as xe,i as kt,r as G,g as $e,c as B,w as Fe,a as pt,o as wt,b as St,d as ve,T as ke,e as Ot}from"./index.4bedcad7.js";/*!
->>>>>>> 62aba857f8d1da03209840cbccc382358af0308c:dist/pwa/assets/i18n.f3ff6634.js
   * @intlify/shared v9.1.10
   * (c) 2022 kazuya kawaguchi
   * Released under the MIT License.
