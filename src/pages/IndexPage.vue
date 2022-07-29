@@ -233,6 +233,18 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
+        <br>
+        <div class="text-h4">Наши парнтёры
+        <br>
+        <q-btn
+        :href="'https://artclip.ru/'">
+         <q-img
+         class="partner"
+         src="../assets/partners/artclip.jpeg"
+         >
+        </q-img>
+        </q-btn>
+      </div>
   </div>
 </template>
 <script>
@@ -459,6 +471,10 @@ export default {
 }
 .q-carousel__slide {
   padding-left: 3px !important;
+}
+.partner{
+  border-radius: 50px 150px / 120px;
+  width:100px
 }
 
 </style>
