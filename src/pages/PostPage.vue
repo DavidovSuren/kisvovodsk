@@ -8,6 +8,7 @@ const title = ref(null)
 const addr = ref(null)
 const phone = ref(null)
 const content = ref(null)
+
 const gal = ref([])
 const slide = ref('style')
 function load () {
@@ -17,6 +18,7 @@ function load () {
       content.value = response.data.content.rendered
       addr.value = response.data.acf.адрес
       phone.value = response.data.acf.телефон
+      content.value = response.data.acf.card_content
     })
     .catch((e) => {
       console.log(e)
@@ -77,9 +79,9 @@ onMounted(() => {
       >
       <q-carousel-slide v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
       </q-carousel>
-      <!--q-card-section>
-        <div v-html="content"></div>
-      </q-card-section-->
+      <q-card-section>
+        <div v-html=content></div>
+      </q-card-section>
     </q-card>
 
   </q-page>
