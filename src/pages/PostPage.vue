@@ -81,25 +81,9 @@ onMounted(() => {
         <div v-html="content"></div>
       </q-card-section-->
     </q-card>
-    <q-card-section>
-            <div>
-  <q-btn background-color="white" @click="back">НАЗАД</q-btn>
-</div>
-      </q-card-section>
 
   </q-page>
 </template>
-<script>
-export default {
-  data () {
-  },
-  methods: {
-    back () {
-      this.$router.go(-1)
-    }
-  }
-}
-</script>
 <style>
 .wp-block-image {
   width: 100% !important;
