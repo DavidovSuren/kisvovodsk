@@ -10,6 +10,7 @@ const title = ref(null)
 const addr = ref(null)
 const phone = ref(null)
 const content = ref(null)
+const regex = /( |<([^>]+)>)/ig
 
 const gal = ref([])
 const slide = ref('style')
@@ -36,15 +37,21 @@ function load () {
       console.log(e)
     })
   api.get(`/comments?post=${post}`)
+
     .then((response) => {
+      function del (comment) {
+        const clean = comment.replace(regex, '')
+        return clean
+      }
       response.data.forEach((comment) => {
-        $q.notify(comment.content.rendered)
+        $q.notify(del(comment.content.rendered))
       })
     })
     .catch((e) => {
       console.log(e)
     })
 }
+
 onMounted(() => {
   load()
 })
