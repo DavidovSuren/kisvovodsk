@@ -11,7 +11,7 @@
           aria-label="Fa-brands fa-telegram"
           color="blue"
           size="3em"
-          :href="'//vk.com/id711311713'"
+          :href="'https://t.me/heart_city_kissloveodsk'"
 
         />
       </q-card-section>
