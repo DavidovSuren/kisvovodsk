@@ -40,7 +40,7 @@ function load () {
 
     .then((response) => {
       function del (comment) {
-        const clean = comment.replace(regex, '')
+        const clean = comment.replace(regex, ' ')
         return clean
       }
       response.data.forEach((comment) => {
