@@ -11,7 +11,7 @@
           icon="train"
           aria-label="train"
           color="blue"
-          size="3em"
+          size="5em"
           :href="'//yandex.ru/maps/11062/kislovodsk/transport/minibuses/?l=masstransit&ll=42.716822%2C43.904244&z=13.34'"
         />
       </q-card-section>
