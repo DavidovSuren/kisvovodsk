@@ -355,7 +355,7 @@ export default {
           id: 4,
           icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
           link: 'guides',
-          name: 'Гиды'
+          name: 'Гид'
         },
         {
           id: 5,
