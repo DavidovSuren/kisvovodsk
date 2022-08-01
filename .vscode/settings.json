@@ -11,5 +11,6 @@
     "javascriptreact",
     "typescript",
     "vue"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
