@@ -9,11 +9,7 @@
           webvisor:true
       });</script><noscript><div><img src=https://mc.yandex.ru/watch/89683386 style="position:absolute; left:-9999px;" alt=""></div></noscript>  <script type="module" crossorigin src="/assets/index.dee29d0b.js"></script>
   <link rel="stylesheet" href="/assets/index.501d0ad8.css">
-<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#027be3"><link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#027be3"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"><meta name="apple-mobile-web-app-title" content="Сердце Кисловодска"><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons/apple-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png"></head><body>
-  <button
-    class="add-button"
-    style="
-      z-index: 99999;
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#027be3"><link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#027be3"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"><meta name="apple-mobile-web-app-title" content="Сердце Кисловодска"><link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/icons/apple-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png"></head><body><button class=add-button style="z-index: 99999;
       position: absolute;
       left: 20%;
       top: 140px;
@@ -21,39 +17,32 @@
       height: 100px;
       /*border: 5px #000 solid;*/
       opacity: 0.5;
-      border-radius: 25px;
-  ">Установить</button>
-  <div id=q-app></div>
-  <script>
+      border-radius: 25px;">Установить</button><div id=q-app></div><script>let deferredPrompt;
+      const addBtn = document.querySelector('.add-button');
+      addBtn.style.display = 'none';
 
-    let deferredPrompt;
-    const addBtn = document.querySelector('.add-button');
-    addBtn.style.display = 'none';
+      window.addEventListener('beforeinstallprompt', (e) => {
+          // console.log(e.platforms);
+          // Prevent Chrome 67 and earlier from automatically showing the prompt
+          // e.preventDefault();
+          // Stash the event so it can be triggered later.
+          deferredPrompt = e;
+          // Update UI to notify the user they can add to home screen
+          addBtn.style.display = 'initial';
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-        // console.log(e.platforms);
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
-        // e.preventDefault();
-        // Stash the event so it can be triggered later.
-        deferredPrompt = e;
-        // Update UI to notify the user they can add to home screen
-        addBtn.style.display = 'initial';
-
-        addBtn.addEventListener('click', (e) => {
-            // hide our user interface that shows our A2HS button
-            addBtn.style.display = 'none';
-            // Show the prompt
-            deferredPrompt.prompt();
-            // Wait for the user to respond to the prompt
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt');
-                } else {
-                    console.log('User dismissed the A2HS prompt');
-                }
-                    deferredPrompt = null;
-            });
-        });
-    });
-  </script>
-</body></html>
+          addBtn.addEventListener('click', (e) => {
+              // hide our user interface that shows our A2HS button
+              addBtn.style.display = 'none';
+              // Show the prompt
+              deferredPrompt.prompt();
+              // Wait for the user to respond to the prompt
+              deferredPrompt.userChoice.then((choiceResult) => {
+                  if (choiceResult.outcome === 'accepted') {
+                      console.log('User accepted the A2HS prompt');
+                  } else {
+                      console.log('User dismissed the A2HS prompt');
+                  }
+                      deferredPrompt = null;
+              });
+          });
+      });</script></body></html>
