@@ -22,7 +22,6 @@ const routes = [
       { path: '/events', component: () => import('pages/UniPage.vue'), props: { categoryId: 29 } },
       { path: '/cexcursionfe', component: () => import('pages/UniPage.vue'), props: { categoryId: 28 } },
       { path: '/acropolis', component: () => import('pages/UniPage.vue'), props: { categoryId: 27 } },
-      { path: '/guides', component: () => import('pages/UniPage.vue'), props: { categoryId: 26 } },
       { path: '/pets', component: () => import('pages/UniPage.vue'), props: { categoryId: 25 } },
       { path: '/boutique', component: () => import('pages/UniPage.vue'), props: { categoryId: 24 } },
       { path: '/sport', component: () => import('pages/UniPage.vue'), props: { categoryId: 23 } },

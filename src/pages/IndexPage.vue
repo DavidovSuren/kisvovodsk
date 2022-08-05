@@ -347,12 +347,6 @@ export default {
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/tourism/guides.png', import.meta.url).href,
-          link: 'guides',
-          name: 'Гид'
-        },
-        {
-          id: 5,
           icon: new URL('../assets/icons/services/kick.png', import.meta.url).href,
           link: 'extreme',
           name: 'Экстрим'
