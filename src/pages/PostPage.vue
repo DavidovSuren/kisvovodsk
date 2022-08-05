@@ -9,6 +9,7 @@ const post = route.params.id
 const title = ref(null)
 const addr = ref(null)
 const phone = ref(null)
+const opentime = ref(null)
 const content = ref(null)
 const regex = /( |<([^>]+)>)/ig
 
@@ -21,6 +22,7 @@ function load () {
       content.value = response.data.content.rendered
       addr.value = response.data.acf.адрес
       phone.value = response.data.acf.телефон
+      opentime.value = response.data.acf.время_работы
       content.value = response.data.acf.card_content
     })
     .catch((e) => {
@@ -78,11 +80,15 @@ onMounted(() => {
           <a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a>
         </div>
       </q-card-section>
-        <q-card-section>
+      <q-card-section>
         <div class="text-h6">
           <a :href="`tel:${phone}`">{{phone}}</a>
         </div>
-
+      </q-card-section>
+      <q-card-section>
+        <div class="text-h6">
+          <span>{{opentime}}</span>
+        </div>
       </q-card-section>
       <q-separator inset />
       <q-carousel
