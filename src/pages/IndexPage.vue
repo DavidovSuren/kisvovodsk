@@ -39,7 +39,7 @@
             class="bg-white"
             v-for="btn in eventsDark"
             :key="btn.id"
-            :to="btn.link"
+            :href="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -251,21 +251,21 @@ export default {
       eventsDark: [
         {
           id: 1,
-          icon: new URL('../assets/icons/eventss/Prosh.png', import.meta.url).href,
-          link: 'past',
-          name: 'Афиша'
+          icon: new URL('../assets/icons/eventss/harp.png', import.meta.url).href,
+          link: 'https://kursal.ru/',
+          name: 'Филармония'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/eventss/Nast.png', import.meta.url).href,
-          link: 'thepresent',
-          name: 'Сегодня'
+          icon: new URL('../assets/icons/eventss/painting.png', import.meta.url).href,
+          link: 'https://afisha7.ru/kislovodsk/vystavki',
+          name: 'Выставки'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/eventss/Bud.png', import.meta.url).href,
-          link: 'future',
-          name: 'Фотоотчеты'
+          icon: new URL('../assets/icons/eventss/cinema.png', import.meta.url).href,
+          link: 'https://kino-movietheater.business.site/',
+          name: 'Кино'
         }
       ],
       food: [
