@@ -12,12 +12,12 @@
     >
       <q-carousel-slide
         name="first"
-        img-src="https://xn--35-jlc3but5b.xn--p1ai/media/k2/items/cache/9ecd376e5371efaef9aad9bc9143aed8_L.jpg"
+        img-src="https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg"
       >
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtiI1zTmPNOiGNOpj7XfsXWSFlKOhDleE1A&usqp=CAU"
+        img-src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/d9/2f/2b/photo0jpg.jpg?w=700&h=500&s=1"
       >
       </q-carousel-slide>
     </q-carousel>
@@ -51,36 +51,7 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-    <div class="q-pa-md mt">
-    <q-carousel
-      style="margin-top: 20px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-            class="bg-white"
-            v-for="btn in tour  "
-            :key="btn.id"
-            :to="btn.link"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            />{{btn.name}}</q-btn
-          >
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-  <div class="q-pa-md">
+   <div class="q-pa-md">
     <q-separator dark />
     <q-carousel
       class="div_bg"
@@ -110,6 +81,35 @@
         </div>
       </q-carousel-slide>
       <q-separator dark />
+    </q-carousel>
+  </div>
+    <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in tour  "
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
     </q-carousel>
   </div>
   <div class="q-pa-md mt">

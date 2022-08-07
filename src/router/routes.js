@@ -32,14 +32,14 @@ const routes = [
       { path: '/laptop', component: () => import('pages/UniPage.vue'), props: { categoryId: 18 } },
       { path: '/car-wash', component: () => import('pages/UniPage.vue'), props: { categoryId: 17 } },
       { path: '/parking', component: () => import('pages/ParkingPage.vue'), props: { categoryId: 16 } },
-      { path: '/repair', component: () => import('pages/UniPage.vue'), props: { categoryId: 15 } },
       { path: '/child', component: () => import('pages/UniPage.vue'), props: { categoryId: 39 } },
       { path: '/extreme', component: () => import('pages/UniPage.vue'), props: { categoryId: 38 } },
       { path: '/van', component: () => import('pages/VanPage.vue'), props: { categoryId: 10 } },
       { path: '/info', component: () => import('pages/InfoPage.vue') },
       { path: '/video', component: () => import('pages/VideoPage.vue') },
       { path: '/contact', component: () => import('pages/ContactPage.vue') },
-      { path: '/help', component: () => import('pages/HelpPage.vue') }
+      { path: '/help', component: () => import('pages/HelpPage.vue') },
+      { path: '/repair', component: () => import('pages/RepairPage.vue') }
 
     ]
   },
