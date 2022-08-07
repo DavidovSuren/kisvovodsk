@@ -83,35 +83,6 @@
       <q-separator dark />
     </q-carousel>
   </div>
-    <div class="q-pa-md mt">
-    <q-carousel
-      style="margin-top: 20px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-            class="bg-white"
-            v-for="btn in tour  "
-            :key="btn.id"
-            :to="btn.link"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            />{{btn.name}}</q-btn
-          >
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
   <div class="q-pa-md mt">
     <q-carousel
       style="margin-top: 20px"
@@ -128,6 +99,35 @@
           <q-btn
             class="bg-white"
             v-for="btn in home"
+            :key="btn.id"
+            :to="btn.link"
+            ><q-img
+              class="rounded-borders col-6 full-height"
+              :src="btn.icon"
+              width="80px"
+              height="50px"
+            />{{btn.name}}</q-btn
+          >
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+    <div class="q-pa-md mt">
+    <q-carousel
+      style="margin-top: 20px"
+      v-model="slide"
+      animated
+      control-color="primary"
+      arrows
+      height="150px"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
+        >
+          <q-btn
+            class="bg-white"
+            v-for="btn in tour  "
             :key="btn.id"
             :to="btn.link"
             ><q-img
