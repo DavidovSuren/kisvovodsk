@@ -228,7 +228,7 @@
       </q-carousel-slide>
     </q-carousel>
         <br>
-        <div class="text-h4">Наши парнтёры
+        <div class="text-h4">Наши партнёры
         <br>
         <q-btn
         :href="'https://artclip.ru/'">
