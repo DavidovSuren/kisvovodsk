@@ -75,19 +75,19 @@ onMounted(() => {
 
       </q-card-section>
       <q-card-section class="q-pt-none">
-        {{addr}}
+        Адрес: {{addr}}
         <div>
-          <a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a>
+        <a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a>
         </div>
       </q-card-section>
       <q-card-section>
         <div class="text-h6">
-          <a :href="`tel:${phone}`">{{phone}}</a>
+          Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
         </div>
       </q-card-section>
       <q-card-section>
         <div class="text-h6">
-          <span>{{opentime}}</span>
+          <span>Время работы: {{opentime}}</span>
         </div>
       </q-card-section>
       <q-separator inset />
