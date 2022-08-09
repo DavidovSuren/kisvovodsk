@@ -87,7 +87,7 @@ onMounted(() => {
       </q-card-section>
       <q-card-section>
         <div class="text-h6">
-          <span>Время работы: {{opentime}}</span>
+          <span>Время работы: c {{opentime}}</span>
         </div>
       </q-card-section>
       <q-separator inset />
