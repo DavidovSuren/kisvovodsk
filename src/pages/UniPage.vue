@@ -7,7 +7,7 @@
       <q-card-section horizontal>
         <q-img :src="cardInfo.fimg_url" />
         <div class="card-content">
-            <div>{{cardInfo.title.rendered}}</div>
+            <div v-html="cardInfo.title.rendered"></div>
             <div class="text-caption text-grey" v-html="cardInfo.excerpt.rendered"></div>
           <div class="text-caption text-grey">
             <p>Адрес: {{cardInfo.acf.адрес}}</p>

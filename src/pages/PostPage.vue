@@ -70,7 +70,7 @@ onMounted(() => {
     <q-card flat bordered class="my-card">
       <q-card-section>
         <div class="text-h6">
-          <h1>{{title}}</h1>
+          <h1 v-html="title"></h1>
         </div>
 
       </q-card-section>
