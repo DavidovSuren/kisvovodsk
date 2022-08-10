@@ -18,6 +18,7 @@
       <q-carousel-slide
         name="second"
         img-src="../assets/circ.jpeg"
+        @click="goto('https://circus-kislovodsk.ru/')"
       >
       </q-carousel-slide>
       <q-carousel-slide
@@ -250,7 +251,11 @@
 import { ref } from 'vue'
 export default {
   setup () {
+    function goto (url) {
+      window.location.href = url
+    }
     return {
+      goto,
       slide: ref(1),
       info: ref('first'),
       eventsDark: [
