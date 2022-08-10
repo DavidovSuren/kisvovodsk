@@ -7,7 +7,7 @@
       v-model="info"
       arrows
       infinite
-      height="250px"
+      height="220px"
       class="shadow-3"
     >
       <q-carousel-slide
@@ -17,6 +17,11 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
+        img-src="../assets/circ.jpeg"
+      >
+      </q-carousel-slide>
+      <q-carousel-slide
+        name="third"
         img-src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/d9/2f/2b/photo0jpg.jpg?w=700&h=500&s=1"
       >
       </q-carousel-slide>
