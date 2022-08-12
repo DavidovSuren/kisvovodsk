@@ -1,15 +1,15 @@
 <template>
 <div class="q-pa-md">
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
-      <q-parallax  src="src\assets\btnBg.jpeg" :height="95">
+      <q-parallax  src="src\assets\kislovodsk.webp" :height="95">
       <q-card-section>
-        <div><h2>ЛУЧШЕЕ</h2></div>
+        <div><h2 >ЛУЧШЕЕ</h2></div>
         </q-card-section>
       </q-parallax>
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
       <q-card-section>
         <div><h2>МЕРОПРИЯТИЯ</h2></div>
         </q-card-section>
@@ -17,7 +17,7 @@
     </q-card>
   </a></div>
       <div class="mtt"><a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
       <q-card-section>
         <div><h2>ЗДОРОВЬЕ</h2></div>
         </q-card-section>
@@ -25,7 +25,7 @@
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
       <q-card-section>
         <div><h2>ТУРИЗМ</h2></div>
         </q-card-section>
@@ -565,8 +565,9 @@ export default {
 backdrop-filter: blur(10px)
 }
 </style>
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 100%
+<style scoped>
+h2{
+  color: aliceblue;
+  font-size: 27px;
+}
 </style>
