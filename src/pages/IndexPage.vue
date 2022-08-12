@@ -1,5 +1,6 @@
 <template>
 <div class="q-pa-md">
+   <q-separator color="white" inset />
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
       <q-parallax  src="src\assets\icons\kislovodsk.jpg" :height="135">
       <q-card-section>
@@ -34,6 +35,7 @@
   </a></div>
 
   </div>
+   <q-separator color="white" inset />
 <div class="q-pa-md">
     <q-carousel
       autoplay
@@ -63,9 +65,10 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
+   <q-separator color="white" inset />
       <div class="q-pa-md mt">
     <q-carousel
-      style="margin-top: 20px"
+      style="margin-top: 40px"
       v-model="slide"
       animated
       control-color="primary"
@@ -77,6 +80,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in eventsDark"
             :key="btn.id"
@@ -139,6 +143,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in home"
             :key="btn.id"
@@ -168,6 +173,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in tour  "
             :key="btn.id"
@@ -197,6 +203,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in services "
             :key="btn.id"
@@ -226,6 +233,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in clothes "
             :key="btn.id"
@@ -255,6 +263,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
+          push
             class="bg-white"
             v-for="btn in transport "
             :key="btn.id"
@@ -269,10 +278,11 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
-        <br>
-        <div class="text-h4">Наши партнёры
-        <br>
+
+        <div class="mmt" ><h1> Наши партнёры</h1>
         <q-btn
+         class="bg-white"
+        push
         :href="'https://artclip.ru/'">
          <q-img
          class="partner"
@@ -282,14 +292,18 @@
         </q-btn>
       </div>
   </div>
+     <q-separator color="white" inset />
+
    <div class="q-pa-md row items-start q-gutter-md">
     <q-card
       class="my-card text-white"
       style="background: radial-gradient(circle, #9c4dcc 0%, #38006b 90%)"
     >
       <q-card-section style="text-align:center">
-        <div class="text-h5">СВЯЖИТЕСЬ С НАМИ:</div><br>
+        <div ><h1> СВЯЖИТЕСЬ С НАМИ:</h1></div><br>
+        <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal">
          <q-btn
+         push
           dense
           icon="fa-brands fa-vk"
           aria-label="Fa-brands fa-vk"
@@ -298,6 +312,7 @@
           :href="'//vk.com/id711311713'"
         />
          <q-btn
+         push
           dense
           icon="fa-brands fa-instagram"
           aria-label="Fa-brands fa-instagram"
@@ -306,6 +321,7 @@
           :href="'https://instagram.com/heart_city_kissloveodsk?igshid=YmMyMTA2M2Y='"
         />
          <q-btn
+         push
           dense
           icon="email"
           aria-label="Email"
@@ -314,6 +330,7 @@
           :href="'mailto:davidov05101996@gmail.com'"
         />
           <q-btn
+          push
           dense
           icon="phone"
           aria-label="Phone"
@@ -321,6 +338,7 @@
           size="1em"
           :href="'tel:89620031286'"
         />
+        </div>
       </q-card-section>
     </q-card>
   </div>
@@ -542,9 +560,7 @@ export default {
   background-color: rgba(158, 105, 215, 0.2);
   backdrop-filter: blur(10px);
 }
-.div_bg {
-  background-color: "black";
-}
+
 .mt {
   margin-top: -50px;
 }
@@ -566,9 +582,12 @@ backdrop-filter: blur(10px)
 }
 </style>
 <style scoped>
-h2{
+h2,h1{
   color: aliceblue;
   font-size: 27px;
+}
+.mmt{
+  margin-top: 40px
 }
 
 </style>
