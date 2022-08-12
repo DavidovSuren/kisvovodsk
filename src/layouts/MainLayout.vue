@@ -112,4 +112,3 @@ body{
   background-repeat: no-repeat;
   height: 100vh;}
 body * {font-family: 'Oswald', sans-serif;}
-</style>
