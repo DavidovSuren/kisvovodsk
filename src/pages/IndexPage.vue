@@ -2,7 +2,7 @@
 <div class="q-pa-md">
    <q-separator color="white" inset />
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
-      <q-parallax  src="src\assets\icons\kislovodsk.jpg" :height="135">
+      <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><h2 >ЛУЧШЕЕ</h2></div>
         </q-card-section>
@@ -10,7 +10,7 @@
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\icons\kislovodsk.jpg" :height="135">
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><h2>МЕРОПРИЯТИЯ</h2></div>
         </q-card-section>
@@ -18,7 +18,7 @@
     </q-card>
   </a></div>
       <div class="mtt"><a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\icons\kislovodsk.jpg" :height="135">
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><h2>ЗДОРОВЬЕ</h2></div>
         </q-card-section>
@@ -26,7 +26,7 @@
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\icons\kislovodsk.jpg" :height="135">
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><h2>ТУРИЗМ</h2></div>
         </q-card-section>
@@ -300,8 +300,7 @@
       style="background: radial-gradient(circle, #9c4dcc 0%, #38006b 90%)"
     >
       <q-card-section style="text-align:center">
-        <div ><h1> СВЯЖИТЕСЬ С НАМИ:</h1></div><br>
-        <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal">
+        <div class="text-h5">СВЯЖИТЕСЬ С НАМИ:</div><br>
          <q-btn
          push
           dense
