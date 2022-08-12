@@ -246,6 +246,48 @@
         </q-btn>
       </div>
   </div>
+   <div class="q-pa-md row items-start q-gutter-md">
+    <q-card
+      class="my-card text-white"
+      style="background: radial-gradient(circle, #9c4dcc 0%, #38006b 90%)"
+    >
+      <q-card-section style="text-align:center">
+        <div class="text-h5">СВЯЖИТЕСЬ С НАМИ:</div><br>
+         <q-btn
+          dense
+          icon="fa-brands fa-vk"
+          aria-label="Fa-brands fa-vk"
+          color="blue"
+          size="1em"
+          :href="'//vk.com/id711311713'"
+        />
+         <q-btn
+          dense
+          icon="fa-brands fa-instagram"
+          aria-label="Fa-brands fa-instagram"
+          color="red"
+          size="1em"
+          :href="'https://instagram.com/heart_city_kissloveodsk?igshid=YmMyMTA2M2Y='"
+        />
+         <q-btn
+          dense
+          icon="email"
+          aria-label="Email"
+          color="dark blue"
+          size="1em"
+          :href="'mailto:davidov05101996@gmail.com'"
+        />
+          <q-btn
+          dense
+          icon="phone"
+          aria-label="Phone"
+          color="green"
+          size="1em"
+          :href="'tel:89620031286'"
+        />
+      </q-card-section>
+    </q-card>
+  </div>
 </template>
 <script>
 import { ref } from 'vue'
@@ -481,4 +523,9 @@ export default {
   width:100px
 }
 
+</style>
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+  max-width: 100%
 </style>

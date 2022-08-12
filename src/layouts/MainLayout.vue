@@ -1,13 +1,20 @@
 <template>
-<video v-if="intro" src="../assets/intro.mp4" autoplay muted style="width: 100%; height: 100%; position:absolute; z-index: 10000; object-fit: cover;">
-</video>
+  <video
+    v-if="intro"
+    src="../assets/intro.mp4"
+    autoplay
+    muted
+    style="
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10000;
+      object-fit: cover;
+    "
+  ></video>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated
-   style="
-background: linear-gradient(234deg, rgba(158,105,215,0.7231267507002801) 11%, rgba(30,162,175,0.7262255243894433) 40%, rgba(63,76,167,0.4321078773306197) 57%, rgba(166,107,238,0.38448882971157217) 72%, rgba(238,111,107,0.47692580450148814) 89%);
-backdrop-filter: blur(10px);"
->
-<q-toolbar >
+    <q-header elevated style="backdrop-filter: blur(10px)">
+      <q-toolbar>
         <q-btn
           flat
           dense
@@ -18,14 +25,22 @@ backdrop-filter: blur(10px);"
           color="dark blue"
         />
         <q-toolbar-title @click="this.$router.push('/');" style="color: black">
-          <div style="margin-bottom: -3px;">Сердце Кисловодска&nbsp;
+          <div
+            style="
+              text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                0px 8px 13px rgba(0, 0, 0, 0.1),
+                0px 18px 23px rgba(0, 0, 0, 0.1);
+            "
+          >
+            Сердце Кисловодска&nbsp;
 
-          <q-icon size="25px">
-            <img src="../assets/bitmap.png" >
-          </q-icon>
-       </div>
+            <q-icon size="25px">
+              <img src="../assets/bitmap.png" />
+            </q-icon>
+          </div>
         </q-toolbar-title>
-  <q-btn @click="this.$router.push('/');"
+        <q-btn
+          @click="this.$router.push('/');"
           flat
           dense
           icon="home"
@@ -33,7 +48,6 @@ backdrop-filter: blur(10px);"
           color="dark blue"
         />
       </q-toolbar>
-
     </q-header>
 
     <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
@@ -70,12 +84,6 @@ const linksList = [
     caption: 'Обратная свзяь',
     icon: 'accessibility',
     link: '/help'
-  },
-  {
-    title: 'Контакты',
-    caption: 'Реклама',
-    icon: 'phone',
-    link: '/contact'
   }
 ]
 
@@ -101,17 +109,23 @@ export default defineComponent({
     }
   }
 })
-
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap');
-body{
-  font-family: 'Oswald', sans-serif;
-  background: rgb(131,222,244);
-  background: linear-gradient(356deg, rgba(131,222,244,0.1561519607843137) 0%, rgba(250,250,250,0.258140756302521) 100%);
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+  background: rgb(131, 222, 244);
+  background: linear-gradient(
+    356deg,
+    rgba(14, 1, 73, 0.95) 0%,
+    rgba(244, 2, 188, 0.875) 100%
+  );
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;}
-body * {font-family: 'Oswald', sans-serif;}
+  height: 100vh;
+}
+body * {
+  font-family: "Oswald", sans-serif;
+}
 </style>
