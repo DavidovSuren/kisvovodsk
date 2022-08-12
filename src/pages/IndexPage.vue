@@ -571,3 +571,8 @@ h2{
   font-size: 27px;
 }
 </style>
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+  max-width: 100%
+  </style>
