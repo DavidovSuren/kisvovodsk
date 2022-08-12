@@ -287,8 +287,8 @@
       class="my-card text-white"
       style="background: radial-gradient(circle, #9c4dcc 0%, #38006b 90%)"
     >
-      <q-card-section style="text-align:center">
-        <div class="text-h5">СВЯЖИТЕСЬ С НАМИ:</div><br>
+      <q-card-section style="text-align:center" class="q-gutter-lg">
+        <div class="text-h5 ">СВЯЖИТЕСЬ С НАМИ:</div>
          <q-btn
           dense
           icon="fa-brands fa-vk"
