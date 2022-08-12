@@ -1,5 +1,5 @@
 <template>
-<div class="q-pa-md">
+<div class="q-pa-md" >
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
       <q-parallax  src="src\assets\kislovodsk.webp" :height="95">
       <q-card-section>
