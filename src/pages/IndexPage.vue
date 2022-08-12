@@ -1,7 +1,7 @@
 <template>
 <div class="q-pa-md">
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
-      <q-parallax  src="src\assets\kislovodsk.webp" :height="95">
+      <q-parallax  src="src\assets\kislovodsk.webp" :height="135">
       <q-card-section>
         <div><h2 >ЛУЧШЕЕ</h2></div>
         </q-card-section>
@@ -9,7 +9,7 @@
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="135">
       <q-card-section>
         <div><h2>МЕРОПРИЯТИЯ</h2></div>
         </q-card-section>
@@ -17,7 +17,7 @@
     </q-card>
   </a></div>
       <div class="mtt"><a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="135">
       <q-card-section>
         <div><h2>ЗДОРОВЬЕ</h2></div>
         </q-card-section>
@@ -25,7 +25,7 @@
     </q-card>
   </a></div>
      <div class="mtt"> <a href=""> <q-card class="my-card">
-      <q-parallax src="src\assets\kislovodsk.webp" :height="95">
+      <q-parallax src="src\assets\kislovodsk.webp" :height="135">
       <q-card-section>
         <div><h2>ТУРИЗМ</h2></div>
         </q-card-section>
