@@ -118,7 +118,7 @@ body {
   background: linear-gradient(
     356deg,
     rgba(14, 1, 73, 0.95) 0%,
-    rgba(244, 2, 188, 0.875) 100%
+    rgba(244, 2, 188, 0.875) 99%
   );
   background-attachment: fixed;
   background-position: center;
