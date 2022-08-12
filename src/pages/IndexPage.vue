@@ -572,3 +572,8 @@ h2{
 }
 
 </style>
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+  max-width: 100%
+  </style>
