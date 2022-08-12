@@ -1,5 +1,40 @@
 <template>
-  <div class="q-pa-md">
+<div class="q-pa-md">
+    <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
+      <q-parallax  src="src\assets\btnBg.jpeg" :height="95">
+      <q-card-section>
+        <div><h2>ЛУЧШЕЕ</h2></div>
+        </q-card-section>
+      </q-parallax>
+    </q-card>
+  </a></div>
+     <div class="mtt"> <a href=""> <q-card class="my-card">
+      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-card-section>
+        <div><h2>МЕРОПРИЯТИЯ</h2></div>
+        </q-card-section>
+      </q-parallax>
+    </q-card>
+  </a></div>
+      <div class="mtt"><a href=""> <q-card class="my-card">
+      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-card-section>
+        <div><h2>ЗДОРОВЬЕ</h2></div>
+        </q-card-section>
+      </q-parallax>
+    </q-card>
+  </a></div>
+     <div class="mtt"> <a href=""> <q-card class="my-card">
+      <q-parallax src="src\assets\btnBg.jpeg" :height="95">
+      <q-card-section>
+        <div><h2>ТУРИЗМ</h2></div>
+        </q-card-section>
+      </q-parallax>
+    </q-card>
+  </a></div>
+
+  </div>
+<div class="q-pa-md">
     <q-carousel
       autoplay
       swipeable
@@ -73,6 +108,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap"
         >
           <q-btn
+          push
             v-for="btn in food"
             :key="btn.id"
             :to="btn.link"
@@ -470,6 +506,9 @@ export default {
 .mt {
   margin-top: -50px;
 }
+.mtt{
+   margin-top: 12px;
+}
 .q-carousel {
   background: none;
 }
@@ -480,5 +519,7 @@ export default {
   border-radius: 50px 150px / 120px;
   width:100px
 }
-
+.bg-blur{
+backdrop-filter: blur(10px)
+}
 </style>
