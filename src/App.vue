@@ -10,7 +10,7 @@ export default defineComponent({
 })
 </script>
 <style>
-body { background: "src/background/fon2.png"}
+body { background: linear-gradient(356deg, rgb(33, 3, 45) 0%, rgb(65, 70, 116) 100%);}
 h1 {font-family: monospace; font-size: 23px; margin-top: -30px; margin-bottom: -20px;}
 h2 {font-family:monospace; font-size: 23px; align-self: start;  }
 p  {font-family: cursive; font-size: 18px}

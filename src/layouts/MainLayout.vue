@@ -107,8 +107,6 @@ export default defineComponent({
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap');
 body{
   font-family: 'Oswald', sans-serif;
-  background: rgb(131,222,244);
-  background: linear-gradient(356deg, rgba(131,222,244,0.1561519607843137) 0%, rgba(250,250,250,0.258140756302521) 100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
