@@ -575,4 +575,4 @@ h2{
 .my-card
   width: 100%
   max-width: 100%
-  </style>
+</style>
