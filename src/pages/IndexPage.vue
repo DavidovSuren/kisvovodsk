@@ -1,6 +1,5 @@
 <template>
 <div class="q-pa-md">
-   <q-separator color="white" inset />
     <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
