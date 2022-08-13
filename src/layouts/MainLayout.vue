@@ -18,7 +18,7 @@ backdrop-filter: blur(10px);"
           color= indigo-9
         />
         <q-toolbar-title @click="this.$router.push('/');" >
-          <div style="margin-bottom: -3px;">Сердце Кисловодска&nbsp;
+          <div style="margin-bottom: -3px; font-family: monospace;">Сердце Кисловодска&nbsp;
        </div>
         </q-toolbar-title>
   <q-btn @click="this.$router.push('/');"
@@ -30,14 +30,16 @@ backdrop-filter: blur(10px);"
 
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
-      <q-list>
-        <q-item-label header> </q-item-label>
+    <q-drawer class="bbg" show-if-above v-model="leftDrawerOpen" side="left" bordered>
+      <q-list color="white">
+        <q-item-label header > <h1> Меню</h1></q-item-label>
+  <q-separator color="white" inset />
 
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
+          class="menuText"
         />
       </q-list>
     </q-drawer>
@@ -98,5 +100,22 @@ export default defineComponent({
 
 </script>
 <style>
-
+.bbg{
+ background: linear-gradient(234deg, rgba(158,105,215,0.7231267507002801) 11%, rgba(30,162,175,0.7262255243894433) 40%, rgba(63,76,167,0.4321078773306197) 57%, rgba(166,107,238,0.38448882971157217) 72%, rgba(238,111,107,0.47692580450148814) 89%);
+backdrop-filter: blur(10px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+</style>
+<style scoped>
+h1{
+  color: aliceblue;
+  font-size: 27px;
+  margin-bottom: -40px;
+}
+.menuText{
+  color: whitesmoke; font-size: large;
+}
 </style>
