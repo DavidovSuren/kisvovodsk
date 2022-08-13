@@ -83,19 +83,18 @@
             v-for="btn in eventsDark"
             :key="btn.id"
             :href="btn.link"
-            ><q-img
+          ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            />  <p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
     </q-carousel>
   </div>
    <div class="q-pa-md">
-    <q-separator dark />
     <q-carousel
       class="div_bg"
       style="margin-top: -30px"
@@ -119,7 +118,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -149,7 +148,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -178,7 +177,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -207,7 +206,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -236,7 +235,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -265,7 +264,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
       </q-carousel-slide>
@@ -583,6 +582,10 @@ h2,h1{
   margin-top: 40px
 }
 body * {font-family: 'Oswald', sans-serif;}
+.textCard{
+  color: aliceblue;
+  font-size: 15px;
+}
 </style>
 <style lang="sass" scoped>
 .my-card
