@@ -34,13 +34,14 @@ backdrop-filter: blur(10px);"
       <q-list color="white">
         <q-item-label header > <h1> Меню</h1></q-item-label>
   <q-separator color="white" inset />
-
+<div class="mt">
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
           class="menuText"
         />
+</div>
       </q-list>
     </q-drawer>
 
@@ -117,5 +118,9 @@ h1{
 }
 .menuText{
   color: whitesmoke; font-size: large;
+}
+body * {  font-family: monospace;}
+.mt{
+    margin-top: 15px;
 }
 </style>

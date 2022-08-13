@@ -591,7 +591,7 @@ h2,h1{
 .mmt{
   margin-top: 40px
 }
-
+body * {font-family: 'Oswald', sans-serif;}
 </style>
 <style lang="sass" scoped>
 .my-card
