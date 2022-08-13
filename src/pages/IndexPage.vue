@@ -83,6 +83,7 @@
             v-for="btn in eventsDark"
             :key="btn.id"
             :href="btn.link"
+            class="cardColor"
           ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -113,6 +114,7 @@
             v-for="btn in food"
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -143,6 +145,7 @@
             v-for="btn in home"
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -172,6 +175,7 @@
             v-for="btn in tour  "
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -201,6 +205,7 @@
             v-for="btn in services "
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -230,6 +235,7 @@
             v-for="btn in clothes "
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -259,6 +265,7 @@
             v-for="btn in transport "
             :key="btn.id"
             :to="btn.link"
+            class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
@@ -272,7 +279,7 @@
 
         <div class="mmt" ><h1> Наши партнёры</h1>
         <q-btn
-        push
+        push class="cardColor"
         :href="'https://artclip.ru/'">
          <q-img
          class="partner"
@@ -585,6 +592,9 @@ body * {font-family: 'Oswald', sans-serif;}
 .textCard{
   color: aliceblue;
   font-size: 15px;
+}
+.cardColor{
+  background-color: #110e35;
 }
 </style>
 <style lang="sass" scoped>
