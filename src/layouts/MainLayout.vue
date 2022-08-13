@@ -15,23 +15,17 @@ backdrop-filter: blur(10px);"
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-          color="dark blue"
+          color= indigo-9
         />
-        <q-toolbar-title @click="this.$router.push('/');" style="color: black">
+        <q-toolbar-title @click="this.$router.push('/');" >
           <div style="margin-bottom: -3px;">Сердце Кисловодска&nbsp;
-
-          <q-icon size="25px">
-            <img src="../assets/bitmap.png" >
-          </q-icon>
        </div>
         </q-toolbar-title>
   <q-btn @click="this.$router.push('/');"
-          flat
-          dense
-          icon="home"
-          aria-label="Home"
-          color="dark blue"
-        />
+          flat dense
+        ><q-icon   size="30px">
+            <img src="../assets/bitmap.png" >
+          </q-icon></q-btn>
       </q-toolbar>
 
     </q-header>
