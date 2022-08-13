@@ -80,7 +80,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in eventsDark"
             :key="btn.id"
             :href="btn.link"
@@ -108,16 +107,15 @@
       <q-separator dark />
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap"
+          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
           push
             v-for="btn in food"
             :key="btn.id"
             :to="btn.link"
-            class="bg-white"
             ><q-img
-              class="circle-borders col-3 full-height"
+              class="rounded-borders col-6 full-height"
               :src="btn.icon"
               width="80px"
               height="50px"
@@ -143,7 +141,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in home"
             :key="btn.id"
             :to="btn.link"
@@ -173,7 +170,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in tour  "
             :key="btn.id"
             :to="btn.link"
@@ -203,7 +199,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in services "
             :key="btn.id"
             :to="btn.link"
@@ -233,7 +228,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in clothes "
             :key="btn.id"
             :to="btn.link"
@@ -263,7 +257,6 @@
         >
           <q-btn
           push
-            class="bg-white"
             v-for="btn in transport "
             :key="btn.id"
             :to="btn.link"
@@ -280,7 +273,6 @@
 
         <div class="mmt" ><h1> Наши партнёры</h1>
         <q-btn
-         class="bg-white"
         push
         :href="'https://artclip.ru/'">
          <q-img
