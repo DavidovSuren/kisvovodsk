@@ -67,12 +67,6 @@ const linksList = [
     caption: 'Обратная свзяь',
     icon: 'accessibility',
     link: '/help'
-  },
-  {
-    title: 'Контакты',
-    caption: 'Реклама',
-    icon: 'phone',
-    link: '/contact'
   }
 ]
 

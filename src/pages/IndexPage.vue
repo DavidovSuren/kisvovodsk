@@ -8,7 +8,7 @@
       </q-parallax>
     </q-card>
   </a></div>
-     <div class="mtt"> <a to=""> <q-card class="my-card">
+     <div class="mtt"> <a href=""> <q-card class="my-card">
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><h2>МЕРОПРИЯТИЯ</h2></div>
@@ -291,7 +291,7 @@
     >
 
       <q-card-section style="text-align:center">
-        <div ><h1> СВЯЖИТЕСЬ С НАМИ:</h1></div><br>
+        <div ><h1> КОНТАКТЫ</h1></div><br>
         <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal">
 
          <q-btn
