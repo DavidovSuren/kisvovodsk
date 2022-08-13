@@ -1,6 +1,6 @@
-<template>SFVSRVSDV LSNDkj:vB ,.N
+<template>
 <div class="q-pa-md mt">
-  sragsdhcjaSBCK;jasbcK;JASECBVBWKVB CNMD XZMN HL
+  <h1>МЕРОПРИЯТИЯ</h1>
     <q-carousel
       style="margin-top: 40px"
       v-model="slide"
@@ -15,7 +15,7 @@
         >
           <q-btn
           push
-            class="bg-white"
+            class="cardColor"
             v-for="btn in eventsDark"
             :key="btn.id"
             :href="btn.link"
@@ -66,3 +66,16 @@ export default {
   }
 }
 </script>
+<style scoped>
+.cardColor{
+  background-color: #110e35;}
+.q-carousel {
+  background: none;
+}
+
+h2,h1{
+  color: aliceblue;
+  font-size: 27px;
+  text-align: center;
+}
+</style>

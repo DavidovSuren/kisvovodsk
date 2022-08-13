@@ -39,7 +39,7 @@ const routes = [
       { path: '/video', component: () => import('pages/VideoPage.vue') },
       { path: '/help', component: () => import('pages/HelpPage.vue') },
       { path: '/repair', component: () => import('pages/RepairPage.vue') },
-      { path: '/events', component: () => import('pages/EventsPage.vue') }
+      { path: '/event', component: () => import('pages/EventsPage.vue') }
 
     ]
   },
