@@ -292,7 +292,7 @@
     >
 
       <q-card-section style="text-align:center">
-        <div ><h1> СВЯЖИТЕСЬ С НАМИ:</h1></div><br>
+        <div ><h1> КОНТАКТЫ</h1></div><br>
         <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal">
 
          <q-btn
