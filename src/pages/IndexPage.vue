@@ -1,37 +1,37 @@
 <template>
 <div class="q-pa-md">
-    <div class="mtt" ><a href=""> <q-card class="my-card bg-blur " >
+    <div class="mtt" > <q-card class="my-card bg-blur " >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><h2 >ЛУЧШЕЕ</h2></div>
+        <div><a size="xl" @click="this.$router.push('/');"><h2 class="aLine">ЛУЧШЕЕ</h2> </a></div>
         </q-card-section>
       </q-parallax>
     </q-card>
-  </a></div>
+</div>
      <div class="mtt">  <q-card class="my-card">
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/event');"><h2>МЕРОПРИЯТИЯ</h2> </a></div>
+        <div><a size="xl" @click="this.$router.push('/event');"><h2 class="aLine">МЕРОПРИЯТИЯ</h2> </a></div>
         </q-card-section>
       </q-parallax>
     </q-card>
  </div>
-      <div class="mtt"><a href=""> <q-card class="my-card">
+      <div class="mtt"> <q-card class="my-card">
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><h2>ЗДОРОВЬЕ</h2></div>
+        <div><a size="xl" @click="this.$router.push('/');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a></div>
         </q-card-section>
       </q-parallax>
     </q-card>
-  </a></div>
-     <div class="mtt"> <a href=""> <q-card class="my-card">
+</div>
+     <div class="mtt"> <q-card class="my-card">
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><h2>ТУРИЗМ</h2></div>
+        <div><a size="xl" @click="this.$router.push('/tour');"><h2 class="aLine">ТУРИЗМ</h2> </a></div>
         </q-card-section>
       </q-parallax>
     </q-card>
-  </a></div>
+ </div>
 
   </div>
    <q-separator color="white" inset />
@@ -113,36 +113,6 @@
           <q-btn
           push
             v-for="btn in home"
-            :key="btn.id"
-            :to="btn.link"
-            class="cardColor"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            /><p class="textCard">{{btn.name}}</p></q-btn
-          >
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-    <div class="q-pa-md mt">
-    <q-carousel
-      style="margin-top: 20px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-          push
-            v-for="btn in tour  "
             :key="btn.id"
             :to="btn.link"
             class="cardColor"
@@ -565,6 +535,10 @@ body * {font-family: 'Oswald', sans-serif;}
 }
 .cardColor{
   background-color: #110e35;
+}
+.aLine {
+  text-decoration: underline;
+  text-decoration-color: aliceblue;
 }
 </style>
 <style lang="sass" scoped>

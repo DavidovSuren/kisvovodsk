@@ -39,11 +39,11 @@ const routes = [
       { path: '/video', component: () => import('pages/VideoPage.vue') },
       { path: '/help', component: () => import('pages/HelpPage.vue') },
       { path: '/repair', component: () => import('pages/RepairPage.vue') },
-      { path: '/event', component: () => import('pages/EventsPage.vue') }
+      { path: '/event', component: () => import('pages/EventsPage.vue') },
+      { path: '/tour', component: () => import('pages/TourPage.vue') }
 
     ]
   },
-
   // Always leave this as last one,
   // but you can also remove it
   {
