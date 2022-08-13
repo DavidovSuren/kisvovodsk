@@ -38,7 +38,8 @@ const routes = [
       { path: '/info', component: () => import('pages/InfoPage.vue') },
       { path: '/video', component: () => import('pages/VideoPage.vue') },
       { path: '/help', component: () => import('pages/HelpPage.vue') },
-      { path: '/repair', component: () => import('pages/RepairPage.vue') }
+      { path: '/repair', component: () => import('pages/RepairPage.vue') },
+      { path: '/events', component: () => import('pages/EventsPage.vue') }
 
     ]
   },
