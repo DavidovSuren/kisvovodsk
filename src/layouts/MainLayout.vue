@@ -18,7 +18,7 @@ backdrop-filter: blur(10px);"
           color= indigo-9
         />
         <q-toolbar-title @click="this.$router.push('/');" >
-          <div style="margin-bottom: -3px; font-family: monospace;">Сердце Кисловодска&nbsp;
+          <div style="margin-bottom: -3px;">Сердце Кисловодска&nbsp;
        </div>
         </q-toolbar-title>
   <q-btn @click="this.$router.push('/');"
@@ -118,9 +118,10 @@ h1{
 }
 .menuText{
   color: whitesmoke; font-size: large;
+  font-family: monospace;
 }
-body * {  font-family: monospace;}
 .mt{
     margin-top: 15px;
 }
+.q-item-label{   margin-top: -15px;}
 </style>
