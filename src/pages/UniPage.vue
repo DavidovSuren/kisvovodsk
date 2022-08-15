@@ -1,7 +1,7 @@
 <template>
 <div class="q-pa-md ">
 <q-page>
-  <q-card class="mmt" v-for="cardInfo in data"
+  <q-card class="mmt cardColor" v-for="cardInfo in data"
       :key="cardInfo.id" >
     <router-link :to="`/post/${cardInfo.id}`">
       <q-card-section horizontal>
@@ -73,8 +73,11 @@ export default {
 
 <style scoped>
 .mmt{margin-top: 20px;}
-.mmt a{color:#1976d2}
+.mmt a{color: whitesmoke}
 .q-img{position: inherit !important; overflow: hidden;}
 .q-img, .q-img__image, .q-img__container, .q-img__content {width:100px !important; height: 100px !important;}
 .card-content{padding: 5px 0 0 10px;}
+.cardColor{
+  background-color: #110e35;
+}
 </style>

@@ -11,6 +11,8 @@ const addr = ref(null)
 const phone = ref(null)
 const opentime = ref(null)
 const content = ref(null)
+const rating = ref(null)
+const subtitle = ref(null)
 const regex = /( |<([^>]+)>)/ig
 
 const gal = ref([])
@@ -24,6 +26,8 @@ function load () {
       phone.value = response.data.acf.телефон
       opentime.value = response.data.acf.время_работы
       content.value = response.data.acf.card_content
+      rating.value = response.data.acf.рейтинг
+      subtitle.value = response.data.excerpt.rendered
     })
     .catch((e) => {
       console.log(e)
@@ -62,55 +66,58 @@ onMounted(() => {
 </script>
 
 <template>
-  <q-page>
-    <!--<p>{{data.title.rendered}}</p>
-  <p>{{data.excerpt.rendered}}</p>
-  <p>{{data.acf.адрес}}</p>
-  <p>{{data.acf.рейтинг}}</p>-->
-    <q-card flat bordered class="my-card">
+
+  <div class="q-pa-md"><q-card style="background:none; ">
       <q-card-section>
-        <div class="text-h6">
+        <div class="text-h2">
           <h1 v-html="title"></h1>
         </div>
+      </q-card-section>
+            <q-separator color="white"/>
+       <q-card-section>
+        <q-card-section>
+          <p class="sTitle" v-html="subtitle"></p>
+        </q-card-section>
 
       </q-card-section>
-      <q-card-section class="q-pt-none">
-        Адрес: {{addr}}
-        <div>
-        <a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a>
-        </div>
-      </q-card-section>
-      <q-card-section>
-        <div class="text-h6">
-          Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
-        </div>
-      </q-card-section>
-      <q-card-section>
-        <div class="text-h6">
-          <span>Время работы: {{opentime}}</span>
-        </div>
-      </q-card-section>
-      <q-separator inset />
-      <q-carousel
+            <q-carousel
         autoplay
         swipeable
         animated
         v-model="slide"
         arrows
         infinite
-        height="500px"
+        height="250px"
         class="shadow-3"
       >
-      <q-carousel-slide v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
+      <q-carousel-slide  v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
       </q-carousel>
-      <q-card-section>
-        <div v-html=content></div>
-      </q-card-section>
-    </q-card>
 
-  </q-page>
+      <q-card-section horizontal class="cardSectionRating"><p class="pRating"> {{rating}}</p><q-rating readonly v-model="ratin" :max="5" size="25px" /> </q-card-section>
+
+      <q-card-section>
+         <p class="pTime">Время работы: {{opentime}}</p>
+    </q-card-section>
+      <q-card-section class="q-pt-none">
+        <p class="pAdr"> Адрес: {{addr}}</p>
+        <div>
+        <p class="pWay"><a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a></p>
+        </div>
+      </q-card-section>
+      <q-card-section>
+        <div class="text-h6">
+          <p> Телефон: <a :href="`tel:${phone}`">{{phone}}</a> </p>
+        </div>
+      </q-card-section>
+      <q-separator color="white"/>
+
+      <q-card-section>
+        <div > <h1 style="text-align: center; padding-top: 10px">Описание</h1>  <p class="descrip" v-html=content></p> </div>
+      </q-card-section>
+</q-card>
+</div>
 </template>
-<style>
+<style scoped>
 .wp-block-image {
   width: 100% !important;
 }
@@ -130,5 +137,55 @@ figure {
   height: auto !important;
   max-width: 100% !important;
   min-width: 100% !important;
+}
+.q-card__section--vert{
+  padding: 0%;
+}
+.cardSectionRating{
+  margin:10px
+}
+.pRating{
+  margin-bottom: 0; margin-right: 10px;
+}
+body { background: rgb(2, 0, 28);}
+h2,h1{
+  color: aliceblue;
+  font-size: 27px;
+}
+p{
+  color: white;
+  font-family: Oswald, sans-serif
+}
+.pAdr{
+  margin: 0;
+  font-size: 15px;
+}
+.pWay{
+  font-family: Oswald, sans-serif;
+  font-size: 14px;
+  color:orange
+}
+.pTime{
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  padding-top: 15px ;
+}
+a{
+  font-family: Oswald, sans-serif;
+  color:#ffa500ab
+}
+.sTitle {
+  font-family: Oswald, sans-serif !important;
+  font-size: 13px !important;
+  padding-top: 24px ;
+}
+.q-rating{
+  color: orange !important;
+}
+.descrip{
+  font-size: 15px
+}
+h3 h4 h5 h6{
+   font-size: 15px !important
 }
 </style>

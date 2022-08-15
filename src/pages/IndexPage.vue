@@ -519,6 +519,10 @@ export default {
 .bg-blur{
 backdrop-filter: blur(10px)
 }
+.textCard{
+  color: aliceblue;
+  font-size: 15px;
+}
 </style>
 <style scoped>
 h2,h1{
@@ -529,10 +533,7 @@ h2,h1{
   margin-top: 40px
 }
 body * {font-family: 'Oswald', sans-serif;}
-.textCard{
-  color: aliceblue;
-  font-size: 15px;
-}
+
 .cardColor{
   background-color: #110e35;
 }

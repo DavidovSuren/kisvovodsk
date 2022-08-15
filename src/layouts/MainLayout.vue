@@ -15,7 +15,7 @@ backdrop-filter: blur(10px);"
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-          color= indigo-9
+          color= indigo-10
         />
         <q-toolbar-title @click="this.$router.push('/');" >
           <div style="margin-bottom: -3px;">Сердце Кисловодска&nbsp;

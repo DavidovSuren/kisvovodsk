@@ -24,7 +24,7 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            />{{btn.name}}</q-btn
+            /> <p class="textCard">{{btn.name}}</p> </q-btn
           >
         </div>
       </q-carousel-slide>

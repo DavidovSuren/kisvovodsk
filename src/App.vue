@@ -19,8 +19,8 @@ body { background: rgb(2, 0, 28);  font-family: "Oswald", sans-serif;
   height: 100vh;}
 h1 {font-family: monospace; font-size: 23px; margin-top: -30px; margin-bottom: -20px;}
 h2 {font-family:monospace; font-size: 23px; align-self: start;  }
-p  {font-family: cursive; font-size: 18px}
-a  {font-family: cursive; font-weight:  150px;text-decoration: none}
+p  {font-size: 18px}
+a  {font-weight:  150px;text-decoration: none}
 </style>
 rgba(48, 29, 99, 0.991);
 rgb(49, 55, 91)
