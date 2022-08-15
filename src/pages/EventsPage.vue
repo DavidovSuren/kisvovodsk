@@ -18,7 +18,7 @@
             class="cardColor"
             v-for="btn in eventsDark"
             :key="btn.id"
-            :href="btn.link"
+            :to="btn.link"
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
