@@ -40,8 +40,8 @@ const routes = [
       { path: '/help', component: () => import('pages/HelpPage.vue') },
       { path: '/repair', component: () => import('pages/RepairPage.vue') },
       { path: '/event', component: () => import('pages/EventsPage.vue') },
-      { path: '/tour', component: () => import('pages/TourPage.vue') }
-
+      { path: '/tour', component: () => import('pages/TourPage.vue') },
+      { path: '/health', component: () => import('pages/HealthPage.vue') }
     ]
   },
   // Always leave this as last one,

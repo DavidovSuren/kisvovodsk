@@ -19,7 +19,7 @@
       <div class="mtt"> <q-card class="my-card">
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a></div>
+        <div><a size="xl" @click="this.$router.push('/health');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a></div>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -348,24 +348,18 @@ export default {
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/housing/sanatoriums.png', import.meta.url).href,
-          link: 'sanatoriums',
-          name: 'Санатории'
-        },
-        {
-          id: 3,
           icon: new URL('../assets/icons/housing/Gostinitsa.png', import.meta.url).href,
           link: 'gostinitsa',
           name: 'Гостиницы'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/housing/motel.png', import.meta.url).href,
           link: 'motel',
           name: 'Хостелы'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/housing/flat.png', import.meta.url).href,
           link: 'flat',
           name: 'Квартиры'
@@ -438,24 +432,6 @@ export default {
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
-          link: 'hair-cut',
-          name: 'Бьюти'
-        },
-        {
-          id: 4,
-          icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
-          link: 'spa',
-          name: 'СПА'
-        },
-        {
-          id: 5,
-          icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
-          link: 'fitness',
-          name: 'Фитнес'
-        },
-        {
-          id: 6,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'

@@ -185,7 +185,7 @@ a{
 .descrip{
   font-size: 15px
 }
-h3 h4 h5 h6{
+.h3, h4, h5, h6{
    font-size: 15px !important
 }
 </style>
