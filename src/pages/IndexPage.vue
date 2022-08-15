@@ -432,15 +432,15 @@ export default {
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
-          link: 'laptop',
-          name: 'Электроника'
-        },
-        {
-          id: 4,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Бьюти'
+        },
+        {
+          id: 4,
+          icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
+          link: 'laptop',
+          name: 'Электроника'
         }
       ],
       transport: [
