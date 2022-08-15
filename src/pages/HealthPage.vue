@@ -51,24 +51,18 @@ export default {
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
-          link: 'hair-cut',
-          name: 'Бьюти'
-        },
-        {
-          id: 3,
           icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/housing/hotel.png', import.meta.url).href,
           link: 'hotel',
           name: 'Отели'
