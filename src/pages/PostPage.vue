@@ -13,6 +13,16 @@ const opentime = ref(null)
 const content = ref(null)
 const rating = ref(null)
 const subtitle = ref(null)
+const video = ref(null)
+const number = ref(null)
+const href = ref(null)
+const tag = ref(null)
+const insta = ref(null)
+const vk = ref(null)
+const ok = ref(null)
+const telegram = ref(null)
+const whatsapp = ref(null)
+
 const regex = /( |<([^>]+)>)/ig
 
 const gal = ref([])
@@ -28,6 +38,15 @@ function load () {
       content.value = response.data.acf.card_content
       rating.value = response.data.acf.рейтинг
       subtitle.value = response.data.excerpt.rendered
+      video.value = response.data.acf.видео
+      number.value = response.data.acf.номер_позиции
+      href.value = response.data.acf.на_меню_или_сайт
+      tag.value = response.data.acf.теги
+      insta.value = response.data.acf.инстаграм_ссылка
+      vk.value = response.data.acf.вк_ссылка
+      ok.value = response.data.acf.ОК_ссылка
+      telegram.value = response.data.acf.телеграмм_ссылка
+      whatsapp.value = response.data.acf.whatsapp_ссылка
     })
     .catch((e) => {
       console.log(e)
@@ -69,12 +88,12 @@ onMounted(() => {
 
   <div class="q-pa-md"><q-card style="background:none; ">
       <q-card-section>
-        <div class="text-h2">
-          <h1 v-html="title"></h1>
+        <div>
+          <h1 style="line-height: 2rem; padding-top: 25px;" v-html="title"></h1>
         </div>
       </q-card-section>
-            <q-separator color="white"/>
-       <q-card-section>
+            <q-separator class="separ"  color="white"/>
+       <q-card-section >
         <q-card-section>
           <p class="sTitle" v-html="subtitle"></p>
         </q-card-section>
@@ -112,10 +131,56 @@ onMounted(() => {
       <q-separator color="white"/>
 
       <q-card-section>
-        <div > <h1 style="text-align: center; padding-top: 10px">Описание</h1>  <p class="descrip" v-html=content></p> </div>
+        <div > <h1 class="contentTitle">Описание</h1>
+         <p class="descrip" v-html=content></p> </div>
       </q-card-section>
+            <q-separator color="white"/>
        <q-card-section>
+        <div > <h1 class="contentTitle">Видео</h1></div>
+<q-video :src="video"></q-video>
        </q-card-section>
+
+       <q-card-section>
+      <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal mtt">
+         <q-btn
+         push
+          dense
+          icon="fa-brands fa-vk"
+          aria-label="Fa-brands fa-vk"
+          color="blue"
+          size="1em"
+          :href="vk"
+        />
+         <q-btn
+         push
+          dense
+          icon="fa-brands fa-instagram"
+          aria-label="Fa-brands fa-instagram"
+          color="red"
+          size="1em"
+          :href="insta"
+        />
+         <q-btn
+         push
+          dense
+          icon="telegram"
+          aria-label="Email"
+          color="blue"
+          size="1em"
+          :href="telegram"
+        />
+          <q-btn
+          push
+          dense
+          icon="phone"
+          aria-label="Phone"
+          color="green"
+          size="1em"
+          :href="phone"
+        />
+        </div>
+       </q-card-section>
+
 </q-card>
 </div>
 </template>
@@ -189,5 +254,12 @@ a{
 }
 .h3, h4, h5, h6{
    font-size: 15px !important
+}
+.contentTitle{
+  text-align: center;
+   padding-top: 10px
+}
+.separ{
+  margin-top: 35px;
 }
 </style>
