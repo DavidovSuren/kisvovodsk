@@ -246,7 +246,7 @@ a{
 }
 .sTitle {
   font-family: Oswald, sans-serif !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
   padding-top: 24px ;
 }
 .q-rating{
