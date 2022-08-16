@@ -41,6 +41,7 @@ const routes = [
       { path: '/repair', component: () => import('pages/RepairPage.vue') },
       { path: '/event', component: () => import('pages/EventsPage.vue') },
       { path: '/tour', component: () => import('pages/TourPage.vue') },
+      { path: '/best', component: () => import('pages/BestPage.vue') },
       { path: '/health', component: () => import('pages/HealthPage.vue') }
     ]
   },
