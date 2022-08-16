@@ -81,21 +81,23 @@ onMounted(() => {
 </script>
 
 <template>
-
-  <div class="q-pa-md"><q-card style="background:none; ">
+  <div class="q-pa-md">
+    <q-card style="background: none">
       <q-card-section>
         <div>
-          <h1 style="line-height: 2rem; padding-top: 25px;  text-align: center;" v-html="title"></h1>
+          <h1
+            style="line-height: 2rem; padding-top: 25px; text-align: center"
+            v-html="title"
+          ></h1>
         </div>
       </q-card-section>
-            <q-separator class="separ"  color="white"/>
-       <q-card-section >
+      <q-separator class="separ" color="white" />
+      <q-card-section>
         <q-card-section>
           <p class="sTitle" v-html="subtitle"></p>
         </q-card-section>
-
       </q-card-section>
-            <q-carousel
+      <q-carousel
         autoplay
         swipeable
         animated
@@ -105,87 +107,104 @@ onMounted(() => {
         height="250px"
         class="shadow-3"
       >
-      <q-carousel-slide  v-for="pic in gal" :key="pic.id" :name="pic.id" :img-src="pic.guid.rendered"></q-carousel-slide>
+        <q-carousel-slide
+          v-for="pic in gal"
+          :key="pic.id"
+          :name="pic.id"
+          :img-src="pic.guid.rendered"
+        ></q-carousel-slide>
       </q-carousel>
 
-      <q-card-section horizontal class="cardSectionRating"><p class="pRating"> {{rating}}</p><q-rating readonly v-model="ratin" :max="5" size="25px" /> </q-card-section>
+      <q-card-section horizontal class="cardSectionRating"
+        ><p class="pRating">{{rating}}</p>
+        <q-rating readonly v-model="ratin" :max="5" size="25px" />
+      </q-card-section>
 
       <q-card-section>
-         <p class="pTime">Время работы: {{opentime}}</p>
-    </q-card-section>
+        <p class="pTime">Время работы: {{opentime}}</p>
+      </q-card-section>
       <q-card-section class="q-pt-none">
-        <p class="pAdr"> Адрес: {{addr}}</p>
+        <p class="pAdr">Адрес: {{addr}}</p>
         <div>
-        <p class="pWay"><a :href="`https://www.google.com/maps/dir//${addr}`">Построить маршрут</a></p>
+          <p class="pWay">
+            <a :href="`https://www.google.com/maps/dir//${addr}`"
+              >Построить маршрут</a
+            >
+          </p>
         </div>
       </q-card-section>
       <q-card-section>
         <div class="text-h6">
-          <p> Телефон: <a :href="`tel:${phone}`">{{phone}}</a> </p>
+          <p>
+            Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
+          </p>
         </div>
       </q-card-section>
-      <q-separator color="white"/>
+      <q-separator color="white" />
 
       <q-card-section>
-        <div > <h1 class="contentTitle">Описание</h1>
-         <p class="descrip" v-html=content></p> </div>
-            <q-separator class="mmtt" inset color="white"/>
-<q-video class="mmtt" :src="video"></q-video>
-       </q-card-section>
-            <q-separator class="mmtt" color="white"/>
-
-       <q-card-section >
-      <div   class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal mmtt">
-         <q-btn
-         push
-          dense
-          icon="fa-brands fa-vk"
-          aria-label="Fa-brands fa-vk"
-          color="positive"
-          size="1em"
-          :href="vk"
-        />
-         <q-btn
-         push
-          dense
-          icon="fa-brands fa-instagram"
-          aria-label="Fa-brands fa-instagram"
-          color="positive"
-          size="1em"
-          :href="insta"
-        />
-         <q-btn
-         push
-          dense
-          icon="email"
-          aria-label="Email"
-          color="positive"
-          size="1em"
-          :href="email"
-        />
-          <q-btn
-          push
-          dense
-          icon="telegram"
-          aria-label="Phone"
-          color="positive"
-          size="1em"
-          :href="telegram"
-        />
-        <q-btn
-          push
-          dense
-          icon="phone"
-          aria-label="Phone"
-          color="positive"
-          size="1em"
-         :href="`tel:${phone}`"
-        />
+        <div>
+          <h1 class="contentTitle">Описание</h1>
+          <p class="descrip" v-html="content"></p>
         </div>
-       </q-card-section>
+        <q-separator class="mmtt" inset color="white" />
+        <q-video class="mmtt" :src="video"></q-video>
+      </q-card-section>
+      <q-separator class="mmtt" color="white" />
 
-</q-card>
-</div>
+      <q-card-section>
+        <div
+          class="row fit justify-center items-center q-gutter-sm q-col-gutter no-wrap horisintal mmtt"
+        >
+          <q-btn
+            push
+            dense
+            icon="fa-brands fa-vk"
+            aria-label="Fa-brands fa-vk"
+            color="positive"
+            size="1em"
+            :href="vk"
+          />
+          <q-btn
+            push
+            dense
+            icon="fa-brands fa-instagram"
+            aria-label="Fa-brands fa-instagram"
+            color="positive"
+            size="1em"
+            :href="insta"
+          />
+          <q-btn
+            push
+            dense
+            icon="email"
+            aria-label="Email"
+            color="positive"
+            size="1em"
+            :href="email"
+          />
+          <q-btn
+            push
+            dense
+            icon="telegram"
+            aria-label="Phone"
+            color="positive"
+            size="1em"
+            :href="telegram"
+          />
+          <q-btn
+            push
+            dense
+            icon="phone"
+            aria-label="Phone"
+            color="positive"
+            size="1em"
+            :href="`tel:${phone}`"
+          />
+        </div>
+      </q-card-section>
+    </q-card>
+  </div>
 </template>
 <style scoped>
 .wp-block-image {
@@ -208,65 +227,72 @@ figure {
   max-width: 100% !important;
   min-width: 100% !important;
 }
-.q-card__section--vert{
+.q-card__section--vert {
   padding: 0%;
 }
-.cardSectionRating{
-  margin:10px
+.cardSectionRating {
+  margin: 10px;
 }
-.pRating{
-  margin-bottom: 0; margin-right: 10px;
+.pRating {
+  margin-bottom: 0;
+  margin-right: 10px;
 }
-body { background: rgb(2, 0, 28);}
-h2,h1{
+body {
+  background: rgb(2, 0, 28);
+}
+h2,
+h1 {
   color: aliceblue;
   font-size: 27px;
 }
-p{
+p {
   color: white;
-  font-family: Oswald, sans-serif
+  font-family: Oswald, sans-serif;
 }
-.pAdr{
+.pAdr {
   margin: 0;
   font-size: 15px;
 }
-.pWay{
+.pWay {
   font-family: Oswald, sans-serif;
   font-size: 14px;
-  color:orange
+  color: orange;
 }
-.pTime{
+.pTime {
   font-family: Oswald, sans-serif;
   font-size: 15px;
-  padding-top: 15px ;
+  padding-top: 15px;
 }
-a{
+a {
   font-family: Oswald, sans-serif;
-  color:#ffa500ab
+  color: #ffa500ab;
 }
 .sTitle {
   font-family: Oswald, sans-serif !important;
   font-size: 15px !important;
-  padding-top: 24px ;
+  padding-top: 24px;
 }
-.q-rating{
+.q-rating {
   color: orange !important;
 }
-.descrip{
+.descrip {
   font-size: 15px;
   text-align: center;
 }
-.h3, h4, h5, h6{
-   font-size: 15px !important
+.h3,
+h4,
+h5,
+h6 {
+  font-size: 15px !important;
 }
-.contentTitle{
+.contentTitle {
   text-align: center;
-   padding-top: 10px
+  padding-top: 10px;
 }
-.separ{
+.separ {
   margin-top: 35px;
 }
-.mmtt{
+.mmtt {
   margin-top: 12px;
 }
 </style>
