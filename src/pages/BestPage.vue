@@ -42,7 +42,7 @@
     >
       <q-carousel-slide
         name="first"
-        img-src="../assets/baner/lyg.jpeg"
+        img-src="../assets/banerBest/eksban.jpg"
       >
       </q-carousel-slide>
       <q-carousel-slide
@@ -53,7 +53,7 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
-        img-src="https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg"
+        img-src="../assets/banerBest/Sanvoen.jpeg"
       >
       </q-carousel-slide>
     </q-carousel>
