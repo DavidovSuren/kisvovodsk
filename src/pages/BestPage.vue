@@ -1,7 +1,7 @@
 <template>
   <div>
           <div class="q-pa-md">
-   <q-btn icon="event" push round color="cyan-8">
+   <q-btn icon="event" push round color="negative">
       <q-popup-proxy @before-show="updateProxy" cover transition-show="scale" transition-hide="scale">
         <q-date color="positive" v-model="date">
           <div class="row items-center justify-end q-gutter-sm">
