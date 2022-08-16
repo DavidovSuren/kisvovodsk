@@ -21,49 +21,25 @@
               Пианино и саксофон
               Добро пожаловать в классику курортов - в Кисловодск!.
             </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
-            </p>
           </q-tab-panel>
 
           <q-tab-panel name="2022/08/18">
             <div class="text-h4 q-mb-md">2022/08/18</div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
+              Как и обещали, концерты классической музыки под открытым небом на проспекте Ленина продолжаются.
+              Сегодня с 18.00 до 20.30 выступают преподаватели Детской музыкальной школы имени Рахманинова.
+              Пианино и саксофон
+              Добро пожаловать в классику курортов - в Кисловодск!.
             </p>
           </q-tab-panel>
 
           <q-tab-panel name="2022/08/19">
             <div class="text-h4 q-mb-md">2022/08/19</div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              praesentium cumque magnam odio iure quidem, quod illum numquam
-              possimus obcaecati commodi minima assumenda consectetur culpa fuga
-              nulla ullam. In, libero.
+              Как и обещали, концерты классической музыки под открытым небом на проспекте Ленина продолжаются.
+              Сегодня с 18.00 до 20.30 выступают преподаватели Детской музыкальной школы имени Рахманинова.
+              Пианино и саксофон
+              Добро пожаловать в классику курортов - в Кисловодск!.
             </p>
           </q-tab-panel>
         </q-tab-panels>
