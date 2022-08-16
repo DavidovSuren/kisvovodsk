@@ -1,23 +1,17 @@
 <template>
   <div>
-          <div class="q-pa-md">
-   <q-btn icon="event" push round color="cyan-8">
-      <q-popup-proxy @before-show="updateProxy" cover transition-show="scale" transition-hide="scale">
-        <q-date color="positive" v-model="date">
-          <div class="row items-center justify-end q-gutter-sm">
-            <q-btn label="Отменить" color="positive" flat v-close-popup />
-            <q-btn label="ОК" color="positive" flat @click="save" v-close-popup />
-          </div>
-        </q-date>
-      </q-popup-proxy>
-    </q-btn>
-          <div><h1>{{date}}</h1></div>
-
-      <q-separator style="margin-top:20px" color="white" />
-        <q-tab-panels style="margin-top: 12px; background: none;"
+        <div class="q-pa-md">
+          <q-date v-model="date" />
+        </div>
+        <q-tab-panels
           v-model="date"
+          animated
+          transition-prev="jump-up"
+          transition-next="jump-up"
+          class="bg-positive"
         >
           <q-tab-panel :name="date">
+            <div class="text-h4 q-mb-md">{{date}}</div>
             <p>
               Как и обещали, концерты классической музыки под открытым небом на проспекте Ленина продолжаются.
               Сегодня с 18.00 до 20.30 выступают преподаватели Детской музыкальной школы имени Рахманинова.
@@ -37,12 +31,12 @@
       v-model="info"
       arrows
       infinite
-      height="230px"
+      height="225px"
       class="shadow-3"
     >
       <q-carousel-slide
         name="first"
-        img-src="../assets/baner/lyg.jpeg"
+        img-src="../assets/banerBest/Sanvoen.jpeg"
       >
       </q-carousel-slide>
       <q-carousel-slide
@@ -53,7 +47,7 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
-        img-src="https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg"
+        img-src="../assets/banerBest/eksban.jpg"
       >
       </q-carousel-slide>
     </q-carousel>
