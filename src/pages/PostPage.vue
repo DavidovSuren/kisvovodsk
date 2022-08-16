@@ -15,11 +15,9 @@ const rating = ref(null)
 const subtitle = ref(null)
 const video = ref(null)
 const number = ref(null)
-const href = ref(null)
-const tag = ref(null)
 const insta = ref(null)
 const vk = ref(null)
-const ok = ref(null)
+const mail = ref(null)
 const telegram = ref(null)
 const whatsapp = ref(null)
 
@@ -40,13 +38,11 @@ function load () {
       subtitle.value = response.data.excerpt.rendered
       video.value = response.data.acf.видео
       number.value = response.data.acf.номер_позиции
-      href.value = response.data.acf.на_меню_или_сайт
-      tag.value = response.data.acf.теги
-      insta.value = response.data.acf.инстаграм_ссылка
-      vk.value = response.data.acf.вк_ссылка
-      ok.value = response.data.acf.ОК_ссылка
-      telegram.value = response.data.acf.телеграмм_ссылка
-      whatsapp.value = response.data.acf.whatsapp_ссылка
+      insta.value = response.data.acf.инстаграм
+      vk.value = response.data.acf.вк
+      mail.value = response.data.acf.почта
+      telegram.value = response.data.acf.телеграмм
+      whatsapp.value = response.data.acf.whatsapp
     })
     .catch((e) => {
       console.log(e)
@@ -89,7 +85,7 @@ onMounted(() => {
   <div class="q-pa-md"><q-card style="background:none; ">
       <q-card-section>
         <div>
-          <h1 style="line-height: 2rem; padding-top: 25px;" v-html="title"></h1>
+          <h1 style="line-height: 2rem; padding-top: 25px;  text-align: center;" v-html="title"></h1>
         </div>
       </q-card-section>
             <q-separator class="separ"  color="white"/>
@@ -133,21 +129,19 @@ onMounted(() => {
       <q-card-section>
         <div > <h1 class="contentTitle">Описание</h1>
          <p class="descrip" v-html=content></p> </div>
-      </q-card-section>
-            <q-separator color="white"/>
-       <q-card-section>
-        <div > <h1 class="contentTitle">Видео</h1></div>
-<q-video :src="video"></q-video>
+            <q-separator class="mmtt" inset color="white"/>
+<q-video class="mmtt" :src="video"></q-video>
        </q-card-section>
+            <q-separator class="mmtt" color="white"/>
 
-       <q-card-section>
-      <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal mtt">
+       <q-card-section >
+      <div   class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal mmtt">
          <q-btn
          push
           dense
           icon="fa-brands fa-vk"
           aria-label="Fa-brands fa-vk"
-          color="blue"
+          color="positive"
           size="1em"
           :href="vk"
         />
@@ -156,27 +150,36 @@ onMounted(() => {
           dense
           icon="fa-brands fa-instagram"
           aria-label="Fa-brands fa-instagram"
-          color="red"
+          color="positive"
           size="1em"
           :href="insta"
         />
          <q-btn
          push
           dense
-          icon="telegram"
+          icon="email"
           aria-label="Email"
-          color="blue"
+          color="positive"
           size="1em"
-          :href="telegram"
+          :href="email"
         />
           <q-btn
           push
           dense
+          icon="telegram"
+          aria-label="Phone"
+          color="positive"
+          size="1em"
+          :href="telegram"
+        />
+        <q-btn
+          push
+          dense
           icon="phone"
           aria-label="Phone"
-          color="green"
+          color="positive"
           size="1em"
-          :href="phone"
+         :href="`tel:${phone}`"
         />
         </div>
        </q-card-section>
@@ -250,7 +253,8 @@ a{
   color: orange !important;
 }
 .descrip{
-  font-size: 15px
+  font-size: 15px;
+  text-align: center;
 }
 .h3, h4, h5, h6{
    font-size: 15px !important
@@ -261,5 +265,8 @@ a{
 }
 .separ{
   margin-top: 35px;
+}
+.mmtt{
+  margin-top: 12px;
 }
 </style>
