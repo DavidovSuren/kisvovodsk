@@ -1,16 +1,23 @@
 <template>
   <div>
-        <div class="q-pa-md">
-          <q-date v-model="date" />
-        </div>
-        <q-tab-panels
+          <div class="q-pa-md">
+   <q-btn icon="event" push round color="cyan-8">
+      <q-popup-proxy @before-show="updateProxy" cover transition-show="scale" transition-hide="scale">
+        <q-date color="positive" v-model="date">
+          <div class="row items-center justify-end q-gutter-sm">
+            <q-btn label="Отменить" color="positive" flat v-close-popup />
+            <q-btn label="ОК" color="positive" flat @click="save" v-close-popup />
+          </div>
+        </q-date>
+      </q-popup-proxy>
+    </q-btn>
+          <div><h1>{{date}}</h1></div>
+
+      <q-separator style="margin-top:20px" color="white" />
+        <q-tab-panels style="margin-top: 12px; background: none;"
           v-model="date"
-          animated
-          transition-prev="jump-up"
-          transition-next="jump-up"
         >
           <q-tab-panel :name="date">
-            <div class="text-h4 q-mb-md">{{date}}</div>
             <p>
               Как и обещали, концерты классической музыки под открытым небом на проспекте Ленина продолжаются.
               Сегодня с 18.00 до 20.30 выступают преподаватели Детской музыкальной школы имени Рахманинова.
@@ -20,6 +27,7 @@
               </q-tab-panel>
         </q-tab-panels>
   </div>
+   </div>
     <q-separator color="white" inset />
   <div class="q-pa-md">
     <q-carousel
@@ -70,3 +78,20 @@ export default {
   width: 100%
   max-width: 100%
   </style>
+  <style>
+  p {
+  color: white;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  margin: 0%;
+
+}
+h1 {
+  color: aliceblue;
+  font-size: 27px;
+  text-align: center;
+  line-height: 3rem
+
+}
+
+</style>
