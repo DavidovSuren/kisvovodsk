@@ -55,7 +55,7 @@
       v-model="info"
       arrows
       infinite
-      height="300px"
+      height="230px"
       class="shadow-3"
     >
       <q-carousel-slide
