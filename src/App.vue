@@ -12,7 +12,7 @@ export default defineComponent({
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap");
 
-body { background: rgb(2, 0, 28);  font-family: "Oswald", sans-serif;
+body { background: rgba(2, 0, 28, 0.960);  font-family: "Oswald", sans-serif;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
