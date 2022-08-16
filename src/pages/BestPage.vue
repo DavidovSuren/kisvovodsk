@@ -1,17 +1,20 @@
 <template>
   <div>
-        <div class="q-pa-md">
-          <q-date v-model="date" />
+        <div class="q-pa-md"
+        >
+          <q-date v-model="date"
+          />
         </div>
         <q-tab-panels
           v-model="date"
           animated
           transition-prev="jump-up"
           transition-next="jump-up"
+          class="bg-positive"
         >
           <q-tab-panel :name="date">
-            <div class="text-h4 q-mb-md">{{date}}</div>
-            <p>
+            <div class="text-h4 q-mb-md text-white">{{date}}</div>
+            <p class="text-white">
               Как и обещали, концерты классической музыки под открытым небом на проспекте Ленина продолжаются.
               Сегодня с 18.00 до 20.30 выступают преподаватели Детской музыкальной школы имени Рахманинова.
               Пианино и саксофон
@@ -34,7 +37,7 @@
     >
       <q-carousel-slide
         name="first"
-        img-src="../assets/baner/lyg.jpeg"
+        img-src="../assets/banerBest/Sanvoen.jpeg"
       >
       </q-carousel-slide>
       <q-carousel-slide
@@ -45,7 +48,7 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="third"
-        img-src="https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg"
+        img-src="../assets/banerBest/eksban.jpg"
       >
       </q-carousel-slide>
     </q-carousel>
