@@ -21,10 +21,7 @@
               Пианино и саксофон
               Добро пожаловать в классику курортов - в Кисловодск!.
             </p>
-            <p>
-              {{events}}
-            </p>
-          </q-tab-panel>
+              </q-tab-panel>
         </q-tab-panels>
       </template>
     </q-splitter>
