@@ -114,6 +114,8 @@ onMounted(() => {
       <q-card-section>
         <div > <h1 style="text-align: center; padding-top: 10px">Описание</h1>  <p class="descrip" v-html=content></p> </div>
       </q-card-section>
+       <q-card-section>
+       </q-card-section>
 </q-card>
 </div>
 </template>
