@@ -21,7 +21,6 @@
               </q-tab-panel>
         </q-tab-panels>
   </div>
-   </div>
     <q-separator color="white" inset />
   <div class="q-pa-md">
     <q-carousel
