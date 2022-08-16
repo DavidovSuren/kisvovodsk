@@ -78,7 +78,7 @@ export default {
   width: 100%
   max-width: 100%
   </style>
-  <style>
+  <style scoped>
   p {
   color: white;
   font-family: Oswald, sans-serif;
