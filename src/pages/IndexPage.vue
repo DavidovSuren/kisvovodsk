@@ -1,6 +1,6 @@
 <template>
 <div class="q-pa-md">
-    <div class="mtt" > <q-card class="my-card bg-blur " >
+    <div class="mtt" > <q-card class="my-card bg-blur" >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <div><a size="xl" @click="this.$router.push('/best');"><h2 class="aLine">ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a></div>
