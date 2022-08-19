@@ -185,7 +185,7 @@ onMounted(() => {
             icon="fa-brands fa-vk"
             aria-label="Fa-brands fa-vk"
             color="positive"
-            size="17px"
+            size="18px"
             :href="vk"
           />
           <q-btn
@@ -194,7 +194,7 @@ onMounted(() => {
             icon="fa-brands fa-instagram"
             aria-label="Fa-brands fa-instagram"
             color="positive"
-            size="17px"
+            size="18px"
             :href="insta"
           />
           <q-btn
@@ -203,7 +203,7 @@ onMounted(() => {
             icon="email"
             aria-label="Email"
             color="positive"
-            size="17px"
+            size="18px"
             :href="email"
           />
           <q-btn
@@ -212,7 +212,7 @@ onMounted(() => {
             icon="telegram"
             aria-label="Phone"
             color="positive"
-            size="17px"
+            size="18px"
             :href="telegram"
           />
           <q-btn
@@ -221,7 +221,7 @@ onMounted(() => {
             icon="phone"
             aria-label="Phone"
             color="positive"
-            size="17px"
+            size="18px"
             :href="`tel:${phone}`"
           />
         </div>

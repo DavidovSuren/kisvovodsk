@@ -523,6 +523,9 @@ body * {font-family: 'Oswald', sans-serif;}
   text-decoration: underline;
   text-decoration-color: aliceblue;
 }
+.q-card {
+    background: #0b0a24;
+}
 </style>
 <style lang="sass" scoped>
 .my-card
