@@ -1,33 +1,33 @@
 <template>
 <div class="q-pa-md">
-    <div class="mtt" > <q-card class="my-card bg-blur" >
+    <div class="mtt" > <q-card >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/best'); "><h2 class="aLine">ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a></div>
+        <a @click="this.$router.push('/best'); "><h2 class="aLine">ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
 </div>
-     <div class="mtt">  <q-card class="my-card">
+     <div class="mtt">  <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/event');"><h2 class="aLine">МЕРОПРИЯТИЯ</h2> </a></div>
+       <a @click="this.$router.push('/event');"><h2 class="aLine">МЕРОПРИЯТИЯ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
  </div>
-      <div class="mtt"> <q-card class="my-card">
+      <div class="mtt"> <q-card >
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/health');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a></div>
+       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
 </div>
-     <div class="mtt"> <q-card class="my-card">
+     <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <div><a size="xl" @click="this.$router.push('/tour');"><h2 class="aLine">ТУРИЗМ</h2> </a></div>
+        <a @click="this.$router.push('/tour');"><h2 class="aLine">ТУРИЗМ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -505,6 +505,9 @@ backdrop-filter: blur(10px)
   color: aliceblue;
   font-size: 15px;
 }
+.cardColor{
+  background-color: #110e35;
+}
 </style>
 <style scoped>
 h2,h1{
@@ -516,9 +519,6 @@ h2,h1{
 }
 body * {font-family: 'Oswald', sans-serif;}
 
-.cardColor{
-  background-color: #110e35;
-}
 .aLine {
   text-decoration: underline;
   text-decoration-color: aliceblue;

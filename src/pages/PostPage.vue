@@ -20,6 +20,7 @@ const vk = ref(null)
 const mail = ref(null)
 const telegram = ref(null)
 const whatsapp = ref(null)
+const awards = ref(null)
 
 const regex = /( |<([^>]+)>)/ig
 
@@ -40,9 +41,10 @@ function load () {
       number.value = response.data.acf.номер_позиции
       insta.value = response.data.acf.инстаграм
       vk.value = response.data.acf.вк
-      mail.value = response.data.acf.почта
+      mail.value = response.data.acf.Почта
       telegram.value = response.data.acf.телеграмм
       whatsapp.value = response.data.acf.whatsapp
+      awards.value = response.data.acf.награды
     })
     .catch((e) => {
       console.log(e)
@@ -115,14 +117,32 @@ onMounted(() => {
         ></q-carousel-slide>
       </q-carousel>
 
+     <q-card-section style="display:flex; justify-content: space-between" horizontal>
+        <div>
       <q-card-section horizontal class="cardSectionRating"
         ><p class="pRating">{{rating}}</p>
         <q-rating readonly v-model="ratin" :max="5" size="25px" />
+      </q-card-section></div>
+      <div>
+      <q-card-section>
+      <q-btn  class="btnMenu" push> <p style="text-align:center; margin: 0"> Меню</p>
+      <q-popup-proxy >
+          <q-card class="cardMenu">
+          <h1 class="txtMenu">Меню</h1>
+          <p class="txtMenu">{{menu}}</p>
+ <q-btn icon= "left" label="Назад" color="positive" flat v-close-popup />
+          </q-card>
+      </q-popup-proxy>
+      </q-btn>
       </q-card-section>
+    </div>
+</q-card-section>
 
       <q-card-section>
         <p class="pTime">Время работы: {{opentime}}</p>
       </q-card-section>
+     <q-card-section horizontal>
+  <div>
       <q-card-section class="q-pt-none">
         <p class="pAdr">Адрес: {{addr}}</p>
         <div>
@@ -134,12 +154,14 @@ onMounted(() => {
         </div>
       </q-card-section>
       <q-card-section>
-        <div class="text-h6">
-          <p>
+        <div>
+          <p class="pTel">
             Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
           </p>
         </div>
       </q-card-section>
+    </div>
+    </q-card-section>
       <q-separator color="white" />
 
       <q-card-section>
@@ -148,7 +170,8 @@ onMounted(() => {
           <p class="descrip" v-html="content"></p>
         </div>
         <q-separator class="mmtt" inset color="white" />
-        <q-video class="mmtt" :src="video"></q-video>
+        <h1  style="line-height: 2rem; padding-top: 25px; text-align: center; padding-top:40px ;">Видео</h1>
+        <q-video class="mmtt" :src="video">  </q-video>
       </q-card-section>
       <q-separator class="mmtt" color="white" />
 
@@ -254,14 +277,16 @@ p {
   font-size: 15px;
 }
 .pWay {
-  font-family: Oswald, sans-serif;
   font-size: 14px;
   color: orange;
 }
 .pTime {
   font-family: Oswald, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   padding-top: 15px;
+}
+.pTel{
+  font-size: 17px;
 }
 a {
   font-family: Oswald, sans-serif;
@@ -269,16 +294,18 @@ a {
 }
 .sTitle {
   font-family: Oswald, sans-serif !important;
-  font-size: 15px !important;
+  font-size: 17px !important;
   padding-top: 24px;
 }
 .q-rating {
   color: orange !important;
 }
 .descrip {
-  font-size: 15px;
-  text-align: center;
-}
+  font-size: 16px;
+  text-align:justify;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: -30px;}
 .h3,
 h4,
 h5,
@@ -294,5 +321,23 @@ h6 {
 }
 .mmtt {
   margin-top: 12px;
+}
+.q-card {
+  box-shadow: none;
+}
+.btnMenu{
+  background-color: #110e35;
+  margin-top: 10px;
+}
+.txtMenu{
+  text-align: center;
+  color: #110e35;
+}
+.cardMenu{
+  height:max-content;
+  width:max-content;
+  min-width: 300px;
+  min-height: 300px;
+  align-content: center;
 }
 </style>
