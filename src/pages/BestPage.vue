@@ -67,8 +67,7 @@ export default {
   setup () {
     return {
       splitterModel: ref(50),
-      date: ref('2022/08/17'),
-      events: ['2022/08/17', '2022/08/18', '2022/08/19']
+      date: ref('2022/08/17')
     }
   }
 }
