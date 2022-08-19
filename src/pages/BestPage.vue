@@ -62,12 +62,14 @@
 
 <script>
 import { ref } from 'vue'
+var options = { year: 'numeric', month: 'long', day: 'numeric' }
+var today = new Date()
 
 export default {
   setup () {
     return {
       splitterModel: ref(50),
-      date: ref('2022/08/17')
+      date: ref(today.toLocaleDateString(options))
     }
   }
 }
