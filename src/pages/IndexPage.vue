@@ -354,12 +354,18 @@ export default {
         },
         {
           id: 3,
+          icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
+          link: 'spa',
+          name: 'СПА'
+        },
+        {
+          id: 4,
           icon: new URL('../assets/icons/housing/motel.png', import.meta.url).href,
           link: 'motel',
           name: 'Хостелы'
         },
         {
-          id: 4,
+          id: 5,
           icon: new URL('../assets/icons/housing/flat.png', import.meta.url).href,
           link: 'flat',
           name: 'Квартиры'
@@ -420,24 +426,30 @@ export default {
       services: [
         {
           id: 1,
+          icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
+          link: 'fitness',
+          name: 'Фитнес'
+        },
+        {
+          id: 2,
           icon: new URL('../assets/icons/services/video.png', import.meta.url).href,
           link: 'video',
           name: 'Видео'
         },
         {
-          id: 2,
+          id: 3,
           icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
           link: 'pets',
           name: 'Питомцы'
         },
         {
-          id: 3,
+          id: 4,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
         },
         {
-          id: 4,
+          id: 5,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Бьюти'
