@@ -1,37 +1,49 @@
 <template>
-<div class="q-pa-md mt">
-      <div class="mtt" > <q-card >
-      <q-img  src="../assets/banerBest/restBan.jpeg" :height="100">
-      <q-card-section>
-        <a @click="this.$router.push('/restraunt'); "><h2 class="aLine">РЕСТОРАНЫ</h2> </a>
-        </q-card-section>
-      </q-img>
-    </q-card>
-</div>
-      <div class="mtt" > <q-card >
-      <q-img  src="../assets/banerBest/cafeBan.jpeg" :height="100">
-      <q-card-section>
-        <a @click="this.$router.push('/cafe'); "><h2 class="aLine">КАФЕ</h2> </a>
-        </q-card-section>
-      </q-img>
-    </q-card>
-</div>
-      <div class="mtt" > <q-card >
-      <q-img  src="../assets/banerBest/stolBan.jpg" :height="100">
-      <q-card-section>
-        <a @click="this.$router.push('/canteen'); "><h2 class="aLine">СТОЛОВЫЕ</h2> </a>
-        </q-card-section>
-      </q-img>
-    </q-card>
-</div>
-      <div class="mtt" > <q-card >
-      <q-img  src="../assets/banerBest/fastban.webp" :height="100">
-      <q-card-section>
-        <a @click="this.$router.push('/fastfood'); "><h2 class="aLine">ФАСТ-ФУД</h2> </a>
-        </q-card-section>
-      </q-img>
-    </q-card>
-</div>
+  <div class="q-pa-md">
+    <div class="mtt">
+      <q-card>
+        <q-img src="../assets/banerBest/restBan.jpeg" :height="100">
+          <q-card-section>
+            <a @click="this.$router.push('/restraunt'); "
+              ><h2 class="aLine">РЕСТОРАНЫ</h2>
+            </a>
+          </q-card-section>
+        </q-img>
+      </q-card>
+    </div>
+    <div class="mtt">
+      <q-card>
+        <q-img src="../assets/banerBest/cafeBan.jpeg" :height="100">
+          <q-card-section>
+            <a @click="this.$router.push('/cafe'); "
+              ><h2 class="aLine">КАФЕ</h2>
+            </a>
+          </q-card-section>
+        </q-img>
+      </q-card>
+    </div>
+    <div class="mtt">
+      <q-card>
+        <q-img src="../assets/banerBest/stolBan.jpg" :height="100">
+          <q-card-section>
+            <a @click="this.$router.push('/canteen'); "
+              ><h2 class="aLine">СТОЛОВЫЕ</h2>
+            </a>
+          </q-card-section>
+        </q-img>
+      </q-card>
+    </div>
+    <div class="mtt">
+      <q-card>
+        <q-img src="../assets/banerBest/fastban.webp" :height="100">
+          <q-card-section>
+            <a @click="this.$router.push('/fastfood'); "
+              ><h2 class="aLine">ФАСТ-ФУД</h2>
+            </a>
+          </q-card-section>
+        </q-img>
+      </q-card>
+    </div>
     <q-carousel
       style="margin-top: 40px"
       v-model="slide"
@@ -45,7 +57,7 @@
           class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
         >
           <q-btn
-          push
+            push
             class="cardColor"
             v-for="btn in health"
             :key="btn.id"
@@ -55,8 +67,9 @@
               :src="btn.icon"
               width="80px"
               height="50px"
-            /> <p class="textCard">{{btn.name}}</p> </q-btn
-          >
+            />
+            <p class="textCard">{{btn.name}}</p>
+          </q-btn>
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -98,16 +111,17 @@ export default {
 }
 </script>
 <style scoped>
-.cardColor{
-  background-color: #110e35;}
+.cardColor {
+  background-color: #110e35;
+}
 .q-carousel {
   background: none;
 }
 
-h2,h1{
+h2,
+h1 {
   color: aliceblue;
   font-size: 27px;
   text-align: center;
 }
-
 </style>
