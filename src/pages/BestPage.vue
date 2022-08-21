@@ -64,7 +64,7 @@
     </q-carousel>
   </div>
   <div class="q-pa-md mt">
-    <h1>МЕРОПРИЯТИЯ</h1>
+    <h1 style="margin-top:30px">МЕРОПРИЯТИЯ</h1>
     <q-carousel
       style="margin-top: 40px"
       v-model="slide"

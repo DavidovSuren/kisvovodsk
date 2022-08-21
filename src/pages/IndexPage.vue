@@ -16,15 +16,7 @@
       </q-parallax>
     </q-card>
  </div>
-      <div class="mtt"> <q-card >
-      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
-      <q-card-section>
-       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗДОРОВЬЕ</h2> </a>
-        </q-card-section>
-      </q-parallax>
-    </q-card>
-</div>
-     <div class="mtt"> <q-card>
+      <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
         <a @click="this.$router.push('/tour');"><h2 class="aLine">ТУРИЗМ</h2> </a>
@@ -32,6 +24,14 @@
       </q-parallax>
     </q-card>
  </div>
+      <div class="mtt"> <q-card >
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
+      <q-card-section>
+       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗАВЕДЕНИЕ</h2> </a>
+        </q-card-section>
+      </q-parallax>
+    </q-card>
+</div>
 
   </div>
    <q-separator color="white" inset />
@@ -74,26 +74,6 @@
       arrows
       height="150px"
     >
-      <q-separator dark />
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-          push
-            v-for="btn in food"
-            :key="btn.id"
-            :to="btn.link"
-            class="cardColor"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            /><p class="textCard">{{btn.name}}</p></q-btn
-          >
-        </div>
-      </q-carousel-slide>
       <q-separator dark />
     </q-carousel>
   </div>

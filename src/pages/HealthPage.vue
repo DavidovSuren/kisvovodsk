@@ -45,24 +45,18 @@ export default {
       health: [
         {
           id: 1,
-          icon: new URL('../assets/icons/housing/sanatoriums.png', import.meta.url).href,
-          link: 'sanatoriums',
-          name: 'Санатории'
-        },
-        {
-          id: 2,
           icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
-          id: 3,
+          id: 2,
           icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/housing/hotel.png', import.meta.url).href,
           link: 'hotel',
           name: 'Отели'
