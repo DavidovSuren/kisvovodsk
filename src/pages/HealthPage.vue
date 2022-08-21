@@ -1,6 +1,37 @@
 <template>
 <div class="q-pa-md mt">
-  <h1>ЗДОРОВЬЕ</h1>
+      <div class="mtt" > <q-card >
+      <q-img  src="../assets/banerBest/restBan.jpeg" :height="100">
+      <q-card-section>
+        <a @click="this.$router.push('/restraunt'); "><h2 class="aLine">РЕСТОРАНЫ</h2> </a>
+        </q-card-section>
+      </q-img>
+    </q-card>
+</div>
+      <div class="mtt" > <q-card >
+      <q-img  src="../assets/banerBest/cafeBan.jpeg" :height="100">
+      <q-card-section>
+        <a @click="this.$router.push('/cafe'); "><h2 class="aLine">КАФЕ</h2> </a>
+        </q-card-section>
+      </q-img>
+    </q-card>
+</div>
+      <div class="mtt" > <q-card >
+      <q-img  src="../assets/banerBest/stolBan.jpg" :height="100">
+      <q-card-section>
+        <a @click="this.$router.push('/canteen'); "><h2 class="aLine">СТОЛОВЫЕ</h2> </a>
+        </q-card-section>
+      </q-img>
+    </q-card>
+</div>
+      <div class="mtt" > <q-card >
+      <q-img  src="../assets/banerBest/fastban.webp" :height="100">
+      <q-card-section>
+        <a @click="this.$router.push('/fastfood'); "><h2 class="aLine">ФАСТ-ФУД</h2> </a>
+        </q-card-section>
+      </q-img>
+    </q-card>
+</div>
     <q-carousel
       style="margin-top: 40px"
       v-model="slide"
