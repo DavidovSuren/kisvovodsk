@@ -8,10 +8,10 @@
       </q-parallax>
     </q-card>
 </div>
-     <div class="mtt">  <q-card>
+      <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-       <a @click="this.$router.push('/event');"><h2 class="aLine">МЕРОПРИЯТИЯ</h2> </a>
+        <a @click="this.$router.push('/sanatoriums');"><h2 class="aLine">САНАТОРИИ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
