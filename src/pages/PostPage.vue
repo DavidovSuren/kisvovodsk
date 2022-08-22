@@ -117,51 +117,62 @@ onMounted(() => {
         ></q-carousel-slide>
       </q-carousel>
 
-     <q-card-section style="display:flex; justify-content: space-between" horizontal>
+      <q-card-section
+        style="display: flex; justify-content: space-between"
+        horizontal
+      >
         <div>
-      <q-card-section horizontal class="cardSectionRating"
-        ><p class="pRating">{{rating}}</p>
-        <q-rating readonly v-model="ratin" :max="5" size="25px" />
-      </q-card-section></div>
-      <div>
-      <q-card-section>
-      <q-btn  class="btnMenu" push> <p style="text-align:center; margin: 0"> Меню</p>
-      <q-popup-proxy >
-          <q-card class="cardMenu">
-          <h1 class="txtMenu">Меню</h1>
-          <p class="txtMenu">{{menu}}</p>
- <q-btn icon= "left" label="Назад" color="positive" flat v-close-popup />
-          </q-card>
-      </q-popup-proxy>
-      </q-btn>
+          <q-card-section horizontal class="cardSectionRating"
+            ><p class="pRating">{{rating}}</p>
+            <q-rating readonly v-model="ratin" :max="5" size="25px" />
+          </q-card-section>
+        </div>
+        <div>
+          <q-card-section>
+            <q-btn class="btnMenu" push>
+              <p style="text-align: center; margin: 0">Меню</p>
+              <q-popup-proxy>
+                <q-card class="cardMenu">
+                  <h1 class="txtMenu">Меню</h1>
+                  <p class="txtMenu">{{menu}}</p>
+                  <q-btn
+                    icon="left"
+                    label="Назад"
+                    color="positive"
+                    flat
+                    v-close-popup
+                  />
+                </q-card>
+              </q-popup-proxy>
+            </q-btn>
+          </q-card-section>
+        </div>
       </q-card-section>
-    </div>
-</q-card-section>
 
       <q-card-section>
         <p class="pTime">Время работы: {{opentime}}</p>
       </q-card-section>
-     <q-card-section horizontal>
-  <div>
-      <q-card-section class="q-pt-none">
-        <p class="pAdr">Адрес: {{addr}}</p>
+      <q-card-section horizontal>
         <div>
-          <p class="pWay">
-            <a :href="`https://www.google.com/maps/dir//${addr}`"
-              >Построить маршрут</a
-            >
-          </p>
+          <q-card-section class="q-pt-none">
+            <p class="pAdr">Адрес: {{addr}}</p>
+            <div>
+              <p class="pWay">
+                <a :href="`https://www.google.com/maps/dir//${addr}`"
+                  >Построить маршрут</a
+                >
+              </p>
+            </div>
+          </q-card-section>
+          <q-card-section>
+            <div>
+              <p class="pTel">
+                Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
+              </p>
+            </div>
+          </q-card-section>
         </div>
       </q-card-section>
-      <q-card-section>
-        <div>
-          <p class="pTel">
-            Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
-          </p>
-        </div>
-      </q-card-section>
-    </div>
-    </q-card-section>
       <q-separator color="white" />
 
       <q-card-section>
@@ -170,8 +181,17 @@ onMounted(() => {
           <p class="descrip" v-html="content"></p>
         </div>
         <q-separator class="mmtt" inset color="white" />
-        <h1  style="line-height: 2rem; padding-top: 25px; text-align: center; padding-top:40px ;">Видео</h1>
-        <q-video class="mmtt" :src="video">  </q-video>
+        <h1
+          style="
+            line-height: 2rem;
+            padding-top: 25px;
+            text-align: center;
+            padding-top: 40px;
+          "
+        >
+          Видео
+        </h1>
+        <q-video class="mmtt" :src="video"> </q-video>
       </q-card-section>
       <q-separator class="mmtt" color="white" />
 
@@ -285,7 +305,7 @@ p {
   font-size: 17px;
   padding-top: 15px;
 }
-.pTel{
+.pTel {
   font-size: 17px;
 }
 a {
@@ -302,10 +322,11 @@ a {
 }
 .descrip {
   font-size: 16px;
-  text-align:justify;
+  text-align: justify;
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: -30px;}
+  margin-top: -30px;
+}
 .h3,
 h4,
 h5,
@@ -325,17 +346,17 @@ h6 {
 .q-card {
   box-shadow: none;
 }
-.btnMenu{
+.btnMenu {
   background-color: #110e35;
   margin-top: 10px;
 }
-.txtMenu{
+.txtMenu {
   text-align: center;
   color: #110e35;
 }
-.cardMenu{
-  height:max-content;
-  width:max-content;
+.cardMenu {
+  height: max-content;
+  width: max-content;
   min-width: 300px;
   min-height: 300px;
   align-content: center;
