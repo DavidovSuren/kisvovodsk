@@ -27,7 +27,7 @@
       <div class="mtt"> <q-card >
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗАВЕДЕНИЕ</h2> </a>
+       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗАВЕДЕНИЯ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
