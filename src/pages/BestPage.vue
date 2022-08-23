@@ -65,36 +65,27 @@
     </div>
   <q-separator color="white" inset />
     <div >
-    <h1 style="margin-top:30px">МЕРОПРИЯТИЯ</h1>
-    <q-carousel
-      style="margin-top: 40px"
-      v-model="slide"
-      animated
-      control-color="primary"
-      arrows
-      height="150px"
-    >
-      <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-            push
-            class="cardColor"
-            v-for="btn in eventsDark"
-            :key="btn.id"
-            :href="btn.link"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            />
-            <p class="textCard">{{btn.name}}</p>
-          </q-btn>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
+    <div style="margin-top:30px">
+      <q-card class="mtt">
+        <q-img style="height:135px" src="src/assets/mainCardBest/fil.jpg" >
+        <q-card-section><a href="https://kursal.ru/"><h2 class="aLine">ФИЛАРМОНИЯ</h2></a></q-card-section>
+        </q-img>
+      </q-card>
+    </div>
+    <div class="mtt">
+      <q-card>
+        <q-img style="height:135px" src="src/assets/mainCardBest/vustavk.jpg">
+    <q-card-section><a href="https://afisha7.ru/kislovodsk/vystavki"><h2 class="aLine">ВЫСТАВКИ</h2></a></q-card-section>
+        </q-img>
+      </q-card>
+    </div>
+    <div class="mtt">
+      <q-card>
+        <q-img style="height:135px" src="src/assets/mainCardBest/kino.jpg">
+          <q-card-section><a href="https://kino-movietheater.business.site/"><h2 class="aLine">КИНО </h2></a></q-card-section>
+        </q-img>
+      </q-card>
+    </div>
   </div>
   </div>
 </template>
@@ -114,27 +105,7 @@ export default {
       splitterModel: ref(50),
       date: ref(today.toLocaleDateString(options)),
       slide: ref(1),
-      info: ref('first'),
-      eventsDark: [
-        {
-          id: 1,
-          icon: new URL('../assets/icons/eventss/harp.png', import.meta.url).href,
-          link: 'https://kursal.ru/',
-          name: 'Филармония'
-        },
-        {
-          id: 2,
-          icon: new URL('../assets/icons/eventss/painting.png', import.meta.url).href,
-          link: 'https://afisha7.ru/kislovodsk/vystavki',
-          name: 'Выставки'
-        },
-        {
-          id: 3,
-          icon: new URL('../assets/icons/eventss/cinema.png', import.meta.url).href,
-          link: 'https://kino-movietheater.business.site/',
-          name: 'Кино'
-        }
-      ]
+      info: ref('first')
     }
   }
 }
@@ -157,11 +128,6 @@ h1 {
   text-align: center;
   line-height: 3rem;
 }
-.mtt{
-   margin-top: 12px;
-}
-</style>
-<style scoped>
 .cardColor {
   background-color: #110e35;
 }
@@ -169,10 +135,26 @@ h1 {
   background: none;
 }
 
-h2,
-h1 {
+h2{
   color: aliceblue;
   font-size: 24px;
   text-align: center;
 }
+a{
+  text-align: center;
+
+}
+.mtt{
+   margin-top: 12px;
+}
+
+.q-img__content > div{
+  position:relative;
+  background: none;
+}
+.aLine {
+  text-decoration: underline;
+  text-decoration-color: aliceblue;
+}
+
 </style>
