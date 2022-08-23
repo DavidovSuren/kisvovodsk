@@ -1,7 +1,8 @@
 <template>
-  <div>
+
     <div class="q-pa-md">
-      <q-btn icon="event" push round color="negative">
+      <div>
+        <q-btn icon="event" push round color="negative">
         <q-popup-proxy
           @before-show="updateProxy"
           cover
@@ -25,22 +26,7 @@
       <div>
         <h1>{{date}}</h1>
       </div>
-
-      <q-separator style="margin-top: 20px" color="white" />
-      <q-tab-panels style="margin-top: 12px; background: none" v-model="date">
-        <q-tab-panel :name="date">
-          <p>
-            Как и обещали, концерты классической музыки под открытым небом на
-            проспекте Ленина продолжаются. Сегодня с 18.00 до 20.30 выступают
-            преподаватели Детской музыкальной школы имени Рахманинова. Пианино и
-            саксофон Добро пожаловать в классику курортов - в Кисловодск!.
-          </p>
-        </q-tab-panel>
-      </q-tab-panels>
-    </div>
-  </div>
-  <q-separator color="white" inset />
-  <div class="q-pa-md">
+ <q-separator color="white" style="margin-top: 22px" inset />
     <q-carousel
       autoplay
       swipeable
@@ -49,7 +35,7 @@
       arrows
       infinite
       height="230px"
-      class="shadow-3"
+      class="shadow-3 mtt"
     >
       <q-carousel-slide name="first" img-src="../assets/banerBest/eksban.jpg">
       </q-carousel-slide>
@@ -63,7 +49,22 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-  <div class="q-pa-md mt">
+  <div >
+
+     <q-separator style="margin-top: 20px" color="white" />
+      <q-tab-panels style=" background: none" v-model="date">
+        <q-tab-panel :name="date">
+          <p>
+            Как и обещали, концерты классической музыки под открытым небом на
+            проспекте Ленина продолжаются. Сегодня с 18.00 до 20.30 выступают
+            преподаватели Детской музыкальной школы имени Рахманинова. Пианино и
+            саксофон Добро пожаловать в классику курортов - в Кисловодск!.
+          </p>
+        </q-tab-panel>
+      </q-tab-panels>
+    </div>
+  <q-separator color="white" inset />
+    <div >
     <h1 style="margin-top:30px">МЕРОПРИЯТИЯ</h1>
     <q-carousel
       style="margin-top: 40px"
@@ -94,6 +95,7 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
+  </div>
   </div>
 </template>
 
@@ -147,13 +149,16 @@ p {
   color: white;
   font-family: Oswald, sans-serif;
   text-align: center;
-  margin: 15%;
+  margin: 5%;
 }
 h1 {
   color: aliceblue;
   font-size: 27px;
   text-align: center;
   line-height: 3rem;
+}
+.mtt{
+   margin-top: 12px;
 }
 </style>
 <style scoped>

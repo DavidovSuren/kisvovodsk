@@ -60,41 +60,9 @@
     </q-carousel>
   </div>
    <q-separator color="white" inset />
-   <div class="q-pa-md">
-    <q-carousel
-      class="div_bg"
-  style="margin-top: -5px"
-      v-model="slide"
-      animated
-      arrows
-      height="150px"
-    >
-          <q-carousel-slide :name="1" class="column no-wrap">
-        <div
-          class="row fit justify-start items-center q-gutter-sm q-col-gutter no-wrap horisintal"
-        >
-          <q-btn
-          push
-            v-for="btn in food"
-            :key="btn.id"
-            :to="btn.link"
-            class="cardColor"
-            ><q-img
-              class="rounded-borders col-6 full-height"
-              :src="btn.icon"
-              width="80px"
-              height="50px"
-            /><p class="textCard">{{btn.name}}</p></q-btn
-          >
-        </div>
-      </q-carousel-slide>
-      <q-separator dark />
-      <q-separator dark />
-    </q-carousel>
-  </div>
   <div class="q-pa-md mt">
     <q-carousel
-      style="margin-top: 20px"
+      style="margin-top: 45px"
       v-model="slide"
       animated
       control-color="primary"
@@ -306,32 +274,6 @@ export default {
           icon: new URL('../assets/icons/eventss/cinema.png', import.meta.url).href,
           link: 'https://kino-movietheater.business.site/',
           name: 'Кино'
-        }
-      ],
-      food: [
-        {
-          id: 1,
-          icon: new URL('../assets/icons/Food/restraunt.png', import.meta.url).href,
-          link: 'restraunt',
-          name: 'Рестораны'
-        },
-        {
-          id: 2,
-          icon: new URL('../assets/icons/Food/cafe.png', import.meta.url).href,
-          link: 'cafe',
-          name: 'Кафе'
-        },
-        {
-          id: 3,
-          icon: new URL('../assets/icons/Food/canteen.png', import.meta.url).href,
-          link: 'canteen',
-          name: 'Столовые '
-        },
-        {
-          id: 4,
-          icon: new URL('../assets/icons/Food/fastfood.png', import.meta.url).href,
-          link: 'fastfood',
-          name: 'Фаст-фуд'
         }
       ],
       home: [
