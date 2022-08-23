@@ -268,12 +268,6 @@ export default {
           icon: new URL('../assets/icons/eventss/painting.png', import.meta.url).href,
           link: 'https://afisha7.ru/kislovodsk/vystavki',
           name: 'Выставки'
-        },
-        {
-          id: 3,
-          icon: new URL('../assets/icons/eventss/cinema.png', import.meta.url).href,
-          link: 'https://kino-movietheater.business.site/',
-          name: 'Кино'
         }
       ],
       home: [

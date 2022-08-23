@@ -79,13 +79,6 @@
         </q-img>
       </q-card>
     </div>
-    <div class="mtt">
-      <q-card>
-        <q-img style="height:135px" src="src/assets/mainCardBest/kino.jpg">
-          <q-card-section><a href="https://kino-movietheater.business.site/"><h2 class="aLine">КИНО </h2></a></q-card-section>
-        </q-img>
-      </q-card>
-    </div>
   </div>
   </div>
 </template>
