@@ -21,11 +21,12 @@ const mail = ref(null)
 const telegram = ref(null)
 const whatsapp = ref(null)
 const awards = ref(null)
-
+const category = ref(null)
 const regex = /( |<([^>]+)>)/ig
 
 const gal = ref([])
 const slide = ref('style')
+
 function load () {
   api.get(`/posts/${post}`)
     .then((response) => {
@@ -45,6 +46,7 @@ function load () {
       telegram.value = response.data.acf.телеграмм
       whatsapp.value = response.data.acf.whatsapp
       awards.value = response.data.acf.награды
+      category.value = response.data.categories
     })
     .catch((e) => {
       console.log(e)
@@ -127,7 +129,7 @@ onMounted(() => {
             <q-rating readonly v-model="ratin" :max="5" size="25px" />
           </q-card-section>
         </div>
-        <div>
+    <div  v-if="category == 31" >
           <q-card-section>
             <q-btn class="btnMenu" push>
               <p style="text-align: center; margin: 0">Меню</p>
