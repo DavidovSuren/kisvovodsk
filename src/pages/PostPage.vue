@@ -129,7 +129,7 @@ onMounted(() => {
             <q-rating readonly v-model="ratin" :max="5" size="25px" />
           </q-card-section>
         </div>
-    <div  v-if="category == 31" >
+    <div  v-if="category == 31 || category == 32||category == 33 ||category == 30" >
           <q-card-section>
             <q-btn class="btnMenu" push>
               <p style="text-align: center; margin: 0">Меню</p>
