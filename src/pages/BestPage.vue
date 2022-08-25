@@ -1,8 +1,16 @@
 <template>
-
     <div class="q-pa-md">
+      <q-card-section>
+        <div>
+          <h1
+            style="line-height: 2rem; padding-top: 10px; text-align: center"
+          > Афиша</h1>
+        </div>
+      </q-card-section>
+
+     <q-separator style="margin: 10px" color="white" inset />
       <div>
-        <q-btn icon="event" push round color="negative">
+        <q-btn icon="event" push dense color="positive" style="margin-left: 10px;">
         <q-popup-proxy
           @before-show="updateProxy"
           cover
@@ -26,7 +34,21 @@
       <div>
         <h1>{{date}}</h1>
       </div>
- <q-separator color="white" style="margin-top: 22px" inset />
+  </div>
+  <div >
+
+      <q-tab-panels style=" background: none" v-model="date">
+        <q-tab-panel :name="date">
+          <p>
+            Как и обещали, концерты классической музыки под открытым небом на
+            проспекте Ленина продолжаются. Сегодня с 18.00 до 20.30 выступают
+            преподаватели Детской музыкальной школы имени Рахманинова. Пианино и
+            саксофон Добро пожаловать в классику курортов - в Кисловодск!.
+          </p>
+        </q-tab-panel>
+      </q-tab-panels>
+    </div>
+    <q-separator color="white" inset />
     <q-carousel
       autoplay
       swipeable
@@ -48,24 +70,10 @@
       <q-carousel-slide name="third" img-src="../assets/banerBest/Sanvoen.jpeg">
       </q-carousel-slide>
     </q-carousel>
-  </div>
-  <div >
+  <q-separator  style="margin-top: 20px" color="white" />
 
-     <q-separator style="margin-top: 20px" color="white" />
-      <q-tab-panels style=" background: none" v-model="date">
-        <q-tab-panel :name="date">
-          <p>
-            Как и обещали, концерты классической музыки под открытым небом на
-            проспекте Ленина продолжаются. Сегодня с 18.00 до 20.30 выступают
-            преподаватели Детской музыкальной школы имени Рахманинова. Пианино и
-            саксофон Добро пожаловать в классику курортов - в Кисловодск!.
-          </p>
-        </q-tab-panel>
-      </q-tab-panels>
-    </div>
-  <q-separator color="white" inset />
     <div >
-    <div style="margin-top:30px">
+    <div style="margin-top:20px">
       <q-card class="mtt">
         <q-img style="height:135px" src="src/assets/mainCardBest/fil.jpg" >
         <q-card-section><a href="https://kursal.ru/"><h2 class="aLine">ФИЛАРМОНИЯ</h2></a></q-card-section>
@@ -150,7 +158,6 @@ a{
 .aLine {
   text-decoration: underline;
   text-decoration-color: aliceblue;
-
 }
 
 </style>
