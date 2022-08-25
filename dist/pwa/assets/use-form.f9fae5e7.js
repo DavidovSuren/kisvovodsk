@@ -1,0 +1,1 @@
+import{c as a,h as r}from"./index.02524f12.js";const s={name:String};function m(e){return a(()=>({type:"hidden",name:e.name,value:e.modelValue}))}function c(e={}){return(n,t,u)=>{n[t](r("input",{class:"hidden"+(u||""),...e.value}))}}export{m as a,c as b,s as u};
