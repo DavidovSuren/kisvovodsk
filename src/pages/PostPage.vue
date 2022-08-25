@@ -129,32 +129,23 @@ onMounted(() => {
             <q-rating readonly v-model="rating" :max="5" size="25px" />
           </q-card-section>
         </div>
-    <div  v-if="category == 31 || category == 32||category == 33 ||category == 30" >
-          <q-card-section>
-            <q-btn class="btnMenu" push color="positive">
-              <q-icon name="local_dining" color="white"></q-icon>
+        <q-card-section>
+          <div>
+             <q-btn  class="btnMenu" push style="  margin-right: 5px;" color="positive"   size="12px">
+              <q-icon name="smart_display" color="white"></q-icon>
               <q-popup-proxy>
-                <q-card class="cardMenu">
-                  <h1 class="txtMenu">Меню</h1>
-                  <p class="txtMenu">{{menu}}</p>
-                  <q-btn
-                    icon="left"
-                    label="Назад"
-                    color="positive"
-                    flat
-                    v-close-popup
-                  />
-                </q-card>
+                <q-video class="mmtt" :src="video"> </q-video>
               </q-popup-proxy>
             </q-btn>
-          </q-card-section>
-        </div>
+          </div>
+
+            </q-card-section>
       </q-card-section>
 
       <q-card-section>
         <p class="pTime">Время работы: {{opentime}}</p>
       </q-card-section>
-      <q-card-section horizontal>
+      <q-card-section horizontal style="display: flex; justify-content: space-between">
         <div>
           <q-card-section class="q-pt-none">
             <p class="pAdr">Адрес: {{addr}}</p>
@@ -174,6 +165,24 @@ onMounted(() => {
             </div>
           </q-card-section>
         </div>
+      <div  v-if="category == 30 || category == 31 || category == 32 ||category == 33 " >
+            <q-btn  class="btnMenu" push round color="positive"  size="20px">
+                <q-icon name="local_dining" color="white"></q-icon>
+                  <q-popup-proxy>
+                    <q-card class="cardMenu">
+                      <h1 class="txtMenu">Меню</h1>
+                      <p class="txtMenu">{{menu}}</p>
+                      <q-btn
+                        icon="left"
+                        label="Назад"
+                        color="positive"
+                        flat
+                        v-close-popup
+                      />
+                    </q-card>
+                  </q-popup-proxy>
+                </q-btn>
+              </div>
       </q-card-section>
       <q-separator color="white" />
 
@@ -182,18 +191,6 @@ onMounted(() => {
           <h1 class="contentTitle">Описание</h1>
           <p class="descrip" v-html="content"></p>
         </div>
-        <q-separator class="mmtt" inset color="white" />
-        <h1
-          style="
-            line-height: 2rem;
-            padding-top: 25px;
-            text-align: center;
-            padding-top: 40px;
-          "
-        >
-          Видео
-        </h1>
-        <q-video class="mmtt" :src="video"> </q-video>
       </q-card-section>
       <q-separator class="mmtt" color="white" />
 
@@ -207,7 +204,7 @@ onMounted(() => {
             icon="fa-brands fa-vk"
             aria-label="Fa-brands fa-vk"
             color="positive"
-            size="18px"
+            size="14px"
             :href="vk"
           />
           <q-btn
@@ -216,17 +213,8 @@ onMounted(() => {
             icon="fa-brands fa-instagram"
             aria-label="Fa-brands fa-instagram"
             color="positive"
-            size="18px"
+            size="16px"
             :href="insta"
-          />
-          <q-btn
-            push
-            dense
-            icon="email"
-            aria-label="Email"
-            color="positive"
-            size="18px"
-            :href="email"
           />
           <q-btn
             push
@@ -240,10 +228,19 @@ onMounted(() => {
           <q-btn
             push
             dense
+            icon="email"
+            aria-label="Email"
+            color="positive"
+            size="16px"
+            :href="email"
+          />
+          <q-btn
+            push
+            dense
             icon="phone"
             aria-label="Phone"
             color="positive"
-            size="18px"
+            size="14px"
             :href="`tel:${phone}`"
           />
         </div>
