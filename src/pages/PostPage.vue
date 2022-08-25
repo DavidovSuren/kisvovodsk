@@ -126,13 +126,13 @@ onMounted(() => {
         <div>
           <q-card-section horizontal class="cardSectionRating"
             ><p class="pRating">{{rating}}</p>
-            <q-rating readonly v-model="ratin" :max="5" size="25px" />
+            <q-rating readonly v-model="rating" :max="5" size="25px" />
           </q-card-section>
         </div>
     <div  v-if="category == 31 || category == 32||category == 33 ||category == 30" >
           <q-card-section>
-            <q-btn class="btnMenu" push>
-              <p style="text-align: center; margin: 0">Меню</p>
+            <q-btn class="btnMenu" push color="positive">
+              <q-icon name="local_dining" color="white"></q-icon>
               <q-popup-proxy>
                 <q-card class="cardMenu">
                   <h1 class="txtMenu">Меню</h1>
@@ -279,8 +279,9 @@ figure {
   margin: 10px;
 }
 .pRating {
-  margin-bottom: 0;
-  margin-right: 10px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+  font-size: 19px;
 }
 body {
   background: rgb(2, 0, 28);
@@ -320,7 +321,7 @@ a {
   padding-top: 24px;
 }
 .q-rating {
-  color: orange !important;
+  color: orange ;
 }
 .descrip {
   font-size: 16px;
@@ -349,7 +350,6 @@ h6 {
   box-shadow: none;
 }
 .btnMenu {
-  background-color: #110e35;
   margin-top: 10px;
 }
 .txtMenu {
