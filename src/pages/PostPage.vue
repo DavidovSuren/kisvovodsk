@@ -96,11 +96,16 @@ onMounted(() => {
         </div>
       </q-card-section>
       <q-separator class="separ" color="white" />
-      <q-card-section>
-        <q-card-section>
-          <p class="sTitle" v-html="subtitle"></p>
-        </q-card-section>
-      </q-card-section>
+
+    <div class="row">
+      <div class="col">
+        <p class="pTime sTitle">{{opentime}}</p>
+      </div>
+      <div class="col">
+        <p class="sTitle pTime" v-html="subtitle"></p>
+      </div>
+    </div>
+
       <q-carousel
         autoplay
         swipeable
@@ -138,12 +143,7 @@ onMounted(() => {
               </q-popup-proxy>
             </q-btn>
           </div>
-
-            </q-card-section>
-      </q-card-section>
-
-      <q-card-section>
-        <p class="pTime">Время работы: {{opentime}}</p>
+        </q-card-section>
       </q-card-section>
       <q-card-section horizontal style="display: flex; justify-content: space-between">
         <div>
@@ -285,11 +285,9 @@ body {
 }
 h2,
 h1 {
-  color: aliceblue;
   font-size: 27px;
 }
 p {
-  color: white;
   font-family: Oswald, sans-serif;
 }
 .pAdr {
@@ -359,5 +357,9 @@ h6 {
   min-width: 300px;
   min-height: 300px;
   align-content: center;
+}
+.q-card, .q-page-container,   .q-pa-md {
+  color: black!important;
+  background-color: white !important;
 }
 </style>
