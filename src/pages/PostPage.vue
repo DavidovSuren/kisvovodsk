@@ -164,6 +164,13 @@ onMounted(() => {
               </p>
             </div>
           </q-card-section>
+
+          <q-card-section v-if="category == 11 ">
+
+          <q-btn @click="this.$router.push('/booking'); "  push style="  margin-bottom: 12px;" color="positive"   size="13px">
+              <p class="pBooking">Забронировать</p>
+            </q-btn>
+          </q-card-section>
         </div>
       <div  v-if="category == 30 || category == 31 || category == 32 ||category == 33 " >
             <q-btn  class="btnMenu" push round color="positive"  size="20px">
@@ -357,9 +364,5 @@ h6 {
   min-width: 300px;
   min-height: 300px;
   align-content: center;
-}
-.q-card, .q-page-container,   .q-pa-md {
-  color: black!important;
-  background-color: white !important;
 }
 </style>
