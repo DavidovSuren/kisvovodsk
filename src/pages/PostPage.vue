@@ -358,6 +358,9 @@ h6 {
   text-align: center;
   color: #110e35;
 }
+.q-card {
+  color: rgb(255, 255, 255)!important;
+}
 .cardMenu {
   height: max-content;
   width: max-content;
