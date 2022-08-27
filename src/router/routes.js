@@ -41,7 +41,8 @@ const routes = [
       { path: '/repair', component: () => import('pages/RepairPage.vue') },
       { path: '/tour', component: () => import('pages/TourPage.vue') },
       { path: '/best', component: () => import('pages/BestPage.vue') },
-      { path: '/health', component: () => import('pages/HealthPage.vue') }
+      { path: '/health', component: () => import('pages/HealthPage.vue') },
+      { path: '/booking', component: () => import('pages/BookingPage.vue') }
     ]
   },
   // Always leave this as last one,
