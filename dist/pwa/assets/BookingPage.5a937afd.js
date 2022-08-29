@@ -1,1 +1,0 @@
-import{_ as o,U as t,M as n,N as a,O as c,R as s}from"./index.cc569767.js";const r={},_=s("\u0421\u043A\u043E\u0440\u043E");function f(l,d){const e=t("H1");return n(),a(e,null,{default:c(()=>[_]),_:1})}var p=o(r,[["render",f]]);export{p as default};
