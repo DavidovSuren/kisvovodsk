@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { api } from 'boot/axios'
 import { useQuasar } from 'quasar'
@@ -22,8 +22,17 @@ const telegram = ref(null)
 const whatsapp = ref(null)
 const awards = ref(null)
 const category = ref(null)
+const openHour = ref(null)
+const workPeriod = ref(null)
+const clouseHour = computed(() => {
+  const clouseHour = (openHour.value + workPeriod.value) % 24
+  return clouseHour // date.getHours() < openHour.value + workPeriod.value ? 'green' : 'red'
+})
+const isOpen = computed(() => {
+  const date = new Date()
+  return openHour.value <= date.getHours() && date.getHours() < openHour.value + workPeriod.value ? 1 : 0
+})
 const regex = /( |<([^>]+)>)/ig
-
 const gal = ref([])
 const slide = ref('style')
 
@@ -47,6 +56,8 @@ function load () {
       whatsapp.value = response.data.acf.whatsapp
       awards.value = response.data.acf.награды
       category.value = response.data.categories
+      openHour.value = response.data.acf.openHour
+      workPeriod.value = response.data.acf.workPeriod
     })
     .catch((e) => {
       console.log(e)
@@ -96,10 +107,14 @@ onMounted(() => {
         </div>
       </q-card-section>
       <q-separator class="separ" color="white" />
-
     <div class="row">
       <div class="col">
-        <p class="pTime sTitle">{{opentime}}</p>
+        <p class="pTime sTitle" v-if="openHour && workPeriod">
+          <q-icon name="done" color="green" v-if="isOpen"></q-icon>
+          <q-icon name="watch" color="red" v-if="!isOpen"></q-icon>
+        {{openHour}}:00 -{{clouseHour}}:00
+        </p>
+        <p class="pTime sTitle" v-if="!openHour">{{opentime}}</p>
       </div>
       <div class="col">
         <p class="sTitle pTime" v-html="subtitle"></p>
@@ -367,5 +382,8 @@ h6 {
   min-width: 300px;
   min-height: 300px;
   align-content: center;
+}
+.active {
+  color:green
 }
 </style>
