@@ -2,28 +2,28 @@
 <div class="q-pa-md mt">
  <div>
       <q-card >
-        <q-img style="height:135px" src="src/assets/mainCardTour/children.webp" @click="this.$router.push('/child'); ">
+        <q-img style="height:135px" src="../assets/mainCardTour/children.webp" @click="this.$router.push('/child'); ">
         <q-card-section><h2 class="aLine">ДЕТЯМ</h2></q-card-section>
         </q-img>
       </q-card>
     </div>
     <div class="mtt">
       <q-card>
-        <q-img style="height:135px" src="src/assets/mainCardTour/marshrut.webp" @click="this.$router.push('/cexcursionfe'); ">
+        <q-img style="height:135px" src="../assets/mainCardTour/marshrut.webp" @click="this.$router.push('/cexcursionfe'); ">
     <q-card-section><h2 class="aLine">ЭКСКУРСИИ</h2></q-card-section>
         </q-img>
       </q-card>
     </div>
     <div class="mtt">
       <q-card>
-        <q-img style="height:135px" src="src/assets/mainCardTour/tour.webp" @click="this.$router.push('/acropolis'); ">
+        <q-img style="height:135px" src="../assets/mainChttps://docs.google.com/spreadsheets/d/1q1sbhLxwtFR3ik1kB4Oh93F_JApSirg_kB5mwHxdkQw/edit#gid=1210048364ardTour/tour.webp" @click="this.$router.push('/acropolis'); ">
           <q-card-section><h2 class="aLine">МАРШРУТЫ </h2></q-card-section>
         </q-img>
       </q-card>
     </div>
     <div class="mtt">
       <q-card>
-        <q-img style="height:135px" src="src/assets/mainCardTour/cexcursionfe.webp" @click="this.$router.push('/extreme'); ">
+        <q-img style="height:135px" src="../assets/mainCardTour/cexcursionfe.webp" @click="this.$router.push('/extreme'); ">
                <q-card-section><h2 class="aLine"> ЭКСТРИМ</h2></q-card-section>
         </q-img>
       </q-card>

@@ -75,14 +75,14 @@
     <div >
     <div style="margin-top:20px">
       <q-card class="mtt">
-        <q-img style="height:135px" src="src/assets/mainCardBest/fil.webp" >
+        <q-img style="height:135px" src="../assets/mainCardBest/fil.webp" >
         <q-card-section><a href="https://kursal.ru/"><h2 class="aLine">ФИЛАРМОНИЯ</h2></a></q-card-section>
         </q-img>
       </q-card>
     </div>
     <div class="mtt">
       <q-card>
-        <q-img style="height:135px" src="src/assets/mainCardBest/vustavk.webp">
+        <q-img style="height:135px" src="../assets/mainCardBest/vustavk.webp">
     <q-card-section><a href="https://afisha7.ru/kislovodsk/vystavki"><h2 class="aLine">ВЫСТАВКИ</h2></a></q-card-section>
         </q-img>
       </q-card>
