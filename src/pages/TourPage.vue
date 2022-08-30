@@ -16,7 +16,7 @@
     </div>
     <div class="mtt">
       <q-card>
-        <q-img style="height:135px" src="../assets/mainChttps://docs.google.com/spreadsheets/d/1q1sbhLxwtFR3ik1kB4Oh93F_JApSirg_kB5mwHxdkQw/edit#gid=1210048364ardTour/tour.webp" @click="this.$router.push('/acropolis'); ">
+        <q-img style="height:135px" src="src/assets/mainCardTour/tour.webp" @click="this.$router.push('/acropolis'); ">
           <q-card-section><h2 class="aLine">МАРШРУТЫ </h2></q-card-section>
         </q-img>
       </q-card>
