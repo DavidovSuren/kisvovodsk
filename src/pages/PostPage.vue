@@ -159,7 +159,7 @@ onMounted(() => {
           </q-card-section>
           <q-card-section>
             <div>
-              <p class="pTel">
+              <p  class="pTel">
                 Телефон: <a :href="`tel:${phone}`">{{phone}}</a>
               </p>
             </div>
