@@ -180,9 +180,9 @@ onMounted(() => {
             </div>
           </q-card-section>
 
-          <q-card-section v-if="category == 11 ">
+          <q-card-section v-if="category == 11 " style="padding-bottom: 12px;">
 
-          <q-btn @click="this.$router.push('/booking'); "  push style="  margin-bottom: 12px;" color="positive"   size="13px">
+          <q-btn @click="this.$router.push('/booking'); "  push color="positive"   size="14px">
               <p class="pBooking">Забронировать</p>
             </q-btn>
           </q-card-section>
@@ -206,9 +206,9 @@ onMounted(() => {
                 </q-btn>
               </div>
       </q-card-section>
-      <q-separator color="white" />
+      <q-separator color="white" style="margin-top:10px" />
 
-      <q-card-section>
+      <q-card-section style="margin-top:10px">
         <div>
           <h1 class="contentTitle">Описание</h1>
           <p class="descrip" v-html="content"></p>
@@ -385,5 +385,8 @@ h6 {
 }
 .active {
   color:green
+}
+.pBooking{
+ margin: 0;
 }
 </style>
