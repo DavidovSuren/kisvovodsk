@@ -46,17 +46,13 @@
       height="220px"
       class="shadow-3"
     >
-      <q-carousel-slide
-        name="first"
-        img-src="https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg"
-      >
-      </q-carousel-slide>
-      <q-carousel-slide
-        name="second"
-        img-src="/assets/baner/circ.jpeg"
-        @click="goto('https://circus-kislovodsk.ru/')"
-      >
-      </q-carousel-slide>
+    <q-carousel-slide
+      v-for="image in sliderImg"
+      :key="image.id"
+      :name="image.id"
+      :img-src="image.url"
+      @click="goto(image.link)"
+      />
     </q-carousel>
   </div>
    <q-separator color="white" inset />
@@ -256,6 +252,21 @@ export default {
       goto,
       slide: ref(1),
       info: ref('first'),
+      sliderImg: [
+        {
+          id: 1,
+          name: 'first',
+          url: 'https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg',
+          link: '/'
+
+        },
+        {
+          id: 2,
+          name: 'second',
+          url: 'src/assets/baner/circ.jpg',
+          link: 'https://circus-kislovodsk.ru/'
+        }
+      ],
       eventsDark: [
         {
           id: 1,
@@ -469,9 +480,14 @@ body * {font-family: 'Oswald', sans-serif;}
 .q-card {
     background: #0b0a24;
 }
+.shadow-3{
+  background-image: url('load.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 </style>
 <style lang="sass" scoped>
 .my-card
   width: 100%
   max-width: 100%
-  </style>
+</style>
