@@ -2,8 +2,6 @@
 import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { api } from 'boot/axios'
-import { useQuasar } from 'quasar'
-const $q = useQuasar()
 const route = useRoute()
 const post = route.params.id
 const title = ref(null)
@@ -32,9 +30,9 @@ const isOpen = computed(() => {
   const date = new Date()
   return openHour.value <= date.getHours() && date.getHours() < openHour.value + workPeriod.value ? 1 : 0
 })
-const regex = /( |<([^>]+)>)/ig
 const gal = ref([])
 const slide = ref('style')
+const feedback = ref([])
 
 function load () {
   api.get(`/posts/${post}`)
@@ -64,9 +62,6 @@ function load () {
     })
   api.get(`/media?parent=${post}`)
     .then((response) => {
-      /* response.data.forEach((el) => {
-        gal.value.push(el.guid.rendered)
-      }) */
       gal.value = response.data
     })
     .catch((e) => {
@@ -75,12 +70,8 @@ function load () {
   api.get(`/comments?post=${post}`)
 
     .then((response) => {
-      function del (comment) {
-        const clean = comment.replace(regex, ' ')
-        return clean
-      }
       response.data.forEach((comment) => {
-        $q.notify(del(comment.content.rendered))
+        feedback.value.push(comment)
       })
     })
     .catch((e) => {
@@ -97,7 +88,7 @@ onMounted(() => {
 
 <template>
   <div class="q-pa-md">
-    <q-card style="background: none">
+    <q-card style="background: #fff;">
       <q-card-section>
         <div>
           <h1
@@ -215,11 +206,34 @@ onMounted(() => {
         </div>
       </q-card-section>
       <q-separator class="mmtt" color="white" />
-
+      <h2 class="contentTitle" >Отзывы</h2>
+      <q-card-section v-for="feed in feedback" :key=feed.id>
+        <q-card-section>
+        {{feed.author_name}}
+        </q-card-section>
+        <q-card-section v-html=feed.content.rendered></q-card-section>
+      </q-card-section>
+      <div
+          class="row fit justify-center items-center q-col-gutter no-wrap horisintal mmtt"
+        >
+        <q-btn
+            push
+            dense
+            icon="edit"
+            aria-label="Fa-brands fa-vk"
+            icon-right="send"
+            color="positive"
+            size="24px"
+            :href="`https://content.kissloveodsk.ru/?page_id=${post}#commentform`"
+            class="pull-right on-left"
+            label="Ваше мнение"
+          />
+      </div>
       <q-card-section>
         <div
           class="row fit justify-center items-center q-gutter-sm q-col-gutter no-wrap horisintal mmtt"
         >
+
           <q-btn
             push
             dense
@@ -356,6 +370,7 @@ h6 {
 .contentTitle {
   text-align: center;
   padding-top: 10px;
+  color:white;
 }
 .separ {
   margin-top: 35px;
@@ -388,5 +403,16 @@ h6 {
 }
 .pBooking{
  margin: 0;
+}
+.q-card{
+  background-color: #fff!important;
+  color:black!important;
+  padding: 0 4px;
+  margin: 4px 0px;
+}
+.q-pa-md {
+    padding: 16px 4px;
+    margin: 16px 0px;
+    /* border-width: 42px; */
 }
 </style>
