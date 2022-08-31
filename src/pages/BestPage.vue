@@ -63,7 +63,7 @@
       </q-carousel-slide>
       <q-carousel-slide
         name="second"
-        img-src="../assets/baner/circ.jpeg"
+        img-src="../assets/baner/circ.jpg"
         @click="goto('https://circus-kislovodsk.ru/')"
       >
       </q-carousel-slide>
