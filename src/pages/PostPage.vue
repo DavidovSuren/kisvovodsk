@@ -183,7 +183,7 @@ onMounted(() => {
           <q-card-section v-if="category == 11 " style="padding-bottom: 12px;">
 
           <q-btn @click="this.$router.push('/booking'); "  push color="positive"   size="14px">
-              <p class="pBooking">Забронировать</p>
+              <p class="pBooking ">Забронировать</p>
             </q-btn>
           </q-card-section>
         </div>
