@@ -29,7 +29,7 @@
  </div>
       <div class="mtt"> <q-card >
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135"
-      @click="this.$router.push('/health');">
+       @click="this.$router.push('/health');">
       <q-card-section>
        <a><h2>ЗАВЕДЕНИЯ</h2> </a>
         </q-card-section>
@@ -461,11 +461,11 @@ export default {
 backdrop-filter: blur(10px)
 }
 .textCard{
-  color: aliceblue;
+  color: rgb(2, 2, 71);
   font-size: 15px;
 }
 .cardColor{
-  background-color: #110e35;
+  background-color: #f9f7c6a5;
 }
 </style>
 <style scoped>
