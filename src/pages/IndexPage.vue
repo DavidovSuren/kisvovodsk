@@ -1,33 +1,37 @@
 <template>
 <div class="q-pa-md">
     <div class="mtt" > <q-card >
-      <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
+      <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135"
+      @click="this.$router.push('/best');">
       <q-card-section>
-        <a @click="this.$router.push('/best'); "><h2>ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
+        <a><h2>ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
 </div>
       <div class="mtt"> <q-card>
-      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135"
+      @click="this.$router.push('/sanatoriums');">
       <q-card-section>
-        <a @click="this.$router.push('/sanatoriums');"><h2>САНАТОРИИ</h2> </a>
+        <a><h2>САНАТОРИИ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
  </div>
       <div class="mtt"> <q-card>
-      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
-      <q-card-section>
-        <a @click="this.$router.push('/tour');"><h2>ТУРИЗМ</h2> </a>
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135"
+      @click="this.$router.push('/tour');">
+      <q-card-section >
+        <a ><h2>ТУРИЗМ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
  </div>
       <div class="mtt"> <q-card >
-      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
+      <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135"
+      @click="this.$router.push('/health');">
       <q-card-section>
-       <a @click="this.$router.push('/health');"><h2>ЗАВЕДЕНИЯ</h2> </a>
+       <a><h2>ЗАВЕДЕНИЯ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
