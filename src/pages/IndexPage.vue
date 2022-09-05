@@ -262,7 +262,6 @@ export default {
           name: 'first',
           url: 'https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg',
           link: '/'
-
         }
       ],
       eventsDark: [
