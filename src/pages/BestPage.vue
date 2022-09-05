@@ -61,13 +61,7 @@
     >
       <q-carousel-slide name="first" img-src="../assets/banerBest/eksban.jpg">
       </q-carousel-slide>
-      <q-carousel-slide
-        name="second"
-        img-src="../assets/baner/circ.jpg"
-        @click="goto('https://circus-kislovodsk.ru/')"
-      >
-      </q-carousel-slide>
-      <q-carousel-slide name="third" img-src="../assets/banerBest/Sanvoen.jpeg">
+      <q-carousel-slide name="second" img-src="../assets/banerBest/Sanvoen.jpeg">
       </q-carousel-slide>
     </q-carousel>
   <q-separator  style="margin-top: 20px" color="white" />
