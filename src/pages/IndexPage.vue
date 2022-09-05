@@ -263,12 +263,6 @@ export default {
           url: 'https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg',
           link: '/'
 
-        },
-        {
-          id: 2,
-          name: 'second',
-          url: 'src/assets/baner/circ.jpg',
-          link: 'https://circus-kislovodsk.ru/'
         }
       ],
       eventsDark: [
@@ -378,24 +372,18 @@ export default {
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/services/video.png', import.meta.url).href,
-          link: 'video',
-          name: 'Видео'
-        },
-        {
-          id: 3,
           icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
           link: 'pets',
           name: 'Питомцы'
         },
         {
-          id: 4,
+          id: 3,
           icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
         },
         {
-          id: 5,
+          id: 4,
           icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
           link: 'hair-cut',
           name: 'Бьюти'
