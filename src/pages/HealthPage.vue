@@ -36,7 +36,7 @@ body * {font-family: 'Oswald', sans-serif;}
   background-color: #110e35;
 }
 h2{
-  color: aliceblue;
+  color: rgb(208, 232, 252);
   font-size: 27px;
   text-align: center;
   padding: 0;
@@ -47,6 +47,7 @@ a{
 }
 .mtt{
    margin-top: 12px;
+   text-shadow: 3px 5px 16px rgb(3, 46, 25);
 }
 
 .q-img__content > div{
@@ -56,5 +57,6 @@ a{
 .aLine {
   text-decoration: underline;
   text-decoration-color: aliceblue;
+  text-shadow: 3px 5px 16px rgb(3, 46, 25);
 }
 </style>

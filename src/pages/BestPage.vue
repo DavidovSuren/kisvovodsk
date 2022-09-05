@@ -149,6 +149,7 @@ a{
 }
 .mtt{
    margin-top: 12px;
+   text-shadow: 3px 5px 6px rgb(2, 47, 25);
 }
 
 .q-img__content > div{
