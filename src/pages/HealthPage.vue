@@ -36,7 +36,7 @@ body * {font-family: 'Oswald', sans-serif;}
   background-color: #110e35;
 }
 h2{
-  color: rgb(208, 232, 252);
+  color: rgb(255, 255, 255);
   font-size: 27px;
   text-align: center;
   padding: 0;
@@ -55,8 +55,6 @@ a{
   background: none;
 }
 .aLine {
-  text-decoration: underline;
-  text-decoration-color: aliceblue;
-  text-shadow: 3px 5px 16px rgb(3, 46, 25);
+  text-shadow: 3px 5px 6px rgb(2, 47, 25);
 }
 </style>

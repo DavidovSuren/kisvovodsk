@@ -56,8 +56,6 @@ h2,h1{
   background: none;
 }
 .aLine {
-  text-decoration: underline;
-  text-decoration-color: aliceblue;
   text-shadow: 3px 5px 6px rgb(2, 47, 25);
 }
 </style>

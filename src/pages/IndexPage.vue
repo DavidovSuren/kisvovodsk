@@ -3,7 +3,7 @@
     <div class="mtt" > <q-card >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <a @click="this.$router.push('/best'); "><h2 class="aLine">ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
+        <a @click="this.$router.push('/best'); "><h2>ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -11,7 +11,7 @@
       <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <a @click="this.$router.push('/sanatoriums');"><h2 class="aLine">САНАТОРИИ</h2> </a>
+        <a @click="this.$router.push('/sanatoriums');"><h2>САНАТОРИИ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -19,7 +19,7 @@
       <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-        <a @click="this.$router.push('/tour');"><h2 class="aLine">ТУРИЗМ</h2> </a>
+        <a @click="this.$router.push('/tour');"><h2>ТУРИЗМ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -27,7 +27,7 @@
       <div class="mtt"> <q-card >
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135">
       <q-card-section>
-       <a @click="this.$router.push('/health');"><h2 class="aLine">ЗАВЕДЕНИЯ</h2> </a>
+       <a @click="this.$router.push('/health');"><h2>ЗАВЕДЕНИЯ</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>
@@ -474,10 +474,6 @@ h2,h1{
 }
 body * {font-family: 'Oswald', sans-serif;}
 
-.aLine {
-  text-decoration: underline;
-  text-decoration-color: aliceblue;
-}
 .q-card {
     background: #0b0a24;
 }
