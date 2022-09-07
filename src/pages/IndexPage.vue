@@ -197,7 +197,7 @@
    <div class="q-pa-md row items-start q-gutter-md">
     <q-card
       class="my-card text-white"
-      style="background: radial-gradient(circle, #9c4dcc 0%, #38006b 90%)"
+      style="background: radial-gradient(circle, #3651D9 40%, #E4EDFF 100%)"
     >
 
       <q-card-section style="text-align:center">
