@@ -270,8 +270,14 @@ export default {
         {
           id: 1,
           name: 'first',
-          url: 'https://cs12.pikabu.ru/post_img/big/2020/11/07/7/160474962215499651.jpg',
-          link: '/'
+          url: new URL('../assets/banerGl/bannerchoco.jpeg', import.meta.url).href,
+          link: 'cafe/'
+        },
+        {
+          id: 2,
+          name: 'second',
+          url: new URL('../assets/banerGl/bannerr.jpeg', import.meta.url).href,
+          link: 'cafe/'
         }
       ],
       eventsDark: [
