@@ -420,7 +420,7 @@ export default {
         {
           id: 4,
           icon: new URL('../assets/icons/transport/van.png', import.meta.url).href,
-          link: 'https://google.com/',
+          link: 'https://yandex.ru/maps/11062/kislovodsk/transport/minibuses/?l=masstransit&ll=42.716822%2C43.904244&z=13.34/',
           name: 'Транспорт'
         }
       ]
