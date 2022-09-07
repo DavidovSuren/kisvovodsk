@@ -56,6 +56,6 @@ h2,h1{
   background: none;
 }
 .aLine {
-  text-shadow: 3px 5px 6px rgb(2, 47, 25);
+  text-shadow: 3px 5px 6px rgb(1, 2, 36);
 }
 </style>

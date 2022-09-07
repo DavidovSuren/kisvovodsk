@@ -37,7 +37,7 @@ body * {font-family: 'Oswald', sans-serif;}
 }
 h2{
   color: rgb(255, 255, 255);
-  font-size: 27px;
+  font-size: 30px;
   text-align: center;
   padding: 0;
 }
@@ -47,7 +47,7 @@ a{
 }
 .mtt{
    margin-top: 12px;
-   text-shadow: 3px 5px 16px rgb(3, 46, 25);
+   text-shadow: 3px 5px 16px rgb(1, 2, 36);
 }
 
 .q-img__content > div{
@@ -55,6 +55,6 @@ a{
   background: none;
 }
 .aLine {
-  text-shadow: 3px 5px 6px rgb(2, 47, 25);
+  text-shadow: 3px 5px 6px rgb(1, 2, 36);
 }
 </style>
