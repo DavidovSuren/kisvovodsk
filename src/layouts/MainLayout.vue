@@ -92,7 +92,7 @@ export default defineComponent({
 </script>
 <style>
 .bbg{
- background: linear-gradient(234deg, rgba(232, 232, 238, 0.723) 11%, rgba(33, 69, 215, 0.726) 40%, rgba(236, 8, 0, 0.477) 89%);
+ background: linear-gradient(234deg, rgba(232, 232, 238, 0.723));
 backdrop-filter: blur(10px);
   background-attachment: fixed;
   background-position: center;
@@ -106,12 +106,12 @@ backdrop-filter: blur(10px);
 </style>
 <style scoped>
 h1{
-  color: rgb(7, 11, 137);
+  color: rgb(1, 2, 36);
   font-size: 27px;
   margin-bottom: -40px;
 }
 .menuText{
-  color:rgb(7, 11, 137); font-size: large;
+  color:rgb(1, 2, 36); font-size: large;
   font-family: monospace;
 }
 .mt{
