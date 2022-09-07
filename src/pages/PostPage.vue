@@ -332,7 +332,7 @@ p {
 }
 .pWay {
   font-size: 14px;
-  color: orange;
+  color: rgb(0, 0, 255);
 }
 .pTime {
   font-family: Oswald, sans-serif;
@@ -344,7 +344,7 @@ p {
 }
 a {
   font-family: Oswald, sans-serif;
-  color: #ffa500ab;
+  color: #0000ff;
 }
 .sTitle {
   font-family: Oswald, sans-serif !important;
@@ -352,7 +352,7 @@ a {
   padding-top: 24px;
 }
 .q-rating {
-  color: orange ;
+  color: rgb(255, 166, 0) ;
 }
 .descrip {
   font-size: 16px;

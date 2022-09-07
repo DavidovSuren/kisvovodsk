@@ -43,7 +43,7 @@
   <div class="q-pa-md" style="margin-left:-20px"><q-toggle color="accent" v-model="accept" label="Я принимаю пользовательское соглашение и политику конфиденциальности" /></div>
 
       <div>
-        <q-btn label="Продолжить" type="submit" color="positive"/>
+        <q-btn label="Продолжить" type="submit" color="blue"/>
         <q-btn label="Заново" type="reset" color="white" flat class="q-ml-sm" />
       </div></div>
     </q-form>
@@ -104,19 +104,19 @@ export default {
   margin-top: 12px;
 }
 .q-field__label{
-   color: #ffffff !important;
+   color: rgba(1, 2, 36) !important;
 }
 .q-field__native {
-  color: whitesmoke;
+  color: rgba(1, 2, 36) !important;
 }
 .text-negative {
-    color: #e9e9fe !important;
+  color: rgba(1, 2, 36) !important;
 }
 .q-placeholder{
   color:rgb(255, 255, 255)
 }
 .q-field--error .q-field__bottom {
-    color: #cfced8;
+  color: rgba(1, 2, 36) !important;
 }
 .q-toggle__label, q-anchor--skip {
   color: white;
@@ -125,7 +125,7 @@ export default {
   font-size: 19px;
 }
 .self-stretch{
-background: #242d53;
+background: rgba(35, 179, 251, 0.937);
 }
 .q-toggle__track{
   background: #242d53;
