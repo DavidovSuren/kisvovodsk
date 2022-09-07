@@ -142,7 +142,7 @@ onMounted(() => {
         </div>
         <q-card-section>
           <div>
-             <q-btn  class="btnMenu" push style="  margin-right: 5px;" color="positive"   size="12px">
+             <q-btn  class="btnMenu" push style="  margin-right: 5px;" color="blue"   size="15px">
               <q-icon name="smart_display" color="white"></q-icon>
               <q-popup-proxy>
                 <q-video class="mmtt" :src="video"> </q-video>
@@ -179,8 +179,8 @@ onMounted(() => {
           </q-card-section>
         </div>
       <div  v-if="category == 30 || category == 31 || category == 32 ||category == 33 " >
-            <q-btn  class="btnMenu" push round color="positive"  size="20px">
-                <q-icon name="local_dining" color="white"></q-icon>
+            <q-btn  class="btnMenu" push round color="blue"  size="25px">
+                <q-icon name="local_dining" color="white" text="меню"></q-icon>
                   <q-popup-proxy>
                     <q-card class="cardMenu">
                       <h1 class="txtMenu">Меню</h1>
@@ -222,7 +222,7 @@ onMounted(() => {
             icon="edit"
             aria-label="Fa-brands fa-vk"
             icon-right="send"
-            color="positive"
+            color="blue"
             size="24px"
             :href="`https://content.kissloveodsk.ru/?page_id=${post}#commentform`"
             class="pull-right on-left"
@@ -239,7 +239,7 @@ onMounted(() => {
             dense
             icon="fa-brands fa-vk"
             aria-label="Fa-brands fa-vk"
-            color="positive"
+            color="blue"
             size="14px"
             :href="vk"
           />
@@ -248,7 +248,7 @@ onMounted(() => {
             dense
             icon="fa-brands fa-instagram"
             aria-label="Fa-brands fa-instagram"
-            color="positive"
+            color="blue"
             size="16px"
             :href="insta"
           />
@@ -257,7 +257,7 @@ onMounted(() => {
             dense
             icon="telegram"
             aria-label="Phone"
-            color="positive"
+            color="blue"
             size="18px"
             :href="telegram"
           />
@@ -266,7 +266,7 @@ onMounted(() => {
             dense
             icon="email"
             aria-label="Email"
-            color="positive"
+            color="blue"
             size="16px"
             :href="email"
           />
@@ -275,7 +275,7 @@ onMounted(() => {
             dense
             icon="phone"
             aria-label="Phone"
-            color="positive"
+            color="blue"
             size="14px"
             :href="`tel:${phone}`"
           />
