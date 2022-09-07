@@ -18,8 +18,8 @@ body {  background: rgb(250, 250, 242);
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;}
-h1 {font-family: monospace; font-size: 23px; margin-top: -30px; margin-bottom: -20px;}
-h2 {font-family:monospace; font-size: 23px; align-self: start;  }
+h1 {font-family: "Oswald", sans-serif; font-size: 23px; margin-top: -30px; margin-bottom: -20px;}
+h2 {font-family: "Oswald", sans-serif; font-size: 23px; align-self: start}
 a  {font-weight:  150px;text-decoration: none}
 </style>
 rgba(48, 29, 99, 0.991);
