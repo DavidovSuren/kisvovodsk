@@ -180,7 +180,7 @@
       </q-carousel-slide>
     </q-carousel>
 
-        <div class="mmt" ><h1> Наши партнёры</h1>
+        <div class="mmt" ><h1 style="color: black"> Наши партнёры</h1>
         <q-btn
         push class="cardColor"
         :href="'https://artclip.ru/'">
@@ -197,11 +197,11 @@
    <div class="q-pa-md row items-start q-gutter-md">
     <q-card
       class="my-card text-white"
-      style="background: radial-gradient(circle, #3651D9 40%, #E4EDFF 100%)"
+      style="background: rgb(236, 236, 208);"
     >
 
       <q-card-section style="text-align:center">
-        <div ><h1> КОНТАКТЫ</h1></div><br>
+        <div ><h1 style="color: black"> КОНТАКТЫ</h1></div><br>
         <div class="row fit justify-center items-center q-gutter-sm  q-col-gutter no-wrap horisintal">
 
          <q-btn
@@ -270,7 +270,7 @@ export default {
         {
           id: 1,
           name: 'first',
-          url: 'https://www.pnp.ru/upload/entities/2018/04/13/article/detailPicture/28/ce/08/65/7fd4366d350fc6f53f49ac3a3b7d1ffe.jpg',
+          url: 'https://cs12.pikabu.ru/post_img/big/2020/11/07/7/160474962215499651.jpg',
           link: '/'
         }
       ],
@@ -442,7 +442,7 @@ export default {
 }
 .mtt{
    margin-top: 12px;
-   text-shadow: 3px 5px 6px rgb(2, 47, 25);
+   text-shadow: 3px 5px 6px rgb(16, 18, 1);
 }
 .q-carousel {
   background: none;
