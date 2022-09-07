@@ -165,9 +165,9 @@
         >
           <q-btn
           push
-            v-for="btn in transport "
+            v-for="btn in transport"
             :key="btn.id"
-            :to="btn.link"
+            @click="goToIf(btn.link)"
             class="cardColor"
             ><q-img
               class="rounded-borders col-6 full-height"
@@ -247,13 +247,23 @@
 </template>
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 export default {
   setup () {
+    const router = useRouter()
     function goto (url) {
       window.location.href = url
     }
+    function goToIf (link) {
+      if (link.slice(0, 4) === 'http') {
+        window.location.href = link
+      } else {
+        router.push(link)
+      }
+    }
     return {
       goto,
+      goToIf,
       slide: ref(1),
       info: ref('first'),
       sliderImg: [
@@ -410,8 +420,8 @@ export default {
         {
           id: 4,
           icon: new URL('../assets/icons/transport/van.png', import.meta.url).href,
-          link: 'van',
-          name: 'Транспорт '
+          link: 'https://google.com/',
+          name: 'Транспорт'
         }
       ]
     }
