@@ -75,9 +75,9 @@ export default {
 .mmt{margin-top: 20px;}
 .mmt a{color: rgb(0, 0, 0)}
 .q-img{position: inherit !important; overflow: hidden;}
-.q-img, .q-img__image, .q-img__container, .q-img__content {width:200px !important; height: 140px !important;}
+.q-img, .q-img__image, .q-img__container, .q-img__content {width:100px !important; height: 100px !important;}
 .card-content{padding: 5px 0 0 10px;}
 .cardColor{
-  background-color: #eaeefb;
+  background-color: eaeefb;
 }
 </style>
