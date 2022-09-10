@@ -4,7 +4,7 @@
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135"
       @click="this.$router.push('/best');">
       <q-card-section>
-        <a><h2>ЛУЧШЕЕ В КИСЛОВОДСКЕ</h2> </a>
+        <a><h2>АФИША</h2> </a>
         </q-card-section>
       </q-parallax>
     </q-card>

@@ -10,14 +10,14 @@
 
      <q-separator style="margin: 10px" color="white" inset />
       <div>
-        <q-btn icon="event" push dense color="positive" style="margin-left: 10px;">
+        <q-btn icon="event" push dense color="blue" style="margin-left: 10px;">
         <q-popup-proxy
           @before-show="updateProxy"
           cover
           transition-show="scale"
           transition-hide="scale"
         >
-          <q-date color="positive" v-model="date">
+          <q-date color="blue" v-model="date">
             <div class="row items-center justify-end q-gutter-sm">
               <q-btn label="Отменить" color="positive" flat v-close-popup />
               <q-btn
@@ -114,13 +114,13 @@ export default {
 body * {font-family: 'Oswald', sans-serif;}
 
 p {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Oswald, sans-serif;
   text-align: center;
   margin: 5%;
 }
 h1 {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 27px;
   text-align: center;
   line-height: 3rem;
@@ -143,7 +143,7 @@ a{
 }
 .mtt{
    margin-top: 12px;
-   text-shadow: 3px 5px 6px rgb(2, 47, 25);
+   text-shadow: 3px 5px 6px rgb(2, 8, 47);
 }
 
 .q-img__content > div{
