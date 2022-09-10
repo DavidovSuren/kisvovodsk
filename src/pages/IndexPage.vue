@@ -82,8 +82,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="200px"
-              height="150px"
+              width="130px"
+              height="100px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -97,7 +97,7 @@
       animated
       control-color="primary"
       arrows
-      height="280px"
+      height="180px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
@@ -112,8 +112,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="200px"
-              height="150px"
+              width="130px"
+              height="100px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -127,7 +127,7 @@
       animated
       control-color="primary"
       arrows
-      height="280px"
+      height="180px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
@@ -142,8 +142,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="200px"
-              height="150px"
+              width="130px"
+              height="100px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -172,8 +172,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="200px"
-              height="150px"
+              width="130px"
+              height="100px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
