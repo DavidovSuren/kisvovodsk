@@ -62,7 +62,7 @@
    <q-separator color="white" inset />
   <div class="q-pa-md mt">
     <q-carousel
-      style="margin-top: 45px"
+      style="margin-top: 60px"
       v-model="slide"
       animated
       control-color="primary"
@@ -82,8 +82,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="80px"
-              height="50px"
+              width="200px"
+              height="150px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -97,7 +97,7 @@
       animated
       control-color="primary"
       arrows
-      height="150px"
+      height="280px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
@@ -112,8 +112,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="80px"
-              height="50px"
+              width="200px"
+              height="150px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -127,7 +127,7 @@
       animated
       control-color="primary"
       arrows
-      height="150px"
+      height="280px"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
@@ -142,8 +142,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="80px"
-              height="50px"
+              width="200px"
+              height="150px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -172,8 +172,8 @@
             ><q-img
               class="rounded-borders col-6 full-height"
               :src="btn.icon"
-              width="80px"
-              height="50px"
+              width="200px"
+              height="150px"
             /><p class="textCard">{{btn.name}}</p></q-btn
           >
         </div>
@@ -297,31 +297,31 @@ export default {
       home: [
         {
           id: 1,
-          icon: new URL('../assets/icons/housing/hotel.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/hotel.jpg', import.meta.url).href,
           link: 'hotel',
           name: 'Отели'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/housing/Gostinitsa.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/Gostinitsa.jpg', import.meta.url).href,
           link: 'gostinitsa',
           name: 'Гостиницы'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/services/SPA.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/SPA.jpg', import.meta.url).href,
           link: 'spa',
           name: 'СПА'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/housing/motel.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/motel.jpg', import.meta.url).href,
           link: 'motel',
           name: 'Хостелы'
         },
         {
           id: 5,
-          icon: new URL('../assets/icons/housing/flat.png', import.meta.url).href,
+          icon: new URL('../assets/icons/housing/flat.jpg', import.meta.url).href,
           link: 'flat',
           name: 'Квартиры'
         }
@@ -329,7 +329,7 @@ export default {
       tour: [
         {
           id: 1,
-          icon: new URL('../assets/icons/services/child.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/child.jpg', import.meta.url).href,
           link: 'child',
           name: 'Детям'
         },
@@ -355,25 +355,25 @@ export default {
       clothes: [
         {
           id: 1,
-          icon: new URL('../assets/icons/clothing/boutique.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/boutique.jpg', import.meta.url).href,
           link: 'boutique',
           name: 'Бутики'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/clothing/sport.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/sport.jpg', import.meta.url).href,
           link: 'sport',
           name: 'Спортивные'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/clothing/fur.png', import.meta.url).href,
+          icon: new URL('../assets/icons/clothing/fur.jpg', import.meta.url).href,
           link: 'fur',
           name: 'Меховые'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/services/gift.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/gift.jpg', import.meta.url).href,
           link: 'gift',
           name: 'Сувениры'
         }
@@ -381,25 +381,25 @@ export default {
       services: [
         {
           id: 1,
-          icon: new URL('../assets/icons/services/fitness.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/fitness.jpg', import.meta.url).href,
           link: 'fitness',
           name: 'Фитнес'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/services/cat.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/cat.jpg', import.meta.url).href,
           link: 'pets',
           name: 'Питомцы'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/services/laptop.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/laptop.jpg', import.meta.url).href,
           link: 'laptop',
           name: 'Электроника'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/services/hair-cut.png', import.meta.url).href,
+          icon: new URL('../assets/icons/services/hair-cut.jpg', import.meta.url).href,
           link: 'hair-cut',
           name: 'Бьюти'
         }
@@ -407,25 +407,25 @@ export default {
       transport: [
         {
           id: 1,
-          icon: new URL('../assets/icons/transport/car-wash.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/car-wash.jpg', import.meta.url).href,
           link: 'car-wash',
           name: 'Автомойки'
         },
         {
           id: 2,
-          icon: new URL('../assets/icons/transport/parking.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/parking.webp', import.meta.url).href,
           link: 'parking',
           name: 'Парковки'
         },
         {
           id: 3,
-          icon: new URL('../assets/icons/transport/repair.png', import.meta.url).href,
+          icon: new URL('../assets/icons/transport/repair.jpg', import.meta.url).href,
           link: 'repair',
           name: 'Автосервис'
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/transport/van.png', import.meta.url).href,
+          icon: new URL('../assets/mainCardBest/BUS.webp', import.meta.url).href,
           link: 'https://yandex.ru/maps/11062/kislovodsk/transport/minibuses/?l=masstransit&ll=42.716822%2C43.904244&z=13.34/',
           name: 'Транспорт'
         }
@@ -465,10 +465,10 @@ backdrop-filter: blur(10px)
 }
 .textCard{
   color: rgb(2, 2, 71);
-  font-size: 15px;
+  font-size: 18px;
 }
 .cardColor{
-  background-color: #f9f7c6a5;
+  background-color: #dfe9f2a5;
 }
 </style>
 <style scoped>
