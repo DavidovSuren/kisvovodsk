@@ -137,7 +137,7 @@ h2{
   text-align: center;
 }
 a{
-  text-align: center;
+  text-align: justify;
 
 }
 .mtt{
