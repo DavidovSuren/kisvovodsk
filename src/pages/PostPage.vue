@@ -424,7 +424,7 @@ h6 {
 }
 .classfy{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .itemHeader{
   padding-top: 20px;
