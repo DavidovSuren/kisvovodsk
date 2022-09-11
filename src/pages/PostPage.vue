@@ -105,10 +105,10 @@ onMounted(() => {
           <q-icon name="watch" color="red" v-if="!isOpen"></q-icon>
         {{openHour}}:00 -{{clouseHour}}:00
         </p>
-        <p class="pTime sTitle" v-if="!openHour">{{opentime}}</p>
+        <p class="pTime sTitle " v-if="!openHour">{{opentime}}</p>
       </div>
       <div class="col">
-        <p class="sTitle pTime" v-html="subtitle"></p>
+        <p class="sTitle pTime classfy" v-html="subtitle"></p>
       </div>
     </div>
 
@@ -414,5 +414,9 @@ h6 {
     padding: 16px 4px;
     margin: 16px 0px;
     /* border-width: 42px; */
+}
+.classfy{
+  display: flex;
+  justify-content: end;
 }
 </style>
