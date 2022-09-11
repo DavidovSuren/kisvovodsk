@@ -9,4 +9,5 @@
       </a>
     </div>
     <!-- /Yandex.Metrika informer -->
+    <!-- :TODO try to use data from https://mc.yandex.ru/informer/89683386/json-->
 </template>
