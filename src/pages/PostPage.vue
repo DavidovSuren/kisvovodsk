@@ -92,7 +92,8 @@ onMounted(() => {
       <q-card-section>
         <div>
           <h1
-            style="line-height: 2rem; padding-top: 25px; text-align: center"
+            class="itemHeader"
+            style="line-height: 2rem; text-align: center"
             v-html="title"
           ></h1>
         </div>
@@ -100,10 +101,16 @@ onMounted(() => {
       <q-separator class="separ" color="white" />
     <div class="row">
       <div class="col">
-        <p class="pTime sTitle" v-if="openHour && workPeriod">
+        <p class="pTime sTitle" v-if="openHour && workPeriod" >
+          <!--
           <q-icon name="done" color="green" v-if="isOpen"></q-icon>
-          <q-icon name="watch" color="red" v-if="!isOpen"></q-icon>
-        {{openHour}}:00 -{{clouseHour}}:00
+          <q-icon name="watch" color="red" v-if="!isOpen"></q-icon> -->
+          <q-icon name="done" color="green" v-if="isOpen"></q-icon>
+          <span  style="color:red" v-if="!isOpen">
+            Закрыто
+          </span>
+          {{openHour}}:00 -{{clouseHour}}:00
+
         </p>
         <p class="pTime sTitle " v-if="!openHour">{{opentime}}</p>
       </div>
@@ -418,5 +425,9 @@ h6 {
 .classfy{
   display: flex;
   justify-content: end;
+}
+.itemHeader{
+  padding-top: 20px;
+  margin-bottom: -30px;
 }
 </style>
