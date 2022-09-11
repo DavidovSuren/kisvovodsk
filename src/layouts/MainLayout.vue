@@ -44,11 +44,12 @@ class="bgHeader"
     <q-page-container>
       <router-view />
     </q-page-container>
+    <yandexInfo/>
   </q-layout>
 </template>
 
 <script>
-
+import yandexInfo from 'components/yandexInfo.vue'
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 
@@ -70,7 +71,8 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+    EssentialLink,
+    yandexInfo
   },
 
   setup () {
