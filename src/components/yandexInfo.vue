@@ -1,5 +1,5 @@
 <template>
-  <div style="    display: flex;     justify-content: center;"></div>
+  <div style="    display: flex;     justify-content: center;">
     <!-- Yandex.Metrika informer -->
     <a href="https://metrika.yandex.ru/stat/?id=89683386&amp;from=informer"
     target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/89683386/3_0_ECECD0FF_ECECD0FF_0_pageviews"
