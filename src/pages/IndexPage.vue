@@ -399,7 +399,7 @@ export default {
         },
         {
           id: 4,
-          icon: new URL('../assets/icons/services/hair-cut.jpg', import.meta.url).href,
+          icon: new URL('../assets/icons/services/hair-cut.webp', import.meta.url).href,
           link: 'hair-cut',
           name: 'Бьюти'
         }
