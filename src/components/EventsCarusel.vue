@@ -92,7 +92,7 @@ export default {
 }
 .loadingEvents{
 
-  background-image: url(./load.svg);
+  background-image: url('load.svg');
   background-repeat: no-repeat;
   background-position: center;
   animation: imganim 10s linear both;
@@ -100,7 +100,7 @@ export default {
 }
 
 @keyframes imganim {
-from {background-image: url(./load.svg);}
+from {background-image: url('load.svg')};
 to {background-image: none;}
 }
 
@@ -120,7 +120,7 @@ to {background-image: none;}
     bottom: 0;
     width: 160px;
     height: 84px;
-    background-image: url(./corner.png);
+    background-image: url('corner.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
