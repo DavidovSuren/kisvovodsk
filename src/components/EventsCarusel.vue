@@ -91,17 +91,18 @@ export default {
   padding-left: 3px !important;
 }
 .loadingEvents{
-
-  background-image: url('load.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: imganim 10s linear both;
-
+  animation: imgFade 15s;
+    }
+@-webkit-keyframes imgFade
+{
+  from {background: url('../assets/load.svg');  background-repeat: no-repeat;  background-position: center;}
+  to {background: #FFF; background-repeat: no-repeat;  background-position: center;}
 }
 
-@keyframes imganim {
-from {background-image: url('load.svg')};
-to {background-image: none;}
+@keyframes imgFade
+{
+  from {background: url('../assets/load.svg');  background-repeat: no-repeat;  background-position: center;}
+  to {background: #FFF; background-repeat: no-repeat;  background-position: center;}
 }
 
 .custom-caption {
@@ -120,7 +121,7 @@ to {background-image: none;}
     bottom: 0;
     width: 160px;
     height: 84px;
-    background-image: url('corner.png');
+    background-image: url('../assets/corner.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
