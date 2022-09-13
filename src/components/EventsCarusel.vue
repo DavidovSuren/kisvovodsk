@@ -1,16 +1,17 @@
 <template>
+  <div class="loadingEvents">
   <q-carousel
   autoplay
   swipeable
   v-model="slide"
   arrows
   infinite
+  animated
   height="220px"
-  class="loadingEvents"
   @mouseenter="autoplay = false"
   @mouseleave="autoplay = true"
+
   >
-  {{sliderImg}}
     <q-carousel-slide
     v-for="image in sliderImg"
     :key="image.id"
@@ -32,6 +33,7 @@
       </div>
     </q-carousel-slide>
   </q-carousel>
+  </div>
 </template>
 <script>
 import { ref } from 'vue'
@@ -89,17 +91,19 @@ export default {
   padding-left: 3px !important;
 }
 .loadingEvents{
-  background-image: url(load.svg);
+
+  background-image: url(./load.svg);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
-  animation: ani 2.5s forwards;
+  animation: imganim 10s linear both;
+
 }
 
-@keyframes ani {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+@keyframes imganim {
+from {background-image: url(./load.svg);}
+to {background-image: none;}
 }
+
 .custom-caption {
   text-align: center;
   position: absolute;
@@ -116,7 +120,7 @@ export default {
     bottom: 0;
     width: 160px;
     height: 84px;
-    background-image: url(corner.png);
+    background-image: url(./corner.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
