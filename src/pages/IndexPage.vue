@@ -1,5 +1,7 @@
 <template>
 <div class="q-pa-md">
+  <eventsCasrusel/>
+
     <div class="mtt" > <q-card >
       <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135"
       @click="this.$router.push('/best');">
@@ -248,7 +250,11 @@
 <script>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import eventsCasrusel from 'components/EventsCarusel.vue'
 export default {
+  components: {
+    eventsCasrusel
+  },
   setup () {
     const router = useRouter()
     function goto (url) {
