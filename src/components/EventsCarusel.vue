@@ -2,12 +2,13 @@
   <q-carousel
   autoplay
   swipeable
-  animated
   v-model="slide"
   arrows
   infinite
   height="220px"
   class="loadingEvents"
+  @mouseenter="autoplay = false"
+  @mouseleave="autoplay = true"
   >
   {{sliderImg}}
     <q-carousel-slide
@@ -91,7 +92,13 @@ export default {
   background-image: url(load.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ececd0;
+  opacity: 1;
+  animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 .custom-caption {
   text-align: center;
