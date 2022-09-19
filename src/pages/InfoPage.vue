@@ -1,7 +1,8 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
     <q-card class="my-card text-white"
-          style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+          style="background: linear-gradient(234deg, rgba(255, 255, 255, 0.723) 15%, rgba(76, 110, 189, 0.726) 21%, rgba(177, 7, 7, 0.432) 90%);
+"
           >
       <q-card-section>
         <div class="text-h6">Миссия СЕРДЦЕ ГОРОДА</div>
