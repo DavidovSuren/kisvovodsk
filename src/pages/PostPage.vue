@@ -192,6 +192,7 @@ onMounted(() => {
                     <q-card class="cardMenu">
                       <h1 class="txtMenu">Меню</h1>
                       <p class="txtMenu">{{menu}}</p>
+                      <img src="https://content.kissloveodsk.ru/wp-content/uploads/2022/09/Меню-шоколад-1-scaled.jpg">
                       <q-btn
                         icon="left"
                         label="Назад"
