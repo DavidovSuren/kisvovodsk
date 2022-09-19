@@ -41,27 +41,6 @@
 
   </div>
    <q-separator color="white" inset />
-<div class="q-pa-md">
-    <q-carousel
-      autoplay
-      swipeable
-      animated
-      v-model="info"
-      arrows
-      infinite
-      height="220px"
-      class="shadow-3"
-    >
-    <q-carousel-slide
-      v-for="image in sliderImg"
-      :key="image.id"
-      :name="image.id"
-      :img-src="image.url"
-      @click="goto(image.link)"
-      />
-    </q-carousel>
-  </div>
-   <q-separator color="white" inset />
   <div class="q-pa-md mt">
     <q-carousel
       style="margin-top: 60px"
@@ -272,20 +251,6 @@ export default {
       goToIf,
       slide: ref(1),
       info: ref('first'),
-      sliderImg: [
-        {
-          id: 1,
-          name: 'first',
-          url: new URL('../assets/banerGl/bannerchoco.jpeg', import.meta.url).href,
-          link: 'cafe/'
-        },
-        {
-          id: 2,
-          name: 'second',
-          url: new URL('../assets/banerGl/bannerr.jpeg', import.meta.url).href,
-          link: 'cafe/'
-        }
-      ],
       eventsDark: [
         {
           id: 1,

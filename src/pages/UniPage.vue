@@ -11,6 +11,7 @@
             <div class="text-caption text-grey" v-html="cardInfo.excerpt.rendered"></div>
           <div class="text-caption text-grey">
             <p>Адрес: {{cardInfo.acf.адрес}}</p>
+            <p>👁 {{cardInfo.acf.views}}</p>
           </div>
         <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="15px" /> &nbsp;{{cardInfo.acf.рейтинг }}
         </div>
