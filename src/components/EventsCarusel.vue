@@ -60,7 +60,7 @@ export default {
           id: 1,
           name: 'first',
           url: new URL('../assets/banerGl/bannerchoco.jpeg', import.meta.url).href,
-          link: 'post/1010',
+          link: 'post/1729',
           eventDate: 1,
           eventMounth: 'сентября',
           eventStartHours: 18,
