@@ -1,16 +1,6 @@
 <template>
 <div class="q-pa-md">
   <eventsCasrusel/>
-
-    <div class="mtt" > <q-card >
-      <q-parallax  src="../assets/icons/kislovodsk.jpg" :height="135"
-      @click="this.$router.push('/best');">
-      <q-card-section>
-        <a><h2>АФИША</h2> </a>
-        </q-card-section>
-      </q-parallax>
-    </q-card>
-</div>
       <div class="mtt"> <q-card>
       <q-parallax src="../assets/icons/kislovodsk.jpg" :height="135"
       @click="this.$router.push('/sanatoriums');">
