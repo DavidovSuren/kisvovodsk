@@ -71,7 +71,7 @@ export default {
           id: 2,
           name: 'second',
           url: new URL('../assets/banerGl/bannerr.jpeg', import.meta.url).href,
-          link: 'post/876',
+          link: 'post/303',
           eventDate: 2,
           eventMounth: 'сентября',
           eventStartHours: 10,
