@@ -24,7 +24,7 @@
         <div class="text-subtitle1">
           {{image.eventMounth}}
           <br>
-          {{image.eventStartHours}}:00
+          {{image.eventStartHours}}:{{image.eventStartMinute}}
         </div>
       </div>
       <div class="custom-caption topRight">
@@ -64,11 +64,8 @@ export default {
         {
           id: 1,
           name: 'first',
-          url: new URL('../assets/banerGl/bannerchoco.jpeg', import.meta.url).href,
+          url: new URL('../assets/banerGl/Шоколад банер 0.jpg', import.meta.url).href,
           link: 'post/1729',
-          eventDate: 24,
-          eventMounth: 'сентября',
-          eventStartHours: 8,
           eventDurationHours: 3,
           eventName: 'Завтрак в кафе',
           eventPrice: 500
@@ -78,12 +75,7 @@ export default {
           name: 'second',
           url: new URL('../assets/banerGl/bannerr.jpeg', import.meta.url).href,
           link: 'post/303',
-          eventDate: 23,
-          eventMounth: 'сентября',
-          eventStartHours: 10,
-          eventDurationHours: 3,
-          eventName: 'Утро бодрого нарзана',
-          eventPrice: 5
+          eventName: 'Живая музыка'
         },
         {
           id: 3,
@@ -93,6 +85,7 @@ export default {
           eventDate: 23,
           eventMounth: 'сентября',
           eventStartHours: 10,
+          eventStartMinute: 30,
           eventDurationHours: 3,
           eventName: 'Экскурсия в парк',
           eventPrice: 0
