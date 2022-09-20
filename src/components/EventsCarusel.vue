@@ -21,10 +21,15 @@
     >
       <div class="custom-caption topLeft">
         <div class="text-h5">{{image.eventDate}}</div>
-        <div class="text-subtitle1">{{image.eventMounth}}</div>
+        <div class="text-subtitle1">
+          {{image.eventMounth}}
+          <br>
+          {{image.eventStartHours}}:00
+        </div>
       </div>
       <div class="custom-caption topRight">
-        <div class="text-h5">{{image.eventStartHours}}:00</div>
+        <div class="text-h5"></div>
+        <div class="text-h5">{{image.eventPrice}}₽</div>
       </div>
       <div class="custom-caption bottLeft">
         <div class="text-h5">{{image.eventName}}</div>
@@ -61,22 +66,36 @@ export default {
           name: 'first',
           url: new URL('../assets/banerGl/bannerchoco.jpeg', import.meta.url).href,
           link: 'post/1729',
-          eventDate: 1,
+          eventDate: 24,
           eventMounth: 'сентября',
-          eventStartHours: 18,
+          eventStartHours: 8,
           eventDurationHours: 3,
-          eventName: 'День Молодого Вина'
+          eventName: 'Завтрак Кафе Шоколад',
+          eventPrice: 500
         },
         {
           id: 2,
           name: 'second',
           url: new URL('../assets/banerGl/bannerr.jpeg', import.meta.url).href,
           link: 'post/303',
-          eventDate: 2,
+          eventDate: 23,
           eventMounth: 'сентября',
           eventStartHours: 10,
           eventDurationHours: 3,
-          eventName: 'Утро бодрого нарзана'
+          eventName: 'Утро бодрого нарзана',
+          eventPrice: 5
+        },
+        {
+          id: 3,
+          name: 'second',
+          url: new URL('../assets/banerBest/eksban.jpg', import.meta.url).href,
+          link: 'post/303',
+          eventDate: 23,
+          eventMounth: 'сентября',
+          eventStartHours: 10,
+          eventDurationHours: 3,
+          eventName: 'Экскурсия в парк',
+          eventPrice: 0
         }
       ]
     }
