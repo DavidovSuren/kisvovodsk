@@ -70,7 +70,7 @@ export default {
           eventMounth: 'сентября',
           eventStartHours: 8,
           eventDurationHours: 3,
-          eventName: 'Завтрак Кафе Шоколад',
+          eventName: 'Завтрак в кафе',
           eventPrice: 500
         },
         {

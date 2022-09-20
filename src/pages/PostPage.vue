@@ -2,6 +2,8 @@
 import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { api } from 'boot/axios'
+import { openURL } from 'quasar'
+
 const route = useRoute()
 const post = route.params.id
 const title = ref(null)
@@ -188,21 +190,15 @@ onMounted(() => {
           </q-card-section>
         </div>
       <div  v-if="category == 30 || category == 31 || category == 32 ||category == 33 " >
-            <q-btn  class="btnMenu" push round color="blue"  size="25px">
+
+            <q-btn
+            @click="openURL(menu, '_blank').focus()"
+            class="btnMenu"
+            push
+            round
+            color="blue"
+            size="25px">
                 <q-icon name="local_dining" color="white" text="меню"></q-icon>
-                  <q-popup-proxy>
-                    <q-card class="cardMenu">
-                      <h1 class="txtMenu">Меню</h1>
-                      <img :src="menu" class="responsive">
-                      <q-btn
-                        icon="left"
-                        label="Назад"
-                        color="positive"
-                        flat
-                        v-close-popup
-                      />
-                    </q-card>
-                  </q-popup-proxy>
                 </q-btn>
               </div>
       </q-card-section>
