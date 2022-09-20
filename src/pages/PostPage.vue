@@ -22,6 +22,7 @@ const awards = ref(null)
 const category = ref(null)
 const openHour = ref(null)
 const workPeriod = ref(null)
+const menu = ref(null)
 const clouseHour = computed(() => {
   const clouseHour = (openHour.value + workPeriod.value) % 24
   return clouseHour // date.getHours() < openHour.value + workPeriod.value ? 'green' : 'red'
@@ -56,6 +57,7 @@ function load () {
       category.value = response.data.categories
       openHour.value = response.data.acf.openHour
       workPeriod.value = response.data.acf.workPeriod
+      menu.value = response.data.acf.меню
     })
     .catch((e) => {
       console.log(e)
@@ -191,8 +193,7 @@ onMounted(() => {
                   <q-popup-proxy>
                     <q-card class="cardMenu">
                       <h1 class="txtMenu">Меню</h1>
-                      <p class="txtMenu">{{menu}}</p>
-                      <img src="https://content.kissloveodsk.ru/wp-content/uploads/2022/09/Меню-шоколад-1-scaled.jpg">
+                      <img :src="menu" class="responsive">
                       <q-btn
                         icon="left"
                         label="Назад"
