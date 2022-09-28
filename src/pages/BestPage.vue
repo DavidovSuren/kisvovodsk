@@ -35,8 +35,45 @@
         <h1>{{date}}</h1>
       </div>
   </div>
-  <div >
-
+  <div>
+    <q-card class="mmt cardColor"
+      v-for="cardInfo in data"
+      :name="cardInfo.id"
+      :img-src="cardInfo.url"
+      @click.self="goto(cardInfo.link)"
+      :key="cardInfo.id" >
+      <router-link :to="`/post/${cardInfo.id}`">
+        <div>
+          <q-img :src="cardInfo.fimg_url" />
+          <div class="card-content">
+          <div class="custom-caption topLeft">
+            <div class="text-h5">{{cardInfo.eventDate}}</div>
+            <div class="text-subtitle1">
+            {{cardInfo.eventMounth}}
+            <br>
+            {{cardInfo.eventStartHours}}:{{cardInfo.eventStartMinute}}
+          </div>
+          </div>
+          <div class="custom-caption topRight">
+            <div class="text-h5"></div>
+            <div class="text-h5">{{cardInfo.eventPrice}}₽</div>
+          </div>
+          <div class="custom-caption bottLeft">
+            <div class="text-h5">{{cardInfo.eventName}}</div>
+          </div>
+          <div class="bottRight" @click="goto('/best')">
+          </div>
+              <div v-html="cardInfo.title.rendered"></div>
+              <div class="text-caption text-grey" v-html="cardInfo.excerpt.rendered"></div>
+            <div class="text-caption text-grey">
+              <p>Адрес: {{cardInfo.acf.адрес}}</p>
+              <p>👁 {{ (Math.round (cardInfo.acf.views)) + parseInt(String( Date.now()).slice(8,9))}}</p>
+            </div>
+          <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="15px" /> &nbsp;{{cardInfo.acf.рейтинг }}
+          </div>
+        </div>
+      </router-link>
+    </q-card>
       <q-tab-panels style=" background: none" v-model="date">
         <q-tab-panel :name="date">
           <p>
@@ -85,7 +122,8 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { api } from 'boot/axios'
 const options = { year: 'numeric', month: 'long', day: 'numeric' }
 const today = new Date()
 
@@ -94,12 +132,28 @@ export default {
     function goto (url) {
       window.location.href = url
     }
+    const data = ref(null)
+    function loadData () {
+      api.get(`/posts?orderby=date&order=desc&after=2022-06-13T17:00:00&categories=${29}`)
+        .then((response) => {
+          data.value = response.data
+          console.log(data.value)
+        })
+        .catch(() => {
+          console.log('server error!')
+        })
+    }
+    onMounted(() => {
+      loadData()
+    })
     return {
       goto,
       splitterModel: ref(50),
       date: ref(today.toLocaleDateString(options)),
       slide: ref(1),
-      info: ref('first')
+      info: ref('first'),
+      data,
+      loadData
     }
   }
 }
@@ -149,5 +203,43 @@ a{
   position:relative;
   background: none;
 }
+.mmt{margin-top: 20px;}
+.mmt a{color: rgb(0, 0, 0)}
+.q-img{position: inherit !important; overflow: hidden;}
+.q-img, .q-img__image, .q-img__container, .q-img__content {width:100px !important; height: 100px !important;}
+.card-content{padding: 5px 0 0 10px;}
+.cardColor{
+  background-color: #ccc;
+}
+.custom-caption {
+  text-align: center;
+  position: absolute;
+  color: white;
+}
+.topRight {
+  right: 3px;
+  top: 3px;
+  padding: 3px;
+  margin: 3px;
+}
+.bottRight {
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 84px;
+    position: absolute;
+}
 
+.bottLeft {
+  left: 3px;
+  bottom: 3px;
+  padding: 3px;
+  margin: 3px;
+}
+.topLeft {
+  left: 3px;
+  top: 3px;
+  padding: 3px;
+  margin: 3px;
+}
 </style>
