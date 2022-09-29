@@ -46,30 +46,30 @@
         <div>
           <q-img :src="cardInfo.fimg_url" />
           <div class="card-content">
-          <div class="custom-caption topLeft">
-            <div class="text-h5">{{cardInfo.eventDate}}</div>
-            <div class="text-subtitle1">
-            {{cardInfo.eventMounth}}
-            <br>
-            {{cardInfo.eventStartHours}}:{{cardInfo.eventStartMinute}}
-          </div>
-          </div>
-          <div class="custom-caption topRight">
-            <div class="text-h5"></div>
-            <div class="text-h5">{{cardInfo.eventPrice}}₽</div>
-          </div>
-          <div class="custom-caption bottLeft">
-            <div class="text-h5">{{cardInfo.eventName}}</div>
-          </div>
-          <div class="bottRight" @click="goto('/best')">
-          </div>
-              <div v-html="cardInfo.title.rendered"></div>
-              <div class="text-caption text-grey" v-html="cardInfo.excerpt.rendered"></div>
+            <div class="custom-caption topLeft">
+              <div class="text-h5">{{cardInfo.eventDate}}</div>
+              <div class="text-subtitle1">
+                {{cardInfo.eventMounth}}
+                <br>
+                {{cardInfo.eventStartHours}}:{{cardInfo.eventStartMinute}}
+              </div>
+            </div>
+            <div class="custom-caption topRight">
+              <div class="text-h5"></div>
+              <div class="text-h5">{{cardInfo.eventPrice}}₽</div>
+            </div>
+            <div class="custom-caption bottLeft">
+              <div class="text-h5">{{cardInfo.eventName}}</div>
+            </div>
+            <div class="bottRight" @click="goto('/best')">
+            </div>
+            <div v-html="cardInfo.title.rendered"></div>
+            <div class="text-caption text-grey" v-html="cardInfo.excerpt.rendered"></div>
             <div class="text-caption text-grey">
               <p>Адрес: {{cardInfo.acf.адрес}}</p>
               <p>👁 {{ (Math.round (cardInfo.acf.views)) + parseInt(String( Date.now()).slice(8,9))}}</p>
             </div>
-          <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="15px" /> &nbsp;{{cardInfo.acf.рейтинг }}
+            <q-rating v-model="cardInfo.acf.рейтинг" :max="5" size="15px" /> &nbsp;{{cardInfo.acf.рейтинг }}
           </div>
         </div>
       </router-link>
