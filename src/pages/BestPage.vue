@@ -17,7 +17,7 @@
           transition-show="scale"
           transition-hide="scale"
         >
-          <q-date color="blue" v-model="date">
+          <q-date color="blue" v-model="formattedDate" mask="DD.MM.YYYY" first-day-of-week="1">
             <div class="row items-center justify-end q-gutter-sm">
               <q-btn label="Отменить" color="positive" flat v-close-popup />
               <q-btn
@@ -32,7 +32,7 @@
         </q-popup-proxy>
       </q-btn>
       <div>
-        <h1>{{date}}</h1>
+        <h1>{{formattedDate}}</h1>
       </div>
   </div>
   <div>
@@ -74,17 +74,8 @@
         </div>
       </router-link>
     </q-card>
-      <q-tab-panels style=" background: none" v-model="date">
-        <q-tab-panel :name="date">
-          <p>
-            Сегодня в Кисловодске пройдет бесплатный концерт оркестра Росгвардии и известного исполнителя Владимира Маркина.
-            Концерт под открытым небом состоится на площадке около Колоннады. Начало в 14.00.
-            «Сегодня в Кисловодск придёт культурная осень. Марафон  концертных мероприятий
-            стартует в историческом месте города - у столетней Колоннады.
-            Перед кисловодчанами и отдыхающими выступят известные мастеры эстрады. Приглашаем всех отметить начало Кисловодской осени", - сказал глава города-курорта Евгений Моисеев.
-          </p>
-        </q-tab-panel>
-      </q-tab-panels>
+    {{ dateISO}}
+
     </div>
     <q-separator color="white" inset />
     <q-carousel
@@ -122,19 +113,28 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { api } from 'boot/axios'
-const options = { year: 'numeric', month: 'long', day: 'numeric' }
-const today = new Date()
+import { date } from 'quasar'
 
 export default {
   setup () {
+    // const date = ref(formattedDate) // ref(today.toLocaleDateString(options))
+    const timeStamp = Date.now()
+    const formattedDate = ref(date.formatDate(timeStamp, 'DD.MM.YYYY'))
+    const dateISO = computed(() => {
+      const convert = formattedDate.value.split('.')
+      return `${convert[2]}-${convert[1]}-${convert[0]}`
+    })
+    function save () {
+      loadData()
+    }
     function goto (url) {
       window.location.href = url
     }
     const data = ref(null)
     function loadData () {
-      api.get(`/posts?orderby=date&order=desc&after=2022-06-13T17:00:00&categories=${29}`)
+      api.get(`/posts?orderby=date&order=desc&after=${dateISO.value}T17:00:00&categories=${29}`)
         .then((response) => {
           data.value = response.data
           console.log(data.value)
@@ -149,11 +149,14 @@ export default {
     return {
       goto,
       splitterModel: ref(50),
-      date: ref(today.toLocaleDateString(options)),
       slide: ref(1),
       info: ref('first'),
       data,
-      loadData
+      loadData,
+      save,
+      date,
+      dateISO,
+      formattedDate
     }
   }
 }
