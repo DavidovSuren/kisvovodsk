@@ -1,0 +1,29 @@
+.single-portfolio {
+	width: 29%;
+	float: left;
+	margin: 0 10px;
+}
+.portfolio-filter {
+	list-style: none;
+}
+.portfolio-filter li {
+	display: inline-block;
+	margin: 0 10px;
+	background: #ededed;
+	padding: 7px 20px;
+}
+
+.stars {
+	list-style: none;
+}
+.stars li {
+	display: inline;
+}
+
+/* Room css*/
+.aminities {
+    list-style: none;
+}
+.aminities li {
+    display: inline-block;
+}

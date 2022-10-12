@@ -1,0 +1,366 @@
+/*
+Homepage Animation CSS file
+*/
+
+.slider-caption-inner  .slider-lead,
+.slider-caption-inner p {
+    transform: scale(0.85,0.85);
+  -ms-transform: scale(0.85,0.85); 
+  -webkit-transform: scale(0.85,0.85);
+    transition: all 0.4s;
+ -webkit-transition: all 0.4s;
+}
+
+
+.slider-caption-inner.inView .slider-lead,
+.slider-caption-inner.inView p{
+
+    transform: scale(1,1);
+	  -ms-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+
+}
+
+.slider-caption-inner .before-line {
+
+    transform: translateX(100%);
+	 -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	
+}
+
+.slider-caption-inner.inView .before-line {
+
+    opacity: 1;
+    transform: translateX(0);
+	 -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+
+}
+
+.slider-caption-inner .slider-btn-group{
+	    opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.slider-caption-inner.inView .slider-btn-group{
+	opacity: 1;
+}
+
+.slider-caption-inner .after-line {
+
+    transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+
+
+}
+
+.slider-caption-inner.inView .after-line {
+
+    opacity: 1;
+    transform: translateX(0);
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+
+}
+.slider-cta-area{
+	    transform: translateX(100%);
+	-ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.slider-cta-area.inView{
+    opacity: 1;
+    transform: translateX(0);
+-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.front-page-0 .room_img {
+
+    transform: translateX(-25%);
+	-ms-transform:  translateX(-25%);
+  -webkit-transform:  translateX(-25%);
+
+    transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+}
+
+.front-page-0.inView .room_img {
+
+    transform: translateX(0);
+-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+
+}
+
+.front-page-0 .room-sec-inner .room-content .room-content-inner ul li{
+	opacity:0;
+    transform: translateY(150px);
+	-ms-transform: translateY(150px);
+  -webkit-transform: translateY(150px);
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	
+}
+
+.front-page-0.inView .room-sec-inner .room-content .room-content-inner ul li{
+	opacity:1;
+    transform: translateY(0px);
+	-ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);	
+}
+
+.front-page-1.front-page-0 .room_img {
+
+    transform: translateX(25%);
+	-ms-transform: translateX(25%);
+  -webkit-transform: translateX(25%);
+    transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+
+}
+
+.front-page-1.front-page-0.inView .room_img {
+
+    transform: translateX(0);
+-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+
+.front-page-3 .food_menu_content_inner {
+
+    transform: scale(0.8,0.8);
+	-ms-transform: scale(0.8,0.8);
+  -webkit-transform: scale(0.8,0.8);
+    transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+
+}
+.front-page-3.inView .food_menu_content_inner {
+
+    transform: scale(1,1);
+	-ms-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+}
+
+
+.front-page-3 .food_menu_item {
+    opacity: 0;
+    transform: translateX(-100px);
+	-ms-transform: translateX(-100px);
+	-webkit-transform: translateX(-100px);
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.front-page-3.inView .food_menu_item {
+    opacity: 1;
+    transform: translateX(0);
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.front-page-3 .food_menu_inner .food_menu_item:nth-child(1),
+.front-page-3 .food_menu_inner .food_menu_item:nth-child(2){
+	transform: translateX(100px);
+	-ms-transform: translateX(100px);
+	-webkit-transform: translateX(100px);
+}
+.front-page-3.inView .food_menu_inner .food_menu_item:nth-child(1),
+.front-page-3.inView .food_menu_inner .food_menu_item:nth-child(2){
+	transform: translateX(0px);
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+
+
+.front-page-4 .amenities_block-content p:last-of-type span:first-of-type{
+    transform: translateX(100%);
+	-ms-transform:  translateX(100%);
+	-webkit-transform: translateX(100%);
+
+    opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+
+}
+
+.front-page-4 .amenities_block-content  p:last-of-type{
+	opacity: 0;
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.front-page-4.inView .amenities_block-content p:last-of-type{
+	opacity:1;
+}
+
+.front-page-4.inView .amenities_block-content p:last-of-type span:first-of-type,
+.front-page-4.inView .amenities_block-content p:last-of-type span:last-of-type{
+    opacity: 1;
+    transform: translateX(0);	
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+
+}
+
+
+.front-page-4 .amenities_block-content p:last-of-type span:last-of-type{
+    transform: translateX(-100%);
+	-ms-transform:  translateX(-100%);
+	-webkit-transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.8s; 
+	-webkit-transition: all 0.8s;
+}
+
+.front-page-4 .amenities_item_list{
+	  transform: translateX(-100px);
+	  -ms-transform: translateX(-100px);
+-webkit-transform: translateX(-100px);
+    opacity: 0.5;
+    transition: all 1.2s; 
+	-webkit-transition: all 1.2s;
+}
+
+.front-page-4.inView .amenities_item_list{
+	 opacity: 1;
+    transform: translateX(0);
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+.front-page-4 .amenities-block-img-wrap{
+	  transform: translateX(100px);
+	 	-ms-transform: translateX(100px);
+	-webkit-transform: translateX(100px);
+    opacity: 0.5;
+    transition: all 1.2s; 
+	-webkit-transition: all 1.2s;
+}
+
+.front-page-4.inView .amenities-block-img-wrap{
+	 opacity: 1;
+    transform: translateX(0);
+	-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.front-page-7 .eapps-instagram-feed-posts-item {
+    transform: scale(0.8,0.8);
+-ms-transform: scale(0.8,0.8);
+-webkit-transform: scale(0.8,0.8);
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+opacity:0.75;
+}
+
+.front-page-7.inView .eapps-instagram-feed-posts-item {
+transform: scale(1,1);
+-ms-transform: scale(1,1);
+-webkit-transform: scale(1,1);
+
+opacity:1;
+}
+
+.wedding-section  .wedding-img{
+transform: translateX(-75px);
+-ms-transform: translateX(-75px);
+-webkit-transform: translateX(-75px);
+transition: all 1.2s;
+-webkit-transition: all 1.2s;
+opacity:0;
+	
+}
+
+.wedding-section.inView  .wedding-img {
+	opacity:1;
+transform: translateX(0);
+-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.wedding-section-wrap .wedding-cta,
+.front-page-6  .press-cta{
+	transform: translateY(50px);
+	-ms-transform: translateY(50px);
+	-webkit-transform:  translateY(50px);
+    transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.wedding-section-wrap.inView .wedding-cta,
+.front-page-6.inView  .press-cta{
+	
+	transform: translateY(0px);
+	-ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+
+}
+
+.amenities-sec .single_press_item,
+.front-page-6  .single_press_item{
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+opacity:0;
+	
+}
+.amenities-sec.inView .single_press_item,
+.front-page-6.inView  .single_press_item{
+opacity:1;
+	
+}
+
+.footer-widgets-1 {
+transform: translateX(-175px);
+-ms-transform: translateX(-175px);
+-webkit-transform: translateX(-175px);
+transition: all 1.2s;
+-webkit-transition: all 1.2s;
+opacity:0;
+}
+
+.footer-widgets-3 {
+transform: translateX(175px);
+-ms-transform: translateX(175px);
+-webkit-transform: translateX(175px);
+transition: all 1.2s;
+-webkit-transition: all 1.2s;
+opacity:0;
+}
+
+.inView  .footer-widgets-1,
+.inView  .footer-widgets-3{
+	opacity:1;
+transform: translateX(0);
+-ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+
+.footer-widgets-2 {
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);
+    -webkit-transform: scale(0.8,0.8);
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+}
+
+.inView  .footer-widgets-2 {
+transform: scale(1,1);
+-ms-transform: scale(1,1);
+-webkit-transform: scale(1,1);
+}
