@@ -2,10 +2,6 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/GreetLayout.vue')
-  },
-  {
-    path: '/:pathMatch(.*)*',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
@@ -47,6 +43,8 @@ const routes = [
       { path: '/booking', component: () => import('pages/BookingPage.vue') }
     ]
   },
+  // Always leave this as last one,
+  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
